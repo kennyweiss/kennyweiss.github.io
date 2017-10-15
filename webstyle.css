@@ -1,0 +1,435 @@
+/* Design by: Kenny Weiss, 2007-2010 */
+
+
+/* General formatting */
+body{
+	color:#595441;
+	font-family: "Trebuchet MS", verdana, helvetica, sans-serif;
+	margin: 10px 0px;
+	text-align:center;
+	vertical-align:middle;
+	font-size:85%;
+}
+
+#content{
+	width:800px;
+	text-align:left;
+	margin: 0 auto;
+}
+
+a.inactive {
+	color:#AAAAAA;
+}
+
+a, a:link {
+	color:#4A8797;
+	text-decoration:none;
+}
+
+
+h3 {
+	margin:1em 0px 0px 0px;
+	padding:0px;
+}
+
+.small_text {
+	font-size:smaller;
+	padding: 0px 0px 0px 5px;
+	margin:0px;
+}
+
+.should_inline{
+	display:inline;
+}
+
+
+/* Bio and pic */
+#top{
+	padding:10px 0px 15px 0px;
+	overflow:auto;
+}
+
+#top #left {
+	float:left;
+	width:inherit;
+}
+
+#top #right {
+	float:right;
+	padding: 0px 0px 5px 10px;
+	margin:0px;
+	width:540px;
+}
+
+#top #right h1 {
+	margin:5px 0px;
+}
+
+#bio {
+	text-align:justify;
+}
+
+#contact:target {
+	background-color:#DDDDDD;
+	color:#CC0000;
+}
+
+
+#contact  small
+{
+	font-variant:small-caps;
+}
+
+/* papers formatting style */
+.papers {
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 5px;
+}
+
+.paper {
+	padding: 8px 0px 8px 15px;
+}
+
+.paper:hover {
+	background-color:#EEEEEE;
+}
+
+.paper:target {
+	background-color:#DDDDDD;
+}
+
+.paper .paper_venue {
+	padding-top:3px;
+	font-size:90%;
+}
+
+.paper .paper_title {
+	font-weight: bold;
+}
+
+.paper .paper_links  {
+    border: 10px;
+	margin: 5px 0px 0px 0px;
+}
+
+.paper .paper_links ul {
+	padding-left: 10px;
+	padding-right: 10px;	
+	list-style:none;
+	overflow:auto;
+}
+
+.paper .paper_links ul li {
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid #A5A089;
+	float:left;
+}
+
+.paper .paper_links ul li.last {
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: none;	
+}
+
+.paper .paper_links ul li a {
+	float:left;
+	display:inline;
+}
+
+.paper .paper_links ul li span a {
+	float:none;
+}
+
+.toggle_off, .toggle_on{
+	cursor:pointer;
+}
+
+/*
+.toggle_off:after {
+	content: " \00BB";   // quotation marks
+}
+
+.toggle_on:after  {
+	content: " \00AB"; 
+}
+*/
+
+.update {
+	text-align:center;
+}
+.update p:before  {
+	content: "Update:";
+	color:#CC0000;
+	font-weight:bold;
+}
+
+.update p {
+	margin:-2em;
+	text-align:left;
+	display:inline;
+}
+
+
+.toggle_off:before  {
+	content: "+ ";
+}
+
+.toggle_on:before  {
+	content: "\2212  ";  /* unicode minus sign */
+}
+
+/*
+.toggle_off:after  {
+	content: "...";
+}
+
+.toggle_on:after  {
+	font-size:70%;
+	content: " (less)";
+}
+
+.toggle_off:before  {
+	font-weight:bold;
+	font-size:85%;
+	font-family:"Courier New", Courier, monospace;
+	content: "+ ";
+}
+
+.toggle_on:before  {
+	font-weight:bold;
+	font-size:85%;
+	font-family:"Courier New", Courier, monospace;
+	content: "- ";
+}
+
+.toggle_off:after  {
+	font-size:70%;
+	content: " (+)";
+}
+
+.toggle_on:after  {
+	font-size:70%;
+	content: " (-)";
+	}
+
+.toggle_off:after {
+	content:"+ ";
+	font-family:Arial, Helvetica, sans-serif;
+	content:"> ";
+	font-weight:bold;
+	font-size:90%;	
+	font-size:70%;	
+	content:"\2026";
+	content: url(images/down_arrow.png); 
+}
+
+.toggle_on:after {
+	content:"\20";
+}*/
+
+
+
+.paper .paper_award {
+	display: inline;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.paper .paper_award a {
+	color: #CC0000;
+	font-style: italic;
+	font-weight: normal;
+	float:right;
+}
+
+
+.paper .paper_abstract {
+	display:none;
+	font-size:85%;
+	padding-left:2em;
+	padding-right:3em;
+	text-align:justify;
+}
+
+.paper .paper_abstract p:before{
+	font-weight:bold;
+	font-variant:small-caps;
+	content:"Abstract \2014";
+}
+
+.paper .paper_bibtex {
+	display:none;
+	font-family:"Courier New", Courier, monospace;
+	padding-left:2em;
+	padding-right:3em;
+	text-align:justify;
+}
+
+
+
+/* Research images */
+.title_only{
+	display:none;
+}
+.research_images{
+	width:100%;
+	padding:0px;
+	margin-top:60px;
+	margin-bottom:40px;
+}
+
+.research_images ul {
+	padding:0px;
+	margin:0px;
+}
+
+.research_images ul li {
+	display: inline;
+	list-style-type: none;
+	margin:5px;
+	padding:0px;
+}
+
+
+.research_images li a {
+	padding:0px;
+	margin:0px;
+}
+
+.research_images li a img {
+	height: 160px;
+	padding:0px;
+	margin:0px;
+}
+
+.lyte_box img {
+	border: 2px solid #FFFFFF;
+}
+
+.lyte_box:link img {
+	border: 2px solid #FFFFFF;
+}
+
+.lyte_box:hover img {
+	border: 2px solid #CC0000;
+}
+
+
+
+/* Collaborations */
+.collaborations {
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 5px;
+}
+
+.collaborator {
+	padding: 8px 0px 8px 15px;
+}
+
+
+.research_group a {
+	font-weight:bold;
+}
+
+
+
+
+/* Footer */
+#copyright_notices {
+	font-size: 65%;
+}
+#copyright_notices dd {
+	text-align:justify;
+	margin-left:2.5em;
+	margin-right:2em;
+}
+
+.footer{
+	padding: 3px 0px;
+}
+
+.footer:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+.updated {
+	font-style: italic;
+	color: #999999;
+	float:left;
+}
+
+.w3_valid {
+	float: right;
+	padding: 0px 2px 2px 0px;
+}
+
+.w3_valid img {
+	border:none;
+	height:31px;
+	width:88px;
+}
+
+
+
+
+
+
+/*
+
+.publication_links {
+	display:block;
+	float:left;
+}
+
+
+.publication_links:after{
+
+}
+
+.publication_links #publications
+{
+}
+*/
+
+.quick_links {
+	text-align:center;
+	margin:0em 0em 1em 7em;
+}
+
+.quick_links ul:before  {
+	content: "Quick links:";
+	color:#CC0000;
+	font-weight:bold;
+	float:left;
+}
+
+.quick_links ul {
+	padding: 5px 10px 0px 10px;
+	margin: 0px;
+	list-style:none;
+	overflow:auto;
+}
+
+.quick_links ul li {
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px solid #A5A089;
+	float:left;
+}
+
+.quick_links ul li.last {
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+	border-right: none;	
+}
+
+.quick_links ul li a {
+	float:left;
+	display:inline;
+}
+

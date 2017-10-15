@@ -1,0 +1,17 @@
+/* Design by: Kenny Weiss, 2007-9 */
+/* Trick to get the images to be transparent without losing validation */
+
+
+.w3_valid img {
+	opacity:0.5;
+	filter:alpha(opacity=50);  
+    -moz-opacity:0.5;	
+}
+
+.w3_valid:hover img {
+	opacity:1.0;
+	filter:alpha(opacity=100);  
+    -moz-opacity:1.0;	
+}
+
+
