@@ -27,16 +27,16 @@
 <body><div id="content">
 
 <div id="top">
-    <div id="left">
+	<div id="left">
 		<a href="images/kweiss_pic.jpg" rel="lytebox" class="lyte_box" >
 			<img src="images/kweiss_pic.jpg" alt="Image of Kenneth" width="220"  />		</a>	</div>
-    <div id="right">
+	<div id="right">
 		<h1>Kenneth Weiss</h1>
 		<div id="contact"> kenny <div class="should_inline"><small>at</small></div> kennyweiss <small>&sdot;</small> com </div>		
 		<div id="bio"> 
 			<p> I am a computer scientist at <a href="http://www.llnl.gov">Lawrence Livermore National Laboratory</a>
 				in the <a href="http://computation.llnl.gov/about/organization">Applications, Simulations and Quality (ASQ)</a> division.
-			    I am also the information director of the ACM journal 
+				I am also the information director of the ACM journal 
 				<a href="http://tsas.acm.org/">Transactions on Spatial Algorithms and Systems (TSAS)</a>.
 			</p>
 			<p> I earned a Ph.D. from the <a href="http://www.cs.umd.edu/">Computer Science</a> department
@@ -86,6 +86,49 @@
 <div class="publications_section">
 
 <h2 id="publications">Publications</h2>
+
+<h3> 2020</h3>
+<ul class="papers" id="year2020">
+  	<li class="paper"  id="tsas20">
+  		<div class="paper_title"> Tetrahedral trees: A family of hierarchical spatial indexes for tetrahedral meshes </div>
+		<div class="paper_author"> Riccardo Fellegara, Leila De Floriani, Paola Magillo, Kenneth Weiss </div>	
+		<div class="paper_venue">  
+            <div class="paper_journal"> Journal: ACM Transactions on Spatial Algorithms and Systems </div>		
+		</div>
+		<div class="paper_links">
+			<ul> 
+				<li onclick="toggleDisplay('tsas20','paper_abstract',this)">
+					<a class="toggle_off" >Abstract</a> 	</li>
+				<li onclick="toggleDisplay('tsas20','paper_bibtex',this)">
+					<a class="toggle_off" >bibtex</a> 	</li>
+				<li>
+					<a href="papers/Fellegara20.tsas.pdf">paper</a>								</li>
+				<li class="last">
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3385851">doi</a>				</li>
+                    <!-- <a href="https://doi.org/10.1145/3385851">doi</a>				</li>  -->
+			</ul>
+		</div>
+		<div class="paper_abstract">
+			<p>	We address the problem of performing efficient spatial and topological queries on large tetrahedral meshes with arbitrary topology and complex boundaries. Such meshes arise in application domains such as 3D Geographic Information Systems (GISs), scientific visualization and finite element analysis. To this aim, we propose Tetrahedral trees, a family of spatial indexes based on a nested space subdivision (an octree or a kD-tree) and defined by several different subdivision criteria. We provide efficient algorithms for spatial and topological queries on Tetrahedral trees and compare to state-of-the-art approaches. Our results indicate that Tetrahedral trees are an improvement over R*-trees for querying tetrahedral meshes; they are more compact, they perform faster in many queries and are stable at variations of construction thresholds. They also support spatial queries on more general problem domains than topological data structures which explicitly encode adjacency information for efficient navigation, but have difficulties with non-trivial geometric or topological shapes. 
+            </p>
+		</div>	
+		<div class="paper_bibtex">
+<pre>@article{Fellegara2020,
+  author    = {Fellegara, Riccardo and De Floriani, Leila and Magillo, Paola and Weiss, Kenneth},
+  title     = {Tetrahedral Trees: A Family of Hierarchical Spatial Indexes for Tetrahedral Meshes},
+  journal   = {ACM Transactions on Spatial Algorithms ans Systems},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  volume    = {0},
+  number    = {ja},
+  issn      = {2374-0353},
+  doi       = {10.1145/3385851},
+}
+</pre>
+		</div>
+	</li>
+
+</ul>
 
 <h3> 2017</h3>
 <ul class="papers" id="year2017">
@@ -1571,7 +1614,7 @@
 <hr />
 <div class="footer">
 	<!-- Updated -->
-	<span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->February 4, 2020<!-- #EndDate -->.</span>
+	<span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->May 14, 2020<!-- #EndDate -->.</span>
 
 	<!-- StatCounter -->	
 	<script type="text/javascript">	var sc_project=5252655; var sc_invisible=1; var sc_partition=59; var sc_click_stat=1; var sc_security="6e84d811"; </script>	
