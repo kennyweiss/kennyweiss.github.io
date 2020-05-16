@@ -102,7 +102,7 @@
 				<li onclick="toggleDisplay('tsas20','paper_bibtex',this)">
 					<a class="toggle_off" >bibtex</a> 	</li>
 				<li>
-					<a href="papers/Fellegara20.tsas.pdf">paper</a>								</li>
+					<a href="papers/Fellegara20.tsas.pdf">paper (preprint)</a>								</li>
 				<li class="last">
                     <a href="https://dl.acm.org/doi/abs/10.1145/3385851">doi</a>				</li>
                     <!-- <a href="https://doi.org/10.1145/3385851">doi</a>				</li>  -->
@@ -127,7 +127,51 @@
 </pre>
 		</div>
 	</li>
-
+    <li class="paper"  id="spm20">
+        <div class="paper_title"> High-order mesh-free numerical quadrature for trimmed curved parametric domains </div>
+      <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>	
+      <div class="paper_venue"> 
+        <div class="paper_conference"> Conference: Solid and Physical Modeling 2020 Posters Compendium (SPM '20).</div> 
+    </div>
+    <div class="paper_links">
+        <ul>				
+            <li onclick="toggleDisplay('spm20','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> 	</li>
+            <li onclick="toggleDisplay('spm20','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> 	</li>
+            <li>
+                <a href="papers/Gunderman20.spmPoster.pdf">paper</a> 					</li>
+            <!--
+                <li>
+                    <a href="http://dx.doi.org/">doi</a>	</li>	
+            -->				
+            <li class="last">
+                <a href="https://spm2020.sciencesconf.org">conference</a>				</li>
+        </ul>
+    </div>
+    <div class="paper_abstract">
+        <p>	This work presents a high-order, mesh-free, generalized Stokes' theorem-based numerical quadrature scheme for 
+            integrating arbitrary functions over domains in R^3 bounded by trimmed curved parametric surfaces. 
+            The algorithm proceeds in three steps: (1) surface-surface intersection is performed to find a high-order 
+            approximation to each edge curve of the trimmed region, (2) Stokes' theorem is applied to the integrand to transform 
+            volumetric integrals into surface integrals over each boundary parametric surface, and (3) Green's theorem is applied 
+            over each boundary parametric surface to transform surface integrals into line integrals along each approximated edge curve. 
+            Preliminary results indicate that this approach can achieve high efficiency due to its ability to attain high-order convergence 
+            without meshing of the trimmed geometry. Applications include  moment-fitting methods, remapping between high-order meshes, 
+            fictitious domain methods, among others.
+        </p>
+    </div>
+    <div class="paper_bibtex">
+<pre>@inproceedings{Gunderman20_spm_poster,
+  author = {Gunderman, D. and Weiss, K. and Evans, John A.},
+  title = {High-order mesh-free numerical quadrature for trimmed curved parametric domains},
+  booktitle = {Solid and Physical Modeling (SPM) Posters Compendium},
+  year = {2020},
+  address = {Strasbourg, France},
+  month = {June 2--4},
+}</pre>
+      </div>
+  </li>
 </ul>
 
 <h3> 2017</h3>
