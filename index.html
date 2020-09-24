@@ -132,37 +132,39 @@
 }</pre>
           </div>
         </li>
-        <li class="paper" id="arxiv20">
+        <li class="paper" id="cad20">
           <div class="paper_title"> Spectral mesh-free quadrature for planar regions bounded by rational parametric curves </div>
           <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
           <div class="paper_venue">
-            <div class="paper_journal"> Journal: arXiv preprint (2005.07780) </div>
+            <div class="paper_journal"> Journal: Computer-Aided Design (Vol. 130) </div>
           </div>
           <div class="paper_links">
             <ul>
-              <li onclick="toggleDisplay('arxiv20','paper_abstract',this)">
+              <li onclick="toggleDisplay('cad20','paper_abstract',this)">
                 <a class="toggle_off">Abstract</a> </li>
-              <li onclick="toggleDisplay('arxiv20','paper_bibtex',this)">
+              <li onclick="toggleDisplay('cad20','paper_bibtex',this)">
                 <a class="toggle_off">bibtex</a> </li>
               <li>
-                <a href="papers/Gunderman20.arxiv.pdf">paper</a> </li>
-              <li class="last">
-                <a href="https://arxiv.org/abs/2005.07780">doi</a> </li>
+                <a href="papers/Gunderman20.cad.pdf">paper</a> </li>
+                <li>
+                  <a href="https://doi.org/10.1016/j.cad.2020.102944">doi</a> </li>
+                <li class="last">
+                <a href="https://arxiv.org/abs/2005.07780">arXiv</a> </li>
             </ul>
           </div>
           <div class="paper_abstract">
-            <p> This work presents spectral, mesh-free, Green's theorem-based numerical quadrature schemes for integrating functions over planar regions bounded by rational parametric curves. Our algorithm proceeds in two steps: (1) We first find intermediate quadrature rules for line integrals along the region's boundary curves corresponding to Green's theorem. (2) We then use a high-order quadrature rule to compute the numerical antiderivative of the integrand along a coordinate axis, which is used to evaluate the Green's theorem line integral. We present two methods to compute the intermediate quadrature rule. The first is spectrally accurate (it converges faster than any algebraic order with respect to number of quadrature points) and is relatively easy to implement, but has no guarantee of polynomial exactness. The second guarantees exactness for polynomial integrands up to a pre-specified degree k with an a priori-known number of quadrature points and retains the convergence properties of the first, but is slightly more complicated. The quadrature schemes have applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order meshes, and initialization of simulations with rational geometry. We compare the quadrature schemes produced using our method to other methods in the literature and show that they are much more efficient both in terms of number of quadrature points and computational time.
+            <p> This work presents spectral, mesh-free, Green’s theorem-based numerical quadrature schemes for integrating functions over planar regions bounded by rational parametric curves. Our algorithm proceeds in two steps: (1) We first find intermediate quadrature rules for line integrals along the region’s boundary curves corresponding to Green’s theorem. (2) We then use a high-order quadrature rule to compute the numerical antiderivative of the integrand along a coordinate axis, which is used to evaluate the Green’s theorem line integral. We present two methods to compute the intermediate quadrature rule. The first is spectrally accurate (it converges faster than any algebraic order with respect to number of quadrature points) and is relatively easy to implement, but has no guarantee of polynomial exactness. The second guarantees exactness for polynomial integrands up to a pre-specified degree with an a priori-known number of quadrature points and retains the convergence properties of the first, but is slightly more complicated. The quadrature schemes have applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order meshes, and initialization of multi-material simulations with rational geometry. We compare the quadrature schemes produced using our method to other methods in the literature and show that they are much more efficient both in terms of number of quadrature points and computational time. We provide an open-source implementation of the algorithm in MATLAB.
             </p>
           </div>
           <div class="paper_bibtex">
             <pre>
-@article{Gunderman2020_arxiv,
+@article{Gunderman2020_cad,
   author    = {Gunderman, David and Weiss, Kenneth and Evans, John A.},
   title     = {Spectral mesh-free quadrature for planar regions bounded by rational parametric curves},
   year      = {2020},
-  journal   = {Computing Research Repository (CoRR)},
-  volume    = {abs/2005.07780},
-  url       = {http://arxiv.org/abs/2005.07780},  
+  journal   = {Computer-Aided Design},
+  volume    = {130},
+  doi       = {10.1016/j.cad.2020.102944},  
 }</pre>
           </div>
         </li>
@@ -1723,7 +1725,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->June 7, 2020<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->September 23, 2020<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
