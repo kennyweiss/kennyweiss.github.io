@@ -91,7 +91,44 @@
     <div class="publications_section">
 
       <h2 id="publications">Publications</h2>
+      <h3> 2021</h3>
+      <ul class="papers" id="year2021">
+         <li class="paper" id="arxiv21">
+          <div class="paper_title"> High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes </div>
+          <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: arXiv preprint (2101.06497) </div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('arxiv21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('arxiv21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Gunderman21.arxiv.pdf">paper</a> </li>
+              <li class="last">
+                <a href="https://arxiv.org/abs/2101.06497">doi</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> This work presents a high-accuracy, mesh-free, generalized Stokes theorem-based numerical quadrature scheme for integrating functions over trimmed parametric surfaces and volumes. The algorithm relies on two fundamental steps: (1) We iteratively reduce the dimensionality of integration using the generalized Stokes theorem to line integrals over trimming curves, and (2) we employ numerical antidifferentiation in the generalized Stokes theorem using high-order quadrature rules. The scheme achieves exponential convergence up to trimming curve approximation error and has applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order curvilinear meshes, and initialization of multi-material simulations. We compare the quadrature scheme to commonly-used quadrature schemes in the literature and show that our scheme is much more efficient in terms of number of quadrature points used. We provide an open-source implementation of the scheme in MATLAB as part of QuaHOG, a software package for Quadrature of High-Order Geometries.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@article{Gunderman2021_arxiv,
+  author    = {Gunderman, David and Weiss, Kenneth and Evans, John A.},
+  title     = {High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes}, 
+  year      = {2021},
+  journal   = {Computing Research Repository (CoRR)}, 
+  volume    = {abs/2101.06497}, 
+  url       = {http://arxiv.org/abs/2101.06497},  
+}</pre>
+          </div>
+        </li>
 
+      </ul>
       <h3> 2020</h3>
       <ul class="papers" id="year2020">
         <li class="paper" id="tsas20">
@@ -1726,7 +1763,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->January 18, 2021<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->January 19, 2021<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
