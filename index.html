@@ -93,6 +93,44 @@
       <h2 id="publications">Publications</h2>
       <h3> 2021</h3>
       <ul class="papers" id="year2021">
+        <li class="paper" id="isc21">
+          <div class="paper_title"> Ubiquitous Performance Analysis </div>
+          <div class="paper_author"> David Boehme, Pascal Aschwanden, Olga Pearce, Kenneth Weiss, Matthew LeGendre </div>
+          <div class="paper_venue">
+            <div class="paper_conference"> Conference: ISC High Performance 2021 </div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('isc21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('isc21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Boehme21.isc.pdf">paper</a> </li>
+              <!-- <li>
+                <a href="https://doi.org/...">doi</a> </li> -->
+              <li class="last">
+                <a href="https://www.isc-hpc.com">conference</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> In an effort to guide optimizations and detect performance regressions, developers of large HPC codes must regularly collect and analyze application performance profiles across different hardware platforms and in a variety of program configurations. However, traditional performance profiling tools mostly focus on ad-hoc analysis of individual program runs. Ubiquitous performance analysis is a new approach to automate and simplify the collection, management, and analysis of large numbers of application performance profiles. In this regime, performance profiling of large HPC codes transitions from a sporadic process that often requires the help of experts into a routine activity in which the entire development team can participate. We discuss the design and implementation of an open source ubiquitous performance analysis software stack with three major components: the Caliper instrumentation library with a new API to control performance profiling programmatically; Adiak, a library for automatic program metadata capture; and SPOT, a web-based visualization interface for comparing large sets of runs. A case study shows how ubiquitous performance analysis has helped the developers of the Marbl simulation code for over a year with analyzing performance and understanding regressions.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@inproceedings{Boehme_isc,
+  title = {Ubiquitous Performance Analysis},
+  author = {Boehme, David and Aschwanden, Pascal and Pearce, Olga 
+            and Weiss, Kenneth and LeGendre, Matthew},
+  booktitle = {Proceedings ISC High Performance},
+  year = {2021},
+  month = {June 24--July 2},
+  series = {ISC-HPC '21}
+}</pre>
+          </div>
+        </li>
+
          <li class="paper" id="arxiv21">
           <div class="paper_title"> High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes </div>
           <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
@@ -1763,7 +1801,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->January 19, 2021<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->April 30, 2021<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
