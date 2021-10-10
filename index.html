@@ -93,6 +93,52 @@
       <h2 id="publications">Publications</h2>
       <h3> 2021</h3>
       <ul class="papers" id="year2021">
+        <li class="paper" id="parco21">
+          <div class="paper_title"> GPU algorithms for Efficient Exascale Discretizations </div>
+          <div class="paper_author"> Ahmad Abdelfattah, Valeria Barra, Natalie Beams, Ryan Bleile, Jed Brown, Jean-Sylvain Camier, Robert Carson, Noel Chalmers, Veselin Dobrev, Yohann Dudouit, Paul Fischer, Ali Karakus, Stefan Kerkemeier, Tzanio Kolev, Yu-Hsiang Lan, Elia Merzari, Misun Min, Malachi Phillips, Thilina Rathnayake, Robert Rieben, Thomas Stitt, Ananias Tomboulides, Stanimire Tomov, Vladimir Tomov, Arturo Vargas, Tim Warburton, Kenneth Weiss
+          </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: Parallel Computing </div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('parco21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('parco21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Abdelfattah21.arxiv.pdf">paper</a> </li>
+              <li>
+                <a href="https://arxiv.org/abs/2109.05072">arxiv</a>
+              </li>
+              <li class="last">
+                <a href="https://doi.org/10.1016/j.parco.2021.102841">doi</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> In this paper we describe the research and development activities in the Center for Efficient Exascale Discretization within the US Exascale Computing Project, targeting state-of-the-art high-order finite-element algorithms for high-order applications on GPU-accelerated platforms. We discuss the GPU developments in several components of the CEED software stack, including the libCEED, MAGMA, MFEM, libParanumal, and Nek projects. We report performance and capability improvements in several CEED-enabled applications on both NVIDIA and AMD GPU systems.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@article{Abdelfattah2021_parco,
+  title = {GPU algorithms for Efficient Exascale Discretizations},
+  journal = {Parallel Computing},
+  volume = {108},
+  pages = {102841},
+  month = {December},
+  year = {2021},
+  issn = {0167-8191},
+  doi = {https://doi.org/10.1016/j.parco.2021.102841},
+  author = {Ahmad Abdelfattah and Valeria Barra and Natalie Beams and Ryan Bleile and Jed Brown 
+    and Jean-Sylvain Camier and Robert Carson and Noel Chalmers and Veselin Dobrev and Yohann Dudouit 
+    and Paul Fischer and Ali Karakus and Stefan Kerkemeier and Tzanio Kolev and Yu-Hsiang Lan 
+    and Elia Merzari and Misun Min and Malachi Phillips and Thilina Rathnayake and Robert Rieben 
+    and Thomas Stitt and Ananias Tomboulides and Stanimire Tomov and Vladimir Tomov 
+    and Arturo Vargas and Tim Warburton and Kenneth Weiss},
+}</pre>
+          </div>
+        </li>
         <li class="paper" id="imr21">
           <div class="paper_title"> MultiMat: An API for managing multimaterial simulation data </div>
           <div class="paper_author"> Raine Yeh, Kenneth Weiss, Arlie Capps, Xavier Tricoche </div>
@@ -1842,7 +1888,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->June 25, 2021<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->October 10, 2021<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
