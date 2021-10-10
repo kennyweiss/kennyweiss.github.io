@@ -93,11 +93,136 @@
       <h2 id="publications">Publications</h2>
       <h3> 2021</h3>
       <ul class="papers" id="year2021">
+        <li class="paper" id="cad21">
+          <div class="paper_title"> High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes </div>
+          <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: Computer-Aided Design (Vol. 141)</div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('cad21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('cad21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Gunderman21.arxiv.pdf">paper</a> </li>
+                <li>
+                  <a href="https://arxiv.org/abs/2101.06497">arxiv</a> </li>
+                <li class="last">
+                <a href="https://doi.org/10.1016/j.cad.2021.103093">doi</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> This work presents a high-accuracy, mesh-free, generalized Stokes theorem-based numerical quadrature scheme for integrating functions over trimmed parametric surfaces and volumes. The algorithm relies on two fundamental steps: (1) We iteratively reduce the dimensionality of integration using the generalized Stokes theorem to line integrals over trimming curves, and (2) we employ numerical antidifferentiation in the generalized Stokes theorem using high-order quadrature rules. The scheme achieves exponential convergence up to trimming curve approximation error and has applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order curvilinear meshes, and initialization of multi-material simulations. We compare the quadrature scheme to commonly-used quadrature schemes in the literature and show that our scheme is much more efficient in terms of number of quadrature points used. We provide an open-source implementation of the scheme in MATLAB as part of QuaHOG, a software package for Quadrature of High-Order Geometries.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@article{Gunderman2021_cad,
+  title = {High-Accuracy Mesh-Free Quadrature for Trimmed Parametric Surfaces and Volumes},
+  journal = {Computer-Aided Design},
+  volume = {141},
+  pages = {103093},
+  month = {December},
+  year = {2021},
+  issn = {0010-4485},
+  doi = {10.1016/j.cad.2021.103093},
+  author = {David Gunderman and Kenneth Weiss and John A. Evans},
+}</pre>
+          </div>
+        </li>
+        <li class="paper" id="parco21">
+          <div class="paper_title"> GPU algorithms for Efficient Exascale Discretizations </div>
+          <div class="paper_author"> Ahmad Abdelfattah, Valeria Barra, Natalie Beams, Ryan Bleile, Jed Brown, Jean-Sylvain Camier, Robert Carson, Noel Chalmers, Veselin Dobrev, Yohann Dudouit, Paul Fischer, Ali Karakus, Stefan Kerkemeier, Tzanio Kolev, Yu-Hsiang Lan, Elia Merzari, Misun Min, Malachi Phillips, Thilina Rathnayake, Robert Rieben, Thomas Stitt, Ananias Tomboulides, Stanimire Tomov, Vladimir Tomov, Arturo Vargas, Tim Warburton, Kenneth Weiss
+          </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: Parallel Computing (Vol. 108)</div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('parco21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('parco21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Abdelfattah21.arxiv.pdf">paper</a> </li>
+              <li>
+                <a href="https://arxiv.org/abs/2109.05072">arxiv</a>
+              </li>
+              <li class="last">
+                <a href="https://doi.org/10.1016/j.parco.2021.102841">doi</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> In this paper we describe the research and development activities in the Center for Efficient Exascale Discretization within the US Exascale Computing Project, targeting state-of-the-art high-order finite-element algorithms for high-order applications on GPU-accelerated platforms. We discuss the GPU developments in several components of the CEED software stack, including the libCEED, MAGMA, MFEM, libParanumal, and Nek projects. We report performance and capability improvements in several CEED-enabled applications on both NVIDIA and AMD GPU systems.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@article{Abdelfattah2021_parco,
+  title = {GPU algorithms for Efficient Exascale Discretizations},
+  journal = {Parallel Computing},
+  volume = {108},
+  pages = {102841},
+  month = {December},
+  year = {2021},
+  issn = {0167-8191},
+  doi = {10.1016/j.parco.2021.102841},
+  author = {Ahmad Abdelfattah and Valeria Barra and Natalie Beams and Ryan Bleile and Jed Brown 
+            and Jean-Sylvain Camier and Robert Carson and Noel Chalmers and Veselin Dobrev
+            and Yohann Dudouit and Paul Fischer and Ali Karakus and Stefan Kerkemeier
+            and Tzanio Kolev and Yu-Hsiang Lan and Elia Merzari and Misun Min and Malachi Phillips
+            and Thilina Rathnayake and Robert Rieben and Thomas Stitt and Ananias Tomboulides 
+            and Stanimire Tomov and Vladimir Tomov and Arturo Vargas and Tim Warburton and Kenneth Weiss},
+}</pre>
+          </div>
+        </li>
+        <li class="paper" id="cg21">
+          <div class="paper_title"> The Stellar decomposition: A compact representation for simplicial complexes and beyond </div>
+          <div class="paper_author"> Riccardo Fellegara, Kenneth Weiss, Leila De Floriani </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: Computers & Graphics (Vol. 98)</div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('cg21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('cg21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Fellegara21.arxiv.pdf">paper</a> </li>
+                <li>
+                  <a href="https://arxiv.org/abs/1707.02211">arxiv</a>
+                </li>
+                <li class="last">
+                <a href="https://doi.org/10.1016/j.cag.2021.05.002">doi</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> We introduce the Stellar decomposition, a model for efficient topological data structures over a broad range of simplicial and cell complexes. A Stellar decomposition of a complex is a collection of regions indexing the complex’s vertices and cells such that each region has sufficient information to locally reconstruct the star of its vertices, i.e., the cells incident in the region’s vertices. Stellar decompositions are general in that they can compactly represent and efficiently traverse arbitrary complexes with a manifold or non-manifold domain. They are scalable to complexes in high dimension and of large size, and they enable users to easily construct tailored application-dependent data structures using a fraction of the memory required by a corresponding global topological data structure on the complex. As a concrete realization of this model for spatially embedded complexes, we introduce the Stellar tree, which combines a nested spatial tree with a simple tuning parameter to control the number of vertices in a region. Stellar trees exploit the complex’s spatial locality by reordering vertex and cell indices according to the spatial decomposition and by compressing sequential ranges of indices. Stellar trees are competitive with state-of-the-art topological data structures for manifold simplicial complexes and offer significant improvements for cell complexes and non-manifold simplicial complexes. We conclude with a high-level description of several mesh processing and analysis applications that utilize Stellar trees to process large datasets.
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@article{Fellegara2021_cg,
+  title = {The Stellar decomposition: A compact representation for simplicial complexes and beyond},
+  journal = {Computers \& Graphics},
+  volume = {98},
+  pages = {322--343},
+  month = {August},
+  year = {2021},
+  issn = {0097-8493},
+  doi = {10.1016/j.cag.2021.05.002},
+  author = {Fellegara, Riccardo and Weiss, Kenneth and De Floriani, Leila},
+}</pre>
+          </div>
+        </li>
         <li class="paper" id="imr21">
           <div class="paper_title"> MultiMat: An API for managing multimaterial simulation data </div>
           <div class="paper_author"> Raine Yeh, Kenneth Weiss, Arlie Capps, Xavier Tricoche </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: International Meshing Roundtable 2021 </div>
+            <div class="paper_conference"> Conference: International Meshing Roundtable 2021 (IMR '21)</div>
           </div>
           <div class="paper_links">
             <ul>
@@ -133,7 +258,7 @@
           <div class="paper_title"> Ubiquitous Performance Analysis </div>
           <div class="paper_author"> David Boehme, Pascal Aschwanden, Olga Pearce, Kenneth Weiss, Matthew LeGendre </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: ISC High Performance 2021 </div>
+            <div class="paper_conference"> Conference: ISC High Performance 2021 (ISC '21)</div>
           </div>
           <div class="paper_links">
             <ul>
@@ -171,42 +296,6 @@
 }</pre>
           </div>
         </li>
-
-         <li class="paper" id="arxiv21">
-          <div class="paper_title"> High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes </div>
-          <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
-          <div class="paper_venue">
-            <div class="paper_journal"> Journal: arXiv preprint (2101.06497) </div>
-          </div>
-          <div class="paper_links">
-            <ul>
-              <li onclick="toggleDisplay('arxiv21','paper_abstract',this)">
-                <a class="toggle_off">Abstract</a> </li>
-              <li onclick="toggleDisplay('arxiv21','paper_bibtex',this)">
-                <a class="toggle_off">bibtex</a> </li>
-              <li>
-                <a href="papers/Gunderman21.arxiv.pdf">paper</a> </li>
-              <li class="last">
-                <a href="https://arxiv.org/abs/2101.06497">doi</a> </li>
-            </ul>
-          </div>
-          <div class="paper_abstract">
-            <p> This work presents a high-accuracy, mesh-free, generalized Stokes theorem-based numerical quadrature scheme for integrating functions over trimmed parametric surfaces and volumes. The algorithm relies on two fundamental steps: (1) We iteratively reduce the dimensionality of integration using the generalized Stokes theorem to line integrals over trimming curves, and (2) we employ numerical antidifferentiation in the generalized Stokes theorem using high-order quadrature rules. The scheme achieves exponential convergence up to trimming curve approximation error and has applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order curvilinear meshes, and initialization of multi-material simulations. We compare the quadrature scheme to commonly-used quadrature schemes in the literature and show that our scheme is much more efficient in terms of number of quadrature points used. We provide an open-source implementation of the scheme in MATLAB as part of QuaHOG, a software package for Quadrature of High-Order Geometries.
-            </p>
-          </div>
-          <div class="paper_bibtex">
-            <pre>
-@article{Gunderman2021_arxiv,
-  author    = {Gunderman, David and Weiss, Kenneth and Evans, John A.},
-  title     = {High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes}, 
-  year      = {2021},
-  journal   = {Computing Research Repository (CoRR)}, 
-  volume    = {abs/2101.06497}, 
-  url       = {http://arxiv.org/abs/2101.06497},  
-}</pre>
-          </div>
-        </li>
-
       </ul>
       <h3> 2020</h3>
       <ul class="papers" id="year2020">
@@ -214,7 +303,7 @@
           <div class="paper_title"> Tetrahedral trees: A family of hierarchical spatial indexes for tetrahedral meshes </div>
           <div class="paper_author"> Riccardo Fellegara, Leila De Floriani, Paola Magillo, Kenneth Weiss </div>
           <div class="paper_venue">
-            <div class="paper_journal"> Journal: ACM Transactions on Spatial Algorithms and Systems </div>
+            <div class="paper_journal"> Journal: ACM Transactions on Spatial Algorithms and Systems (Vol. 6, Num. 4)</div>
           </div>
           <div class="paper_links">
             <ul>
@@ -240,6 +329,7 @@
   journal   = {ACM Transactions on Spatial Algorithms and Systems},
   publisher = {Association for Computing Machinery},
   address   = {New York, NY, USA},
+  month     = {August},
   year      = {2020},
   volume    = {6},
   number    = {4},
@@ -289,7 +379,7 @@
           <div class="paper_title"> High-order mesh-free numerical quadrature for trimmed curved parametric domains </div>
           <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: Solid and Physical Modeling 2020 Posters (SPM '20).</div>
+            <div class="paper_conference"> Conference: Solid and Physical Modeling 2020 Posters (SPM '20) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -338,7 +428,7 @@
           <div class="paper_title"> The Stellar Tree: A compact representation for simplicial complexes and beyond </div>
           <div class="paper_author"> Riccardo Fellegara, Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_journal"> Journal: arXiv preprint (1701.02211) </div>
+            <div class="paper_journal"> Journal: arXiv preprint (1701.02211v1) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -349,7 +439,7 @@
               <li>
                 <a href="papers/Fellegara17.arxiv.pdf">paper</a> </li>
               <li class="last">
-                <a href="https://arxiv.org/abs/1707.02211">doi</a> </li>
+                <a href="https://arxiv.org/abs/1707.02211v1">arxiv</a> </li>
             </ul>
           </div>
           <div class="paper_abstract">
@@ -362,9 +452,9 @@
   author    = {Riccardo Fellegara and Kenneth Weiss and Leila De Floriani},
   title     = {The Stellar Tree: A compact representation for simplicial complexes and beyond},
   journal   = {Computing Research Repository (CoRR)},
-  volume    = {abs/1707.02211},
+  volume    = {abs/1707.02211v1},
   year      = {2017},
-  url       = {http://arxiv.org/abs/1707.02211},
+  url       = {http://arxiv.org/abs/1707.02211v1},
 }</pre>
           </div>
         </li>
@@ -499,7 +589,7 @@
           <div class="paper_author"> Kenneth Weiss, Peter Lindstrom </div>
           <div class="paper_venue">
             <div class="paper_conference"> Conference: IEEE Visualization (Vis '15) </div>
-            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 22, Num. 1).</div>
+            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 22, Num. 1)</div>
           </div>
           <div class="paper_links">
             <ul>
@@ -599,7 +689,7 @@
           <div class="paper_author"> Kenneth Weiss, Federico Iuricich, Riccardo Fellegara, Leila De Floriani </div>
           <div class="paper_venue">
             <div class="paper_conference"> Conference: Eurovis 2013 </div>
-            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 32, Num. 3).</div>
+            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 32, Num. 3)</div>
           </div>
           <div class="paper_links">
             <ul>
@@ -660,7 +750,7 @@
           <div class="paper_title"> A spatial approach to morphological feature extraction from irregularly sampled scalar fields </div>
           <div class="paper_author"> Leila De Floriani, Federico Iuricich, Riccardo Fellegara, Kenneth Weiss </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: Third ACM SIGSPATIAL International Workshop on GeoStreaming (IWGS '12).</div>
+            <div class="paper_conference"> Conference: Third ACM SIGSPATIAL International Workshop on GeoStreaming (IWGS '12) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -776,7 +866,7 @@
           <div class="paper_title"> The PR-star Octree: A spatio-topological data structure for tetrahedral meshes </div>
           <div class="paper_author"> Kenneth Weiss, Riccardo Fellegara, Leila De Floriani, Marcelo Velloso </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '11).</div>
+            <div class="paper_conference"> Conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '11) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -946,7 +1036,7 @@
           <div class="paper_author"> David Canino, Leila De Floriani, Kenneth Weiss </div>
           <div class="paper_venue">
             <div class="paper_conference"> Conference: Shape Modeling International (SMI '11) </div>
-            <div class="paper_journal"> Journal: Computers &amp; Graphics (Vol. 35, Num. 3).</div>
+            <div class="paper_journal"> Journal: Computers &amp; Graphics (Vol. 35, Num. 3) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1002,7 +1092,7 @@
           <div class="paper_title"> GPU algorithms for diamond-based multiresolution terrain processing </div>
           <div class="paper_author"> M. Adil Yalçın, Kenneth Weiss, Leila De Floriani</div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: Eurographics Symposium on Parallel Graphics and Visualization (PGV '11).</div>
+            <div class="paper_conference"> Conference: Eurographics Symposium on Parallel Graphics and Visualization (PGV '11) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1050,7 +1140,7 @@
           <div class="paper_title"> Simplex and diamond hierarchies: Models and applications </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 30, Num. 8).</div>
+            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 30, Num. 8) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1105,7 +1195,7 @@
           <div class="paper_title"> Nested refinement domains for tetrahedral and diamond hierarchies </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani</div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: IEEE Visualization 2010 Posters Compendium (Vis '10).</div>
+            <div class="paper_conference"> Conference: IEEE Visualization 2010 Posters Compendium (Vis '10) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1147,7 +1237,7 @@
           <div class="paper_title"> Bisection-based triangulations of nested hypercubic meshes </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani</div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: 19th International Meshing Roundtable (IMR '10).</div>
+            <div class="paper_conference"> Conference: 19th International Meshing Roundtable (IMR '10) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1191,7 +1281,7 @@
           <div class="paper_title"> Multiresolution analysis of 3D images based on discrete distortion </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani, Mohammed Mostefa Mesmoudi</div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: International Conference on Pattern Recognition (ICPR '10).</div> <!--  [Oral presentation]-->
+            <div class="paper_conference"> Conference: International Conference on Pattern Recognition (ICPR '10) </div> <!--  [Oral presentation]-->
           </div>
           <div class="paper_links">
             <ul>
@@ -1248,7 +1338,7 @@
 
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: Eurographics State of the Art Reports (EG STAR '10).</div>
+            <div class="paper_conference"> Conference: Eurographics State of the Art Reports (EG STAR '10) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1297,7 +1387,7 @@
           <div class="paper_title"> Isodiamond hierarchies: An efficient multiresolution representation for isosurfaces and interval volumes </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 16, Num. 4). </div>
+            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 16, Num. 4) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1356,7 +1446,7 @@
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
             <div class="paper_conference"> Conference: Symposium on Geometry Processing (SGP '09) </div>
-            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 28, Num. 5).</div>
+            <div class="paper_journal"> Journal: Computer Graphics Forum (Vol. 28, Num. 5) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1410,7 +1500,7 @@
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
             <div class="paper_conference"> Conference: IEEE Visualization / Information Visualization (Vis '09) </div>
-            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 15, Num. 6).</div>
+            <div class="paper_journal"> Journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 15, Num. 6) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1471,7 +1561,7 @@
           </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: IEEE/EG Symposium on Volume and Point-Based Graphics (PBGVG '08).</div>
+            <div class="paper_conference"> Conference: IEEE/EG Symposium on Volume and Point-Based Graphics (PBGVG '08) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1520,7 +1610,7 @@
           </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '08).</div>
+            <div class="paper_conference"> Conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '08) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1573,7 +1663,7 @@
           <div class="paper_title"> Modeling and visualization approaches for time-varying volumetric data </div>
           <div class="paper_author"> Kenneth Weiss, Leila De Floriani </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: International Symposium on Visual Computing (ISVC '08).</div>
+            <div class="paper_conference"> Conference: International Symposium on Visual Computing (ISVC '08) </div>
           </div>
 
           <div class="paper_links">
@@ -1636,7 +1726,7 @@
           <div class="paper_title"> Face modeling from frontal face image based on topographic analysis </div>
           <div class="paper_author"> Lijun Yin, Kenneth Weiss, Xiaozhou Wei </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: ACM SIGGRAPH 2004, Posters session.</div>
+            <div class="paper_conference"> Conference: ACM SIGGRAPH 2004, Posters session </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1690,7 +1780,7 @@
           <div class="paper_title"> Generating 3D views of facial expressions from frontal face video based on topographic analysis </div>
           <div class="paper_author"> Lijun Yin, Kenneth Weiss </div>
           <div class="paper_venue">
-            <div class="paper_conference"> Conference: ACM International Conference on Multimedia (SIGMM '04).</div>
+            <div class="paper_conference"> Conference: ACM International Conference on Multimedia (SIGMM '04) </div>
           </div>
           <div class="paper_links">
             <ul>
@@ -1842,7 +1932,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->June 25, 2021<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->October 10, 2021<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
