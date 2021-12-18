@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <!-- Design by Kenny Weiss, 2007-2020 -->
+  <!-- Design by Kenny Weiss, 2007-2021 -->
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Research homepage of Kenneth Weiss, Ph.D., Computer Scientist at Lawrence Livermore National Laboratory." />
@@ -93,6 +93,44 @@
       <h2 id="publications">Publications</h2>
       <h3> 2021</h3>
       <ul class="papers" id="year2021">
+        <li class="paper" id="arxiv21">
+          <div class="paper_title"> Matrix-free approaches for GPU acceleration of a high-order finite element hydrodynamics application using MFEM, Umpire, and RAJA</div>
+          <div class="paper_author"> Arturo Vargas, Thomas M. Stitt, Kenneth Weiss, Vladimir Z. Tomov, Jean-Sylvain Camier, Tzanio Kolev, Robert N. Rieben </div>
+          <div class="paper_venue">
+            <div class="paper_journal"> Journal: arXiv (2112.07075)</div>
+          </div>
+          <div class="paper_links">
+            <ul>
+              <li onclick="toggleDisplay('arxiv21','paper_abstract',this)">
+                <a class="toggle_off">Abstract</a> </li>
+              <li onclick="toggleDisplay('arxiv21','paper_bibtex',this)">
+                <a class="toggle_off">bibtex</a> </li>
+              <li>
+                <a href="papers/Vargas21.arxiv.pdf">paper</a> </li>
+              <li class="last">
+                <a href="https://arxiv.org/abs/2112.07075">arxiv</a> </li>
+            </ul>
+          </div>
+          <div class="paper_abstract">
+            <p> With the introduction of advanced heterogeneous computing architectures based on GPU accelerators, large-scale production codes have had to rethink their numerical algorithms and incorporate new programming models and memory management strategies in order to run efficiently on the latest supercomputers. In this work we discuss our co-design strategy to address these challenges and achieve performance and portability with MARBL, a next-generation multi-physics code in development at Lawrence Livermore National Laboratory. We present a two-fold approach, wherein new hardware is used to motivate both new algorithms and new abstraction layers, resulting in a single source application code suitable for a variety of platforms. Focusing on MARBL's ALE hydrodynamics package, we demonstrate scalability on different platforms and highlight that many of our innovations have been contributed back to open-source software libraries, such as MFEM (finite element algorithms) and RAJA (kernel abstractions). 
+            </p>
+          </div>
+          <div class="paper_bibtex">
+            <pre>
+@misc{Vargas2021_arxiv,
+  title = {Matrix-free approaches for {GPU} acceleration of a high-order finite element 
+           hydrodynamics application using {MFEM}, {Umpire}, and {RAJA}},
+  author = {Arturo Vargas and Thomas M. Stitt and Kenneth Weiss and Vladimir Z. Tomov 
+            and Jean-Sylvain Camier and Tzanio Kolev and Robert N. Rieben},
+  month = {December},
+  year = {2021},
+  doi = {https://arxiv.org/abs/2112.07075},
+  eprint = {2112.07075},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.MS}
+}</pre>
+          </div>
+        </li>
         <li class="paper" id="cad21">
           <div class="paper_title"> High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes </div>
           <div class="paper_author"> David Gunderman, Kenneth Weiss, John A. Evans </div>
@@ -1939,7 +1977,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->November 14, 2021<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->December 17, 2021<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
