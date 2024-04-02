@@ -6,7 +6,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Research homepage of Kenneth Weiss, Ph.D., Computer Scientist at Lawrence Livermore National Laboratory." />
-  <meta name="keywords" content="Kenneth Weiss, Kenny Weiss, K. Weiss, kweiss, diamonds, hierarchy of diamonds, diamond hierarchy, arbitrary dimension, hierarchical decomposition, hierarchical spatial decomposition, hierarchical simplicial decomposition, Regular Simplex Bisection, Longest Edge Bisection, hierarchy of simplices, hierarchy of tetrahedra, hierarchy of pentatopes, hierarchy of right triangles, hierarchy of triangles, simplicial decomposition, multiresolution modeling, mesh-based multiresolution models, isosurfacing, isosurface extraction, interval volumes, multiresolution interval volume meshes, spatio-topological, octree, topological data structure, discrete distortion, non-manifold, interactive terrain processing, descendant domain, divide and conquer, University of Maryland College Park, computer science, computer graphics, scientific visualization, GPU, Lawrence Livermore National Laboratory, LLNL, Center for Applied Scientific Computing, CASC" />
+  <meta name="keywords" content="Kenneth Weiss, Kenny Weiss, K. Weiss, kweiss, diamonds, hierarchy of diamonds, diamond hierarchy, arbitrary dimension, hierarchical decomposition, hierarchical spatial decomposition, hierarchical simplicial decomposition, Regular Simplex Bisection, Longest Edge Bisection, hierarchy of simplices, hierarchy of tetrahedra, hierarchy of pentatopes, hierarchy of right triangles, hierarchy of triangles, simplicial decomposition, multiresolution modeling, mesh-based multiresolution models, isosurfacing, isosurface extraction, interval volumes, multiresolution interval volume meshes, spatio-topological, octree, topological data structure, discrete distortion, non-manifold, interactive terrain processing, descendant domain, divide and conquer, University of Maryland College Park, computer science, computer graphics, scientific visualization, GPU, Lawrence Livermore National Laboratory, LLNL, Center for Applied Scientific Computing, CASC, generalized winding number, rational Bezier curve, high order" />
   <meta name="google-site-verification" content="QwssdMv_FTCJo_oZQ29a97JAtfpKZ-0_lMs07nkdd_Y" />
   <title>Homepage of Kenneth Weiss</title>
 
@@ -36,7 +36,7 @@
         <div id="contact"> kenny <div class="should_inline"><small>at</small></div> kennyweiss <small>&sdot;</small> com </div>
         <div id="bio">
           <p> I am a computer scientist at <a href="http://www.llnl.gov">Lawrence Livermore National Laboratory</a>
-            in the <a href="http://computing.llnl.gov/about/organization">Applications, Simulations and Quality (ASQ)</a> division.
+            in the <a href="http://computing.llnl.gov/about">Applications, Simulations and Quality (ASQ)</a> division.
             I am also the information director of the ACM journal
             <a href="http://tsas.acm.org/">Transactions on Spatial Algorithms and Systems (TSAS)</a>.
           </p>
@@ -95,6 +95,41 @@
 
     <h3> 2024</h3>
     <ul class="papers" id="year2024">
+      <li class="paper" id="arxiv24">
+        <div class="paper_title">  Robust containment queries over collections of rational parametric curves via generalized winding numbers </div>
+        <div class="paper_author"> Jacob Spainhour, David Gunderman, Kenneth Weiss </div>
+        <div class="paper_venue">
+          <div class="paper_journal"> Journal: arXiv (2403.17371)  </div>
+        </div>
+        <div class="paper_links">
+          <ul>
+            <li onclick="toggleDisplay('arxiv24','paper_abstract',this)">
+              <a class="toggle_off">Abstract</a> </li>
+            <li onclick="toggleDisplay('arxiv24','paper_bibtex',this)">
+              <a class="toggle_off">bibtex</a> </li>
+            <li>
+              <a href="papers/Spainhour24.arxiv.pdf">paper</a> </li>
+            <li class="last">
+              <a href="https://doi.org/10.48550/arXiv.2403.17371">doi</a> </li>
+          </ul>
+        </div>
+        <div class="paper_abstract">
+          <p> Point containment queries for regions bound by watertight geometric surfaces, i.e. closed and without self-intersections, can be evaluated straightforwardly with a number of well-studied algorithms. However, when such assumptions on domain geometry are not met, these methods are theoretically unfounded at best and practically unusable at worst. More robust classification schemes utilize generalized winding numbers, a mathematical construction that is indifferent to imperfections in the often human-defined geometric model. We extend this methodology to more general curved shapes, defining a robust containment query for regions whose boundary elements are defined by a collection of rational parametric curves. In doing so, we devise an algorithm that is stable and accurate at arbitrary points in space, circumventing the typical difficulties for queries that are arbitrarily close or coincident with the model. This is done by reducing the generalized winding number problem to an integer winding number problem, which is solved by approximating each curve with a polyline that provably has the same winding number at the point of interest. We demonstrate the improvements in computational complexity granted by this method over conventional techniques, as well as the robustness induced by its application.
+          </p>
+        </div>
+        <div class="paper_bibtex">
+          <pre>
+@misc{Spainhour2024_arxiv,
+  title  = {Robust containment queries over collections of rational parametric curves via generalized winding numbers}, 
+  author = {Jacob Spainhour and David Gunderman and Kenneth Weiss},
+  year   = {2024},
+  doi    = {10.48550/arXiv.2403.17371},
+  eprint = {2403.17371},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CG}
+}</pre>
+        </div>
+      </li>
       <li class="paper" id="jfe24">
         <div class="paper_title">  Performance portable Graphics Processing Unit acceleration of a high-order finite element multiphysics application </div>
         <div class="paper_author"> Thomas Stitt, Kristi Belcher, Alejandro Campos, Tzanio Kolev, Philip Mocz, Robert N. Rieben, Aaron Skinner, Vladimir Tomov, Arturo Vargas, Kenneth Weiss </div>
@@ -268,7 +303,7 @@
               <li>
                 <a href="papers/Ryujin22.arxiv.pdf">paper</a> </li>
               <li class="last">
-                <a href="https://arxiv.org/abs/2201.01278">arxiv</a> </li>
+                <a href="https://doi.org/10.48550/arXiv.2201.01278">arxiv</a> </li>
             </ul>
           </div>
           <div class="paper_abstract">
@@ -278,13 +313,13 @@
           <div class="paper_bibtex">
             <pre>
 @misc{Ryujin2022_arxiv,
-  title = {Understanding power and energy utilization in large scale production physics simulation codes},
+  title  = {Understanding power and energy utilization in large scale production physics simulation codes},
   author = {Brian S. Ryujin and Arturo Vargas and Ian Karlin and Shawn A. Dawson 
             and Kenneth Weiss and Adam Bertsch and M. Scott McKinley and Michael R. Collette 
             and Si D. Hammond and Kevin Pedretti and Robert N. Rieben},
-  month = {January},
-  year = {2022},
-  doi = {https://arxiv.org/abs/2201.01278},
+  month  = {January},
+  year   = {2022},
+  doi    = {10.48550/arXiv.2201.01278},
   eprint = {2201.01278},
   archivePrefix = {arXiv},
   primaryClass = {cs.DC}
@@ -2055,7 +2090,8 @@
         </li>
         <li class="collaborator">
           <div class="research_group">
-            <a href="http://computing.llnl.gov/casc/data-analysis-group.php">Data Analysis Group</a>,
+            <!-- http://computing.llnl.gov/casc/data-analysis-group.php-->
+            <a href="http://computing.llnl.gov/casc">Data Analysis Group</a>,  
             <a href="http://computing.llnl.gov/casc">Center for Applied Scientific Computing</a>
           </div>
           <span class="research_institute"> Lawrence Livermore National Laboratory</span>, 2012-Present.
@@ -2073,7 +2109,7 @@
           <div> Mentor: <a href="http://www.sci.utah.edu/people/pascucci.html">Valerio Pascucci</a></div>
         </li>
         <li class="collaborator">
-          <div class="research_group"> <a href="http://www.sandia.gov/ccd/index.html"> Center for Cyber Defender Program</a></div>
+          <div class="research_group"> <a href="https://web.archive.org/web/20160119215345/http://www.sandia.gov/ccd"> Center for Cyber Defender Program</a></div>
           <span class="research_institute"> Sandia National Laboratory</span>, 2005.
         </li>
         <li class="collaborator">
@@ -2141,7 +2177,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->March 27, 2024<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->April 1, 2024<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
