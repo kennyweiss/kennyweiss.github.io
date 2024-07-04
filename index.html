@@ -6,7 +6,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Research homepage of Kenneth Weiss, Ph.D., Computer Scientist at Lawrence Livermore National Laboratory." />
-  <meta name="keywords" content="Kenneth Weiss, Kenny Weiss, K. Weiss, kweiss, diamonds, hierarchy of diamonds, diamond hierarchy, arbitrary dimension, hierarchical decomposition, hierarchical spatial decomposition, hierarchical simplicial decomposition, Regular Simplex Bisection, Longest Edge Bisection, hierarchy of simplices, hierarchy of tetrahedra, hierarchy of pentatopes, hierarchy of right triangles, hierarchy of triangles, simplicial decomposition, multiresolution modeling, mesh-based multiresolution models, isosurfacing, isosurface extraction, interval volumes, multiresolution interval volume meshes, spatio-topological, octree, topological data structure, discrete distortion, non-manifold, interactive terrain processing, descendant domain, divide and conquer, University of Maryland College Park, computer science, computer graphics, scientific visualization, GPU, Lawrence Livermore National Laboratory, LLNL, Center for Applied Scientific Computing, CASC, generalized winding number, rational Bezier curve, high order" />
+  <meta name="keywords" content="Kenneth Weiss, Kenny Weiss, K. Weiss, kweiss, diamonds, hierarchy of diamonds, diamond hierarchy, arbitrary dimension, hierarchical decomposition, hierarchical spatial decomposition, hierarchical simplicial decomposition, Regular Simplex Bisection, Longest Edge Bisection, hierarchy of simplices, hierarchy of tetrahedra, hierarchy of pentatopes, hierarchy of right triangles, hierarchy of triangles, simplicial decomposition, multiresolution modeling, mesh-based multiresolution models, isosurfacing, isosurface extraction, interval volumes, multiresolution interval volume meshes, spatio-topological, octree, topological data structure, discrete distortion, non-manifold, interactive terrain processing, descendant domain, divide and conquer, University of Maryland College Park, computer science, computer graphics, scientific visualization, GPU, Lawrence Livermore National Laboratory, LLNL, Center for Applied Scientific Computing, CASC, generalized winding number, rational Bezier curve, high order, NURBS, performance portability and productivity, HPC, high-performance computing" />
   <meta name="google-site-verification" content="QwssdMv_FTCJo_oZQ29a97JAtfpKZ-0_lMs07nkdd_Y" />
   <title>Homepage of Kenneth Weiss</title>
 
@@ -95,27 +95,30 @@
 
     <h3> 2024</h3>
     <ul class="papers" id="year2024">
-      <li class="paper" id="arxiv24">
-        <div class="paper_title">  Robust containment queries over collections of rational parametric curves via generalized winding numbers </div>
+      <li class="paper" id="siggraph24">
+        <div class="paper_title should_inline"> Robust containment queries over collections of rational parametric curves via generalized winding numbers
+          <span class="paper_award"> <a href="https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html" target="_blank">Best Paper Award </a> </span>
+        </div>
         <div class="paper_author"> Jacob Spainhour, David Gunderman, Kenneth Weiss </div>
         <div class="paper_venue">
-          <div class="paper_journal"> Journal: arXiv (2403.17371)  </div>
+          <div class="paper_conference"> Conference: ACM SIGGRAPH (SIGGRAPH '24) </div>
+          <div class="paper_journal"> Journal: ACM Transactions on Graphics (Vol. 43, Num. 4)</div>
+          <!-- <div class="paper_journal"> Journal: arXiv (2403.17371)  </div> -->
         </div>
         <div class="paper_links">
           <ul>
-            <li onclick="toggleDisplay('arxiv24','paper_abstract',this)">
+            <li onclick="toggleDisplay('siggraph24','paper_abstract',this)">
               <a class="toggle_off">Abstract</a> </li>
-            <li onclick="toggleDisplay('arxiv24','paper_bibtex',this)">
+            <li onclick="toggleDisplay('siggraph24','paper_bibtex',this)">
               <a class="toggle_off">bibtex</a> </li>
             <li>
-              <a href="papers/Spainhour24.arxiv.pdf">paper</a> </li>
+              <a href="papers/Spainhour24.siggraph.pdf">paper</a> </li>
             <li class="last">
-              <a href="https://doi.org/10.48550/arXiv.2403.17371">doi</a> </li>
+              <a href="https://doi.org/10.48550/arXiv.2403.17371">arXiv</a> </li>
           </ul>
         </div>
         <div class="paper_abstract">
-          <p> Point containment queries for regions bound by watertight geometric surfaces, i.e. closed and without self-intersections, can be evaluated straightforwardly with a number of well-studied algorithms. However, when such assumptions on domain geometry are not met, these methods are theoretically unfounded at best and practically unusable at worst. More robust classification schemes utilize generalized winding numbers, a mathematical construction that is indifferent to imperfections in the often human-defined geometric model. We extend this methodology to more general curved shapes, defining a robust containment query for regions whose boundary elements are defined by a collection of rational parametric curves. In doing so, we devise an algorithm that is stable and accurate at arbitrary points in space, circumventing the typical difficulties for queries that are arbitrarily close or coincident with the model. This is done by reducing the generalized winding number problem to an integer winding number problem, which is solved by approximating each curve with a polyline that provably has the same winding number at the point of interest. We demonstrate the improvements in computational complexity granted by this method over conventional techniques, as well as the robustness induced by its application.
-          </p>
+          <p> Point containment queries for regions bound by watertight geometric surfaces, i.e., closed and without self-intersections, can be evaluated straightforwardly with a number of well-studied algorithms. When this assumption on domain geometry is not met, such methods are either unusable, or prone to misclassifications that can lead to cascading errors in downstream applications. More robust point classification schemes based on generalized winding numbers have been proposed, as they are indifferent to these imperfections. However, existing algorithms are limited to point clouds and collections of linear elements. We extend this methodology to encompass more general curved shapes with an algorithm that evaluates the winding number scalar field over unstructured collections of rational parametric curves. In particular, we evaluate the winding number for each curve independently, making the derived containment query robust to how the curves are arranged. We ensure geometric fidelity in our queries by treating each curve as equivalent to an adaptively constructed polyline that provably has the same generalized winding number at the point of interest. Our algorithm is numerically stable for points that are arbitrarily close to the model, and explicitly treats points that are coincident with curves. We demonstrate the improvements in computational performance granted by this method over conventional techniques as well as the robustness induced by its application. </p>
         </div>
         <div class="paper_bibtex">
           <pre>
@@ -1609,7 +1612,7 @@
               we distinguish between approaches that focus on a specific dimension and those that apply to all dimensions. The
               primary distinction among all such approaches is whether they treat the simplex or clusters of simplexes, called diamonds,
               as the modeling primitive. This leads to two classes of data structures and to different query approaches.
-              We present the hierarchical models in a dimension–independent manner, and organize the description of the various
+              We present the hierarchical models in a dimension-independent manner, and organize the description of the various
               applications, primarily interactive terrain rendering and isosurface extraction, according to the dimension of
               the domain. </p>
           </div>
@@ -2177,7 +2180,7 @@
     <hr />
     <div class="footer">
       <!-- Updated -->
-      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->April 1, 2024<!-- #EndDate -->.</span>
+      <span class="updated"> Last updated on <!-- #BeginDate format:Am1 -->July 4, 2024<!-- #EndDate -->.</span>
       <!-- StatCounter -->
       <script type="text/javascript">	var sc_project = 5252655; var sc_invisible = 1; var sc_partition = 59; var sc_click_stat = 1; var sc_security = "6e84d811"; </script>
       <script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
