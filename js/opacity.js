@@ -1,1 +1,0 @@
-document.write('<link rel="stylesheet" type="text/css" media="screen" href="opacity.css" />'); 

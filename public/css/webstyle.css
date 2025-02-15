@@ -1,4 +1,4 @@
-/* Design by: Kenny Weiss, 2007-2010 */
+/* Design by: Kenny Weiss, 2007-2025 */
 
 
 /* General formatting */
@@ -247,7 +247,6 @@ h3 {
 
 
 .paper .paper_abstract {
-	display:none;
 	font-size:85%;
 	padding-left:2em;
 	padding-right:3em;
@@ -257,11 +256,10 @@ h3 {
 .paper .paper_abstract p:before{
 	font-weight:bold;
 	font-variant:small-caps;
-	content:"Abstract \2014";
+	content:"Abstract \2014\00a0";
 }
 
 .paper .paper_bibtex {
-	display:none;
 	font-family:"Courier New", Courier, monospace;
 	padding-left:2em;
 	padding-right:3em;
