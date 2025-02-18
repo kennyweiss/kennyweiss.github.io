@@ -8,7 +8,11 @@
   background-color: #242424;
 
   font-synthesis: none;
+
+  /* possibly non-standard */
   text-rendering: optimizeLegibility;
+
+  /* vendor-specific font-smoothing */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,7 +55,7 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto Highlight;
 }
 
 @media (prefers-color-scheme: light) {
