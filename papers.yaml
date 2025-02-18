@@ -19,18 +19,26 @@ papers:
     paper_abstract: >
       Point containment queries for regions bound by watertight geometric surfaces, i.e., closed and without self-intersections, can be evaluated straightforwardly with a number of well-studied algorithms. When this assumption on domain geometry is not met, such methods are either unusable, or prone to misclassifications that can lead to cascading errors in downstream applications. More robust point classification schemes based on generalized winding numbers have been proposed, as they are indifferent to these imperfections. However, existing algorithms are limited to point clouds and collections of linear elements. We extend this methodology to encompass more general curved shapes with an algorithm that evaluates the winding number scalar field over unstructured collections of rational parametric curves. In particular, we evaluate the winding number for each curve independently, making the derived containment query robust to how the curves are arranged. We ensure geometric fidelity in our queries by treating each curve as equivalent to an adaptively constructed polyline that provably has the same generalized winding number at the point of interest. Our algorithm is numerically stable for points that are arbitrarily close to the model, and explicitly treats points that are coincident with curves. We demonstrate the improvements in computational performance granted by this method over conventional techniques as well as the robustness induced by its application.
     paper_bibtex: |
-      @misc{Spainhour2024_arxiv,
-        title  = {Robust containment queries over collections of rational parametric curves via generalized winding numbers}, 
-        author = {Jacob Spainhour and David Gunderman and Kenneth Weiss},
-        year   = {2024},
-        doi    = {10.48550/arXiv.2403.17371},
-        eprint = {2403.17371},
-        archivePrefix = {arXiv},
-        primaryClass  = {cs.CG}
-      }
+      @article{Spainhour2024_siggraph,
+        author     = {Spainhour, Jacob and Gunderman, David and Weiss, Kenneth},
+        title      = {Robust containment queries over collections of rational parametric curves via generalized winding numbers}, 
+        year       = {2024},
+        journal    = {ACM Transactions on Graphics},
+        volume     = {43},
+        number     = {4},
+        articleno  = {38},
+        numpages   = {14},
+        issn       = {0730-0301},
+        doi        = {10.1145/3658228},
+        month      = jul,
+        publisher  = {Association for Computing Machinery},
+        address    = {New York, NY, USA},
+      }      
     paper_links:
       paper: papers/Spainhour24.siggraph.pdf
-      arXiv: https://doi.org/10.48550/arXiv.2403.17371
+      arXiv: https://arxiv.org/abs/2403.17371
+      doi: https://doi.org/10.1145/3658228
+
   - paper_id: jfe24
     paper_year: 2024
     paper_title: >
@@ -136,8 +144,8 @@ papers:
     paper_venue:
       journal: International Journal of High Performance Computing Applications (Vol. 36)
     paper_links: 
-      paper: https://doi.org/10.1177/10943420221100262
       arXiv: https://arxiv.org/abs/2112.07075
+      doi: https://doi.org/10.1177/10943420221100262
     paper_abstract: >
       With the introduction of advanced heterogeneous computing architectures based on GPU accelerators, large-scale production codes have had to rethink their numerical algorithms and incorporate new programming models and memory management strategies in order to run efficiently on the latest supercomputers. In this work we discuss our co-design strategy to address these challenges and achieve performance and portability with MARBL, a next-generation multi-physics code in development at Lawrence Livermore National Laboratory. We present a two-fold approach, wherein new hardware is used to motivate both new algorithms and new abstraction layers, resulting in a single source application code suitable for a variety of platforms. Focusing on MARBL's ALE hydrodynamics package, we demonstrate scalability on different platforms and highlight that many of our innovations have been contributed back to open-source software libraries, such as MFEM (finite element algorithms) and RAJA (kernel abstractions).
     paper_bibtex: |
