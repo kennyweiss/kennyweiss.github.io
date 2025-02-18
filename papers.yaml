@@ -1,0 +1,1293 @@
+# yaml-language-server: $schema=paper_schema.yaml
+
+papers:
+  # 2024
+  - paper_id: siggraph24
+    paper_year: 2024
+    paper_title: >
+      Robust containment queries over collections of rational parametric curves via generalized winding numbers
+    paper_award: 
+      award: Best Paper Award
+      link: https://blog.siggraph.org/2024/06/siggraph-2024-technical-papers-awards-best-papers-honorable-mentions-and-test-of-time.html
+    paper_author:
+      - Jacob Spainhour
+      - David Gunderman
+      - Kenneth Weiss
+    paper_venue:
+      conference: ACM SIGGRAPH (SIGGRAPH '24)
+      journal: ACM Transactions on Graphics (Vol. 43, Num. 4)
+    paper_abstract: >
+      Point containment queries for regions bound by watertight geometric surfaces, i.e., closed and without self-intersections, can be evaluated straightforwardly with a number of well-studied algorithms. When this assumption on domain geometry is not met, such methods are either unusable, or prone to misclassifications that can lead to cascading errors in downstream applications. More robust point classification schemes based on generalized winding numbers have been proposed, as they are indifferent to these imperfections. However, existing algorithms are limited to point clouds and collections of linear elements. We extend this methodology to encompass more general curved shapes with an algorithm that evaluates the winding number scalar field over unstructured collections of rational parametric curves. In particular, we evaluate the winding number for each curve independently, making the derived containment query robust to how the curves are arranged. We ensure geometric fidelity in our queries by treating each curve as equivalent to an adaptively constructed polyline that provably has the same generalized winding number at the point of interest. Our algorithm is numerically stable for points that are arbitrarily close to the model, and explicitly treats points that are coincident with curves. We demonstrate the improvements in computational performance granted by this method over conventional techniques as well as the robustness induced by its application.
+    paper_bibtex: |
+      @misc{Spainhour2024_arxiv,
+        title  = {Robust containment queries over collections of rational parametric curves via generalized winding numbers}, 
+        author = {Jacob Spainhour and David Gunderman and Kenneth Weiss},
+        year   = {2024},
+        doi    = {10.48550/arXiv.2403.17371},
+        eprint = {2403.17371},
+        archivePrefix = {arXiv},
+        primaryClass  = {cs.CG}
+      }
+    paper_links:
+      paper: papers/Spainhour24.siggraph.pdf
+      arXiv: https://doi.org/10.48550/arXiv.2403.17371
+  - paper_id: jfe24
+    paper_year: 2024
+    paper_title: >
+      Performance portable Graphics Processing Unit acceleration of a high-order finite element multiphysics application
+    paper_author:
+      - Thomas Stitt
+      - Kristi Belcher
+      - Alejandro Campos
+      - Tzanio Kolev
+      - Philip Mocz
+      - Robert N. Rieben
+      - Aaron Skinner
+      - Vladimir Tomov
+      - Arturo Vargas
+      - Kenneth Weiss
+    paper_venue:
+      journal: Journal of Fluids Engineering (Vol. 146)
+    paper_abstract: >
+      The Lawrence Livermore National Laboratory (LLNL) will soon have in place the El Capitan exascale supercomputer, based on advanced micro devices (AMD) graphics processing units (GPUs). As part of a multiyear effort under the National Nuclear Security Administration (NNSA) Advanced Simulation and Computing (ASC) program, we have been developing Marbl, a next generation, performance portable multiphysics application based on high-order finite elements. In previous years, we successfully ported the Arbitrary Lagrangian--Eulerian (ALE), multimaterial, compressible flow capabilities of Marbl to nvidia GPUs as described in Vargas et al. (2022, “Matrix-Free Approaches for GPU Acceleration of a High-Order Finite Element Hydrodynamics Application Using MFEM, Umpire, and RAJA,” Int. J. High Perform. Comput. Appl., 36(4), pp. 492--09). In this paper, we describe our ongoing effort in extending Marbl's GPU capabilities with additional physics, including multigroup radiation diffusion and thermonuclear burn for high energy density physics (HEDP) and fusion modeling. We also describe how our portability abstraction approach based on the raja Portability Suite and the mfem finite element discretization library has enabled us to achieve high performance on AMD based GPUs with minimal effort in hardware-specific porting. Throughout this work, we highlight numerical and algorithmic developments that were required to achieve GPU performance.
+    paper_bibtex: |
+      @article{Stitt2024_jfe,
+        author  = {Stitt, Thomas and Belcher, Kristi and Campos, Alejandro and Kolev, Tzanio and Mocz, Philip 
+                   and Rieben, Robert N. and Skinner, Aaron and Tomov, Vladimir and Vargas, Arturo and Weiss, Kenneth},
+        title   = {Performance Portable Graphics Processing Unit Acceleration 
+                   of a High-Order Finite Element Multiphysics Application },
+        journal = {Journal of Fluids Engineering},
+        volume  = {146},
+        number  = {4},
+        pages   = {041102},
+        year    = {2024},
+        month   = {02},
+        issn    = {0098-2202},
+        doi     = {10.1115/1.4064493},
+      }
+    paper_links: 
+      doi: https://doi.org/10.1115/1.4064493
+  - paper_id: prl24
+    paper_year: 2024
+    paper_title: >
+      Achievement of target gain larger than unity in an inertial fusion experiment
+    paper_author: 
+      - H Abu-Shawareb et al.
+    paper_venue:
+      journal: Physical Review Letters (Vol. 132)
+    paper_abstract: >
+      On December 5, 2022, an indirect drive fusion implosion on the National Ignition Facility (NIF) achieved a target gain Gtarget of 1.5. This is the first laboratory demonstration of exceeding "scientific breakeven" (or Gtarget>1) where 2.05 MJ of 351 nm laser light produced 3.1 MJ of total fusion yield, a result which significantly exceeds the Lawson criterion for fusion ignition as reported in a previous NIF implosion [H. Abu-Shawareb et al. (Indirect Drive ICF Collaboration), Phys. Rev. Lett. 129, 075001 (2022)]. This achievement is the culmination of more than five decades of research and gives proof that laboratory fusion, based on fundamental physics principles, is possible. This Letter reports on the target, laser, design, and experimental advancements that led to this result.
+    paper_bibtex: |
+      @article{AbuShawareb2024_prl,
+        author    = {Abu-Shawareb, H. and Acree, R. and Adams, P. and Adams, J. and Addis, B. and Aden, R. and Adrian, P. and Afeyan, B. B. and Aggleton, M. and Aghaian, L. and Aguirre, A. and Aikens, D. and Akre, J. and Albert, F. and Albrecht, M. and Albright, B. J. and Albritton, J. and Alcala, J. and Alday, C. and Alessi, D. A. and Alexander, N. and Alfonso, J. and Alfonso, N. and Alger, E. and Ali, S. J. and Ali, Z. A. and Allen, A. and Alley, W. E. and Amala, P. and Amendt, P. A. and Amick, P. and Ammula, S. and Amorin, C. and Ampleford, D. J. and Anderson, R. W. and Anklam, T. and Antipa, N. and Appelbe, B. and Aracne-Ruddle, C. and Araya, E. and Archuleta, T. N. and Arend, M. and Arnold, P. and Arnold, T. and Arsenlis, A. and Asay, J. and Atherton, L. J. and Atkinson, D. and Atkinson, R. and Auerbach, J. M. and Austin, B. and Auyang, L. and Awwal, A. A. S. and Aybar, N. and Ayers, J. and Ayers, S. and Ayers, T. and Azevedo, S. and Bachmann, B. and Back, C. A. and Bae, J. and Bailey, D. S. and Bailey, J. and Baisden, T. and Baker, K. L. and Baldis, H. and Barber, D. and Barberis, M. and Barker, D. and Barnes, A. and Barnes, C. W. and Barrios, M. A. and Barty, C. and Bass, I. and Batha, S. H. and Baxamusa, S. H. and Bazan, G. and Beagle, J. K. and Beale, R. and Beck, B. R. and Beck, J. B. and Bedzyk, M. and Beeler, R. G. and Beeler, R. G. and Behrendt, W. and Belk, L. and Bell, P. and Belyaev, M. and Benage, J. F. and Bennett, G. and Benedetti, L. R. and Benedict, L. X. and Berger, R. L. and Bernat, T. and Bernstein, L. A. and Berry, B. and Bertolini, L. and Besenbruch, G. and Betcher, J. and Bettenhausen, R. and Betti, R. and Bezzerides, B. and Bhandarkar, S. D. and Bickel, R. and Biener, J. and Biesiada, T. and Bigelow, K. and Bigelow-Granillo, J. and Bigman, V. and Bionta, R. M. and Birge, N. W. and Bitter, M. and Black, A. C. and Bleile, R. and Bleuel, D. L. and Bliss, E. and Bliss, E. and Blue, B. and Boehly, T. and Boehm, K. and Boley, C. D. and Bonanno, R. and Bond, E. J. and Bond, T. and Bonino, M. J. and Borden, M. and Bourgade, J.-L. and Bousquet, J. and Bowers, J. and Bowers, M. and Boyd, R. and Boyle, D. and Bozek, A. and Bradley, D. K. and Bradley, K. S. and Bradley, P. A. and Bradley, L. and Brannon, L. and Brantley, P. S. and Braun, D. and Braun, T. and Brienza-Larsen, K. and Briggs, R. and Briggs, T. M. and Britten, J. and Brooks, E. D. and Browning, D. and Bruhn, M. W. and Brunner, T. A. and Bruns, H. and Brunton, G. and Bryant, B. and Buczek, T. and Bude, J. and Buitano, L. and Burkhart, S. and Burmark, J. and Burnham, A. and Burr, R. and Busby, L. E. and Butlin, B. and Cabeltis, R. and Cable, M. and Cabot, W. H. and Cagadas, B. and Caggiano, J. and Cahayag, R. and Caldwell, S. E. and Calkins, S. and Callahan, D. A. and Calleja-Aguirre, J. and Camara, L. and Camp, D. and Campbell, E. M. and Campbell, J. H. and Carey, B. and Carey, R. and Carlisle, K. and Carlson, L. and Carman, L. and Carmichael, J. and Carpenter, A. and Carr, C. and Carrera, J. A. and Casavant, D. and Casey, A. and Casey, D. T. and Castillo, A. and Castillo, E. and Castor, J. I. and Castro, C. and Caughey, W. and Cavitt, R. and Celeste, J. and Celliers, P. M. and Cerjan, C. and Chandler, G. and Chang, B. and Chang, C. and Chang, J. and Chang, L. and Chapman, R. and Chapman, T. D. and Chase, L. and Chen, H. and Chen, H. and Chen, K. and Chen, L.-Y. and Cheng, B. and Chittenden, J. and Choate, C. and Chou, J. and Chrien, R. E. and Chrisp, M. and Christensen, K. and Christensen, M. and Christiansen, N. S. and Christopherson, A. R. and Chung, M. and Church, J. A. and Clark, A. and Clark, D. S. and Clark, K. and Clark, R. and Claus, L. and Cline, B. and Cline, J. A. and Cobble, J. A. and Cochrane, K. and Cohen, B. and Cohen, S. and Collette, M. R. and Collins, G. W. and Collins, L. A. and Collins, T. J. B. and Conder, A. and Conrad, B. and Conyers, M. and Cook, A. W. and Cook, D. and Cook, R. and Cooley, J. C. and Cooper, G. and Cope, T. and Copeland, S. R. and Coppari, F. and Cortez, J. and Cox, J. and Crandall, D. H. and Crane, J. and Craxton, R. S. and Cray, M. and Crilly, A. and Crippen, J. W. and Cross, D. and Cuneo, M. and Cuotts, G. and Czajka, C. E. and Czechowicz, D. and Daly, T. and Danforth, P. and Danly, C. and Darbee, R. and Darlington, B. and Datte, P. and Dauffy, L. and Davalos, G. and Davidovits, S. and Davis, P. and Davis, J. and Dawson, S. and Day, R. D. and Day, T. H. and Dayton, M. and Deck, C. and Decker, C. and Deeney, C. and DeFriend, K. A. and Deis, G. and Delamater, N. D. and Delettrez, J. A. and Demaret, R. and Demos, S. and Dempsey, S. M. and Desjardin, R. and Desjardins, T. and Desjarlais, M. P. and Dewald, E. L. and DeYoreo, J. and Diaz, S. and Dimonte, G. and Dittrich, T. R. and Divol, L. and Dixit, S. N. and Dixon, J. and Do, A. and Dodd, E. S. and Dolan, D. and Donovan, A. and Donovan, M. and D\"oppner, T. and Dorrer, C. and Dorsano, N. and Douglas, M. R. and Dow, D. and Downie, J. and Downing, E. and Dozieres, M. and Draggoo, V. and Drake, D. and Drake, R. P. and Drake, T. and Dreifuerst, G. and Drury, O. and DuBois, D. F. and DuBois, P. F. and Dunham, G. and Durocher, M. and Dylla-Spears, R. and Dymoke-Bradshaw, A. K. L. and Dzenitis, B. and Ebbers, C. and Eckart, M. and Eddinger, S. and Eder, D. and Edgell, D. and Edwards, M. J. and Efthimion, P. and Eggert, J. H. and Ehrlich, B. and Ehrmann, P. and Elhadj, S. and Ellerbee, C. and Elliott, N. S. and Ellison, C. L. and Elsner, F. and Emerich, M. and Engelhorn, K. and England, T. and English, E. and Epperson, P. and Epstein, R. and Erbert, G. and Erickson, M. A. and Erskine, D. J. and Erlandson, A. and Espinosa, R. J. and Estes, C. and Estabrook, K. G. and Evans, S. and Fabyan, A. and Fair, J. and Fallejo, R. and Farmer, N. and Farmer, W. A. and Farrell, M. and Fatherley, V. E. and Fedorov, M. and Feigenbaum, E. and Fehrenbach, T. and Feit, M. and Felker, B. and Ferguson, W. and Fernandez, J. C. and Fernandez-Panella, A. and Fess, S. and Field, J. E. and Filip, C. V. and Fincke, J. R. and Finn, T. and Finnegan, S. M. and Finucane, R. G. and Fischer, M. and Fisher, A. and Fisher, J. and Fishler, B. and Fittinghoff, D. and Fitzsimmons, P. and Flegel, M. and Flippo, K. A. and Florio, J. and Folta, J. and Folta, P. and Foreman, L. R. and Forrest, C. and Forsman, A. and Fooks, J. and Foord, M. and Fortner, R. and Fournier, K. and Fratanduono, D. E. and Frazier, N. and Frazier, T. and Frederick, C. and Freeman, M. S. and Frenje, J. and Frey, D. and Frieders, G. and Friedrich, S. and Froula, D. H. and Fry, J. and Fuller, T. and Gaffney, J. and Gales, S. and Le Galloudec, B. and Le Galloudec, K. K. and Gambhir, A. and Gao, L. and Garbett, W. J. and Garcia, A. and Gates, C. and Gaut, E. and Gauthier, P. and Gavin, Z. and Gaylord, J. and Geddes, C. G. R. and Geissel, M. and G\'enin, F. and Georgeson, J. and Geppert-Kleinrath, H. and Geppert-Kleinrath, V. and Gharibyan, N. and Gibson, J. and Gibson, C. and Giraldez, E. and Glebov, V. and Glendinning, S. G. and Glenn, S. and Glenzer, S. H. and Goade, S. and Gobby, P. L. and Goldman, S. R. and Golick, B. and Gomez, M. and Goncharov, V. and Goodin, D. and Grabowski, P. and Grafil, E. and Graham, P. and Grandy, J. and Grasz, E. and Graziani, F. R. and Greenman, G. and Greenough, J. A. and Greenwood, A. and Gregori, G. and Green, T. and Griego, J. R. and Grim, G. P. and Grondalski, J. and Gross, S. and Guckian, J. and Guler, N. and Gunney, B. and Guss, G. and Haan, S. and Hackbarth, J. and Hackel, L. and Hackel, R. and Haefner, C. and Hagmann, C. and Hahn, K. D. and Hahn, S. and Haid, B. J. and Haines, B. M. and Hall, B. M. and Hall, C. and Hall, G. N. and Hamamoto, M. and Hamel, S. and Hamilton, C. E. and Hammel, B. A. and Hammer, J. H. and Hampton, G. and Hamza, A. and Handler, A. and Hansen, S. and Hanson, D. and Haque, R. and Harding, D. and Harding, E. and Hares, J. D. and Harris, D. B. and Harte, J. A. and Hartouni, E. P. and Hatarik, R. and Hatchett, S. and Hauer, A. A. and Havre, M. and Hawley, R. and Hayes, J. and Hayes, J. and Hayes, S. and Hayes-Sterbenz, A. and Haynam, C. A. and Haynes, D. A. and Headley, D. and Heal, A. and Heebner, J. E. and Heerey, S. and Heestand, G. M. and Heeter, R. and Hein, N. and Heinbockel, C. and Hendricks, C. and Henesian, M. and Heninger, J. and Henrikson, J. and Henry, E. A. and Herbold, E. B. and Hermann, M. R. and Hermes, G. and Hernandez, J. E. and Hernandez, V. J. and Herrmann, M. C. and Herrmann, H. W. and Herrera, O. D. and Hewett, D. and Hibbard, R. and Hicks, D. G. and Higginson, D. P. and Hill, D. and Hill, K. and Hilsabeck, T. and Hinkel, D. E. and Ho, D. D. and Ho, V. K. and Hoffer, J. K. and Hoffman, N. M. and Hohenberger, M. and Hohensee, M. and Hoke, W. and Holdener, D. and Holdener, F. and Holder, J. P. and Holko, B. and Holunga, D. and Holzrichter, J. F. and Honig, J. and Hoover, D. and Hopkins, D. and Berzak Hopkins, L. F. and Hoppe, M. and Hoppe, M. L. and Horner, J. and Hornung, R. and Horsfield, C. J. and Horvath, J. and Hotaling, D. and House, R. and Howell, L. and Hsing, W. W. and Hu, S. X. and Huang, H. and Huckins, J. and Hui, H. and Humbird, K. D. and Hund, J. and Hunt, J. and Hurricane, O. A. and Hutton, M. and Huynh, K. H.-K. and Inandan, L. and Iglesias, C. and Igumenshchev, I. V. and Ivanovich, I. and Izumi, N. and Jackson, M. and Jackson, J. and Jacobs, S. D. and James, G. and Jancaitis, K. and Jarboe, J. and Jarrott, L. C. and Jasion, D. and Jaquez, J. and Jeet, J. and Jenei, A. E. and Jensen, J. and Jimenez, J. and Jimenez, R. and Jobe, D. and Johal, Z. and Johns, H. M. and Johnson, D. and Johnson, M. A. and Gatu Johnson, M. and Johnson, R. J. and Johnson, S. and Johnson, S. A. and Johnson, T. and Jones, K. and Jones, O. and Jones, M. and Jorge, R. and Jorgenson, H. J. and Julian, M. and Jun, B. I. and Jungquist, R. and Kaae, J. and Kabadi, N. and Kaczala, D. and Kalantar, D. and Kangas, K. and Karasiev, V. V. and Karasik, M. and Karpenko, V. and Kasarky, A. and Kasper, K. and Kauffman, R. and Kaufman, M. I. and Keane, C. and Keaty, L. and Kegelmeyer, L. and Keiter, P. A. and Kellett, P. A. and Kellogg, J. and Kelly, J. H. and Kemic, S. and Kemp, A. J. and Kemp, G. E. and Kerbel, G. D. and Kershaw, D. and Kerr, S. M. and Kessler, T. J. and Key, M. H. and Khan, S. F. and Khater, H. and Kiikka, C. and Kilkenny, J. and Kim, Y. and Kim, Y.-J. and Kimko, J. and Kimmel, M. and Kindel, J. M. and King, J. and Kirkwood, R. K. and Klaus, L. and Klem, D. and Kline, J. L. and Klingmann, J. and Kluth, G. and Knapp, P. and Knauer, J. and Knipping, J. and Knudson, M. and Kobs, D. and Koch, J. and Kohut, T. and Kong, C. and Koning, J. M. and Koning, P. and Konior, S. and Kornblum, H. and Kot, L. B. and Kozioziemski, B. and Kozlowski, M. and Kozlowski, P. M. and Krammen, J. and Krasheninnikova, N. S. and Krauland, C. M. and Kraus, B. and Krauser, W. and Kress, J. D. and Kritcher, A. L. and Krieger, E. and Kroll, J. J. and Kruer, W. L. and Kruse, M. K. G. and Kucheyev, S. and Kumbera, M. and Kumpan, S. and Kunimune, J. and Kur, E. and Kustowski, B. and Kwan, T. J. T. and Kyrala, G. A. and Laffite, S. and Lafon, M. and LaFortune, K. and Lagin, L. and Lahmann, B. and Lairson, B. and Landen, O. L. and Land, T. and Lane, M. and Laney, D. and Langdon, A. B. and Langenbrunner, J. and Langer, S. H. and Langro, A. and Lanier, N. E. and Lanier, T. E. and Larson, D. and Lasinski, B. F. and Lassle, D. and LaTray, D. and Lau, G. and Lau, N. and Laumann, C. and Laurence, A. and Laurence, T. A. and Lawson, J. and Le, H. P. and Leach, R. R. and Leal, L. and Leatherland, A. and LeChien, K. and Lechleiter, B. and Lee, A. and Lee, M. and Lee, T. and Leeper, R. J. and Lefebvre, E. and Leidinger, J.-P. and LeMire, B. and Lemke, R. W. and Lemos, N. C. and Le Pape, S. and Lerche, R. and Lerner, S. and Letts, S. and Levedahl, K. and Lewis, T. and Li, C. K. and Li, H. and Li, J. and Liao, W. and Liao, Z. M. and Liedahl, D. and Liebman, J. and Lindford, G. and Lindman, E. L. and Lindl, J. D. and Loey, H. and London, R. A. and Long, F. and Loomis, E. N. and Lopez, F. E. and Lopez, H. and Losbanos, E. and Loucks, S. and Lowe-Webb, R. and Lundgren, E. and Ludwigsen, A. P. and Luo, R. and Lusk, J. and Lyons, R. and Ma, T. and Macallop, Y. and MacDonald, M. J. and MacGowan, B. J. and Mack, J. M. and Mackinnon, A. J. and MacLaren, S. A. and MacPhee, A. G. and Magelssen, G. R. and Magoon, J. and Malone, R. M. and Malsbury, T. and Managan, R. and Mancini, R. and Manes, K. and Maney, D. and Manha, D. and Mannion, O. M. and Manuel, A. M. and Manuel, M. J.-E. and Mapoles, E. and Mara, G. and Marcotte, T. and Marin, E. and Marinak, M. M. and Mariscal, D. A. and Mariscal, E. F. and Marley, E. V. and Marozas, J. A. and Marquez, R. and Marshall, C. D. and Marshall, F. J. and Marshall, M. and Marshall, S. and Marticorena, J. and Martinez, J. I. and Martinez, D. and Maslennikov, I. and Mason, D. and Mason, R. J. and Masse, L. and Massey, W. and Masson-Laborde, P.-E. and Masters, N. D. and Mathisen, D. and Mathison, E. and Matone, J. and Matthews, M. J. and Mattoon, C. and Mattsson, T. R. and Matzen, K. and Mauche, C. W. and Mauldin, M. and McAbee, T. and McBurney, M. and Mccarville, T. and McCrory, R. L. and McEvoy, A. M. and McGuffey, C. and Mcinnis, M. and McKenty, P. and McKinley, M. S. and McLeod, J. B. and McPherson, A. and Mcquillan, B. and Meamber, M. and Meaney, K. D. and Meezan, N. B. and Meissner, R. and Mehlhorn, T. A. and Mehta, N. C. and Menapace, J. and Merrill, F. E. and Merritt, B. T. and Merritt, E. C. and Meyerhofer, D. D. and Mezyk, S. and Mich, R. J. and Michel, P. A. and Milam, D. and Miller, C. and Miller, D. and Miller, D. S. and Miller, E. and Miller, E. K. and Miller, J. and Miller, M. and Miller, P. E. and Miller, T. and Miller, W. and Miller-Kamm, V. and Millot, M. and Milovich, J. L. and Minner, P. and Miquel, J.-L. and Mitchell, S. and Molvig, K. and Montesanti, R. C. and Montgomery, D. S. and Monticelli, M. and Montoya, A. and Moody, J. D. and Moore, A. S. and Moore, E. and Moran, M. and Moreno, J. C. and Moreno, K. and Morgan, B. E. and Morrow, T. and Morton, J. W. and Moses, E. and Moy, K. and Muir, R. and Murillo, M. S. and Murray, J. E. and Murray, J. R. and Munro, D. H. and Murphy, T. J. and Munteanu, F. M. and Nafziger, J. and Nagayama, T. and Nagel, S. R. and Nast, R. and Negres, R. A. and Nelson, A. and Nelson, D. and Nelson, J. and Nelson, S. and Nemethy, S. and Neumayer, P. and Newman, K. and Newton, M. and Nguyen, H. and Di Nicola, J.-M. G. and Di Nicola, P. and Niemann, C. and Nikroo, A. and Nilson, P. M. and Nobile, A. and Noorai, V. and Nora, R. C. and Norton, M. and Nostrand, M. and Note, V. and Novell, S. and Nowak, P. F. and Nunez, A. and Nyholm, R. A. and O'Brien, M. and Oceguera, A. and Oertel, J. A. and Oesterle, A. L. and Okui, J. and Olejniczak, B. and Oliveira, J. and Olsen, P. and Olson, B. and Olson, K. and Olson, R. E. and Opachich, Y. P. and Orsi, N. and Orth, C. D. and Owen, M. and Padalino, S. and Padilla, E. and Paguio, R. and Paguio, S. and Paisner, J. and Pajoom, S. and Pak, A. and Palaniyappan, S. and Palma, K. and Pannell, T. and Papp, F. and Paras, D. and Parham, T. and Park, H.-S. and Pasternak, A. and Patankar, S. and Patel, M. V. and Patel, P. K. and Patterson, R. and Patterson, S. and Paul, B. and Paul, M. and Pauli, E. and Pearce, O. T. and Pearcy, J. and Pedretti, A. and Pedrotti, B. and Peer, A. and Pelz, L. J. and Penetrante, B. and Penner, J. and Perez, A. and Perkins, L. J. and Pernice, E. and Perry, T. S. and Person, S. and Petersen, D. and Petersen, T. and Peterson, D. L. and Peterson, E. B. and Peterson, J. E. and Peterson, J. L. and Peterson, K. and Peterson, R. R. and Petrasso, R. D. and Philippe, F. and Phillion, D. and Phipps, T. J. and Piceno, E. and Pickworth, L. and Ping, Y. and Pino, J. and Piston, K. and Plummer, R. and Pollack, G. D. and Pollaine, S. M. and Pollock, B. B. and Ponce, D. and Ponce, J. and Pontelandolfo, J. and Porter, J. L. and Post, J. and Poujade, O. and Powell, C. and Powell, H. and Power, G. and Pozulp, M. and Prantil, M. and Prasad, M. and Pratuch, S. and Price, S. and Primdahl, K. and Prisbrey, S. and Procassini, R. and Pruyne, A. and Pudliner, B. and Qiu, S. R. and Quan, K. and Quinn, M. and Quintenz, J. and Radha, P. B. and Rainer, F. and Ralph, J. E. and Raman, K. S. and Raman, R. and Rambo, P. W. and Rana, S. and Randewich, A. and Rardin, D. and Ratledge, M. and Ravelo, N. and Ravizza, F. and Rayce, M. and Raymond, A. and Raymond, B. and Reed, B. and Reed, C. and Regan, S. and Reichelt, B. and Reis, V. and Reisdorf, S. and Rekow, V. and Remington, B. A. and Rendon, A. and Requieron, W. and Rever, M. and Reynolds, H. and Reynolds, J. and Rhodes, J. and Rhodes, M. and Richardson, M. C. and Rice, B. and Rice, N. G. and Rieben, R. and Rigatti, A. and Riggs, S. and Rinderknecht, H. G. and Ring, K. and Riordan, B. and Riquier, R. and Rivers, C. and Roberts, D. and Roberts, V. and Robertson, G. and Robey, H. F. and Robles, J. and Rocha, P. and Rochau, G. and Rodriguez, J. and Rodriguez, S. and Rosen, M. D. and Rosenberg, M. and Ross, G. and Ross, J. S. and Ross, P. and Rouse, J. and Rovang, D. and Rubenchik, A. M. and Rubery, M. S. and Ruiz, C. L. and Rushford, M. and Russ, B. and Rygg, J. R. and Ryujin, B. S. and Sacks, R. A. and Sacks, R. F. and Saito, K. and Salmon, T. and Salmonson, J. D. and Sanchez, J. and Samuelson, S. and Sanchez, M. and Sangster, C. and Saroyan, A. and Sater, J. and Satsangi, A. and Sauers, S. and Saunders, R. and Sauppe, J. P. and Sawicki, R. and Sayre, D. and Scanlan, M. and Schaffers, K. and Schappert, G. T. and Schiaffino, S. and Schlossberg, D. J. and Schmidt, D. W. and Schmit, P. F. and Smidt, J. M. and Schneider, D. H. G. and Schneider, M. B. and Schneider, R. and Schoff, M. and Schollmeier, M. and Schroeder, C. R. and Schrauth, S. E. and Scott, H. A. and Scott, I. and Scott, J. M. and Scott, R. H. H. and Scullard, C. R. and Sedillo, T. and Seguin, F. H. and Seka, W. and Senecal, J. and Sepke, S. M. and Seppala, L. and Sequoia, K. and Severyn, J. and Sevier, J. M. and Sewell, N. and Seznec, S. and Shah, R. C. and Shamlian, J. and Shaughnessy, D. and Shaw, M. and Shaw, R. and Shearer, C. and Shelton, R. and Shen, N. and Sherlock, M. W. and Shestakov, A. I. and Shi, E. L. and Shin, S. J. and Shingleton, N. and Shmayda, W. and Shor, M. and Shoup, M. and Shuldberg, C. and Siegel, L. and Silva, F. J. and Simakov, A. N. and Sims, B. T. and Sinars, D. and Singh, P. and Sio, H. and Skulina, K. and Skupsky, S. and Slutz, S. and Sluyter, M. and Smalyuk, V. A. and Smauley, D. and Smeltser, R. M. and Smith, C. and Smith, I. and Smith, J. and Smith, L. and Smith, R. and Smith, R. and Sch\"olmerich, M. and Sohn, R. and Sommer, S. and Sorce, C. and Sorem, M. and Soures, J. M. and Spaeth, M. L. and Spears, B. K. and Speas, S. and Speck, D. and Speck, R. and Spears, J. and Spinka, T. and Springer, P. T. and Stadermann, M. and Stahl, B. and Stahoviak, J. and Stanley, J. and Stanton, L. G. and Steele, R. and Steele, W. and Steinman, D. and Stemke, R. and Stephens, R. and Sterbenz, S. and Sterne, P. and Stevens, D. and Stevers, J. and Still, C. H. and Stoeckl, C. and Stoeffl, W. and Stolken, J. S. and Stolz, C. and Storm, E. and Stone, G. and Stoupin, S. and Stout, E. and Stowers, I. and Strauser, R. and Streckart, H. and Streit, J. and Strozzi, D. J. and Stutz, J. and Summers, L. and Suratwala, T. and Sutcliffe, G. and Suter, L. J. and Sutton, S. B. and Svidzinski, V. and Swadling, G. and Sweet, W. and Szoke, A. and Tabak, M. and Takagi, M. and Tambazidis, A. and Tang, V. and Taranowski, M. and Taylor, L. A. and Telford, S. and Theobald, W. and Thi, M. and Thomas, A. and Thomas, C. A. and Thomas, I. and Thomas, R. and Thompson, I. J. and Thongstisubskul, A. and Thorsness, C. B. and Tietbohl, G. and Tipton, R. E. and Tobin, M. and Tomlin, N. and Tommasini, R. and Toreja, A. J. and Torres, J. and Town, R. P. J. and Townsend, S. and Trenholme, J. and Trivelpiece, A. and Trosseille, C. and Truax, H. and Trummer, D. and Trummer, S. and Truong, T. and Tubbs, D. and Tubman, E. R. and Tunnell, T. and Turnbull, D. and Turner, R. E. and Ulitsky, M. and Upadhye, R. and Vaher, J. L. and VanArsdall, P. and VanBlarcom, D. and Vandenboomgaerde, M. and VanQuinlan, R. and Van Wonterghem, B. M. and Varnum, W. S. and Velikovich, A. L. and Vella, A. and Verdon, C. P. and Vermillion, B. and Vernon, S. and Vesey, R. and Vickers, J. and Vignes, R. M. and Visosky, M. and Vocke, J. and Volegov, P. L. and Vonhof, S. and Von Rotz, R. and Vu, H. X. and Vu, M. and Wall, D. and Wall, J. and Wallace, R. and Wallin, B. and Walmer, D. and Walsh, C. A. and Walters, C. F. and Waltz, C. and Wan, A. and Wang, A. and Wang, Y. and Wark, J. S. and Warner, B. E. and Watson, J. and Watt, R. G. and Watts, P. and Weaver, J. and Weaver, R. P. and Weaver, S. and Weber, C. R. and Weber, P. and Weber, S. V. and Wegner, P. and Welday, B. and Welser-Sherrill, L. and Weiss, K. and Wharton, K. B. and Wheeler, G. F. and Whistler, W. and White, R. K. and Whitley, H. D. and Whitman, P. and Wickett, M. E. and Widmann, K. and Widmayer, C. and Wiedwald, J. and Wilcox, R. and Wilcox, S. and Wild, C. and Wilde, B. H. and Wilde, C. H. and Wilhelmsen, K. and Wilke, M. D. and Wilkens, H. and Wilkins, P. and Wilks, S. C. and Williams, E. A. and Williams, G. J. and Williams, W. and Williams, W. H. and Wilson, D. C. and Wilson, B. and Wilson, E. and Wilson, R. and Winters, S. and Wisoff, P. J. and Wittman, M. and Wolfe, J. and Wong, A. and Wong, K. W. and Wong, L. and Wong, N. and Wood, R. and Woodhouse, D. and Woodruff, J. and Woods, D. T. and Woods, S. and Woodworth, B. N. and Wooten, E. and Wootton, A. and Work, K. and Workman, J. B. and Wright, J. and Wu, M. and Wuest, C. and Wysocki, F. J. and Xu, H. and Yamaguchi, M. and Yang, B. and Yang, S. T. and Yatabe, J. and Yeamans, C. B. and Yee, B. C. and Yi, S. A. and Yin, L. and Young, B. and Young, C. S. and Young, C. V. and Young, P. and Youngblood, K. and Yu, J. and Zacharias, R. and Zagaris, G. and Zaitseva, N. and Zaka, F. and Ze, F. and Zeiger, B. and Zika, M. and Zimmerman, G. B. and Zobrist, T. and Zuegel, J. D. and Zylstra, A. B.},
+        journal   = {Physical Review Letters},
+        title     = {Achievement of Target Gain Larger than Unity in an Inertial Fusion Experiment},
+        year      = {2024},
+        month     = {February},
+        number    = {6},
+        pages     = {065102},
+        volume    = {132},
+        doi       = {10.1103/PhysRevLett.132.065102},
+        publisher = {American Physical Society ({APS})},
+      }
+    paper_links: 
+      doi: https://doi.org/10.1103/PhysRevLett.132.065102
+
+  # 2022
+  - paper_id: prl22
+    paper_year: 2022
+    paper_title: >
+      Lawson criterion for ignition exceeded in an inertial fusion experiment
+    paper_author: 
+      - H Abu-Shawareb et al.
+    paper_venue:
+      journal: Physical Review Letters (Vol. 129)
+    paper_abstract: >
+      For more than half a century, researchers around the world have been engaged in attempts to achieve fusion ignition as a proof of principle of various fusion concepts. Following the Lawson criterion, an ignited plasma is one where the fusion heating power is high enough to overcome all the physical processes that cool the fusion plasma, creating a positive thermodynamic feedback loop with rapidly increasing temperature. In inertially confined fusion, ignition is a state where the fusion plasma can begin 'burn propagation' into surrounding cold fuel, enabling the possibility of high energy gain. While 'scientific breakeven' (i.e., unity target gain) has not yet been achieved (here target gain is 0.72, 1.37 MJ of fusion for 1.92 MJ of laser energy), this Letter reports the first controlled fusion experiment, using laser indirect drive, on the National Ignition Facility to produce capsule gain (here 5.8) and reach ignition by nine different formulations of the Lawson criterion.
+    paper_bibtex: |
+      @article{AbuShawareb2022_prl,
+        title         = {Lawson Criterion for Ignition Exceeded in an Inertial Fusion Experiment},
+        author        = {Abu-Shawareb, H. and Acree, R. and Adams, P. and Adams, J. and Addis, B. and Aden, R. and Adrian, P. and Afeyan, B. B. and Aggleton, M. and Aghaian, L. and Aguirre, A. and Aikens, D. and Akre, J. and Albert, F. and Albrecht, M. and Albright, B. J. and Albritton, J. and Alcala, J. and Alday, C. and Alessi, D. A. and Alexander, N. and Alfonso, J. and Alfonso, N. and Alger, E. and Ali, S. J. and Ali, Z. A. and Alley, W. E. and Amala, P. and Amendt, P. A. and Amick, P. and Ammula, S. and Amorin, C. and Ampleford, D. J. and Anderson, R. W. and Anklam, T. and Antipa, N. and Appelbe, B. and Aracne-Ruddle, C. and Araya, E. and Arend, M. and Arnold, P. and Arnold, T. and Asay, J. and Atherton, L. J. and Atkinson, D. and Atkinson, R. and Auerbach, J. M. and Austin, B. and Auyang, L. and Awwal, A. S. and Ayers, J. and Ayers, S. and Ayers, T. and Azevedo, S. and Bachmann, B. and Back, C. A. and Bae, J. and Bailey, D. S. and Bailey, J. and Baisden, T. and Baker, K. L. and Baldis, H. and Barber, D. and Barberis, M. and Barker, D. and Barnes, A. and Barnes, C. W. and Barrios, M. A. and Barty, C. and Bass, I. and Batha, S. H. and Baxamusa, S. H. and Bazan, G. and Beagle, J. K. and Beale, R. and Beck, B. R. and Beck, J. B. and Bedzyk, M. and Beeler, R. G. and Beeler, R. G. and Behrendt, W. and Belk, L. and Bell, P. and Belyaev, M. and Benage, J. F. and Bennett, G. and Benedetti, L. R. and Benedict, L. X. and Berger, R. and Bernat, T. and Bernstein, L. A. and Berry, B. and Bertolini, L. and Besenbruch, G. and Betcher, J. and Bettenhausen, R. and Betti, R. and Bezzerides, B. and Bhandarkar, S. D. and Bickel, R. and Biener, J. and Biesiada, T. and Bigelow, K. and Bigelow-Granillo, J. and Bigman, V. and Bionta, R. M. and Birge, N. W. and Bitter, M. and Black, A. C. and Bleile, R. and Bleuel, D. L. and Bliss, E. and Bliss, E. and Blue, B. and Boehly, T. and Boehm, K. and Boley, C. D. and Bonanno, R. and Bond, E. J. and Bond, T. and Bonino, M. J. and Borden, M. and Bourgade, J.-L. and Bousquet, J. and Bowers, J. and Bowers, M. and Boyd, R. and Bozek, A. and Bradley, D. K. and Bradley, K. S. and Bradley, P. A. and Bradley, L. and Brannon, L. and Brantley, P. S. and Braun, D. and Braun, T. and Brienza-Larsen, K. and Briggs, T. M. and Britten, J. and Brooks, E. D. and Browning, D. and Bruhn, M. W. and Brunner, T. A. and Bruns, H. and Brunton, G. and Bryant, B. and Buczek, T. and Bude, J. and Buitano, L. and Burkhart, S. and Burmark, J. and Burnham, A. and Burr, R. and Busby, L. E. and Butlin, B. and Cabeltis, R. and Cable, M. and Cabot, W. H. and Cagadas, B. and Caggiano, J. and Cahayag, R. and Caldwell, S. E. and Calkins, S. and Callahan, D. A. and Calleja-Aguirre, J. and Camara, L. and Camp, D. and Campbell, E. M. and Campbell, J. H. and Carey, B. and Carey, R. and Carlisle, K. and Carlson, L. and Carman, L. and Carmichael, J. and Carpenter, A. and Carr, C. and Carrera, J. A. and Casavant, D. and Casey, A. and Casey, D. T. and Castillo, A. and Castillo, E. and Castor, J. I. and Castro, C. and Caughey, W. and Cavitt, R. and Celeste, J. and Celliers, P. M. and Cerjan, C. and Chandler, G. and Chang, B. and Chang, C. and Chang, J. and Chang, L. and Chapman, R. and Chapman, T. and Chase, L. and Chen, H. and Chen, H. and Chen, K. and Chen, L.-Y. and Cheng, B. and Chittenden, J. and Choate, C. and Chou, J. and Chrien, R. E. and Chrisp, M. and Christensen, K. and Christensen, M. and Christopherson, A. R. and Chung, M. and Church, J. A. and Clark, A. and Clark, D. S. and Clark, K. and Clark, R. and Claus, L. and Cline, B. and Cline, J. A. and Cobble, J. A. and Cochrane, K. and Cohen, B. and Cohen, S. and Collette, M. R. and Collins, G. and Collins, L. A. and Collins, T. J. B. and Conder, A. and Conrad, B. and Conyers, M. and Cook, A. W. and Cook, D. and Cook, R. and Cooley, J. C. and Cooper, G. and Cope, T. and Copeland, S. R. and Coppari, F. and Cortez, J. and Cox, J. and Crandall, D. H. and Crane, J. and Craxton, R. S. and Cray, M. and Crilly, A. and Crippen, J. W. and Cross, D. and Cuneo, M. and Cuotts, G. and Czajka, C. E. and Czechowicz, D. and Daly, T. and Danforth, P. and Darbee, R. and Darlington, B. and Datte, P. and Dauffy, L. and Davalos, G. and Davidovits, S. and Davis, P. and Davis, J. and Dawson, S. and Day, R. D. and Day, T. H. and Dayton, M. and Deck, C. and Decker, C. and Deeney, C. and DeFriend, K. A. and Deis, G. and Delamater, N. D. and Delettrez, J. A. and Demaret, R. and Demos, S. and Dempsey, S. M. and Desjardin, R. and Desjardins, T. and Desjarlais, M. P. and Dewald, E. L. and DeYoreo, J. and Diaz, S. and Dimonte, G. and Dittrich, T. R. and Divol, L. and Dixit, S. N. and Dixon, J. and Dodd, E. S. and Dolan, D. and Donovan, A. and Donovan, M. and D\"oppner, T. and Dorrer, C. and Dorsano, N. and Douglas, M. R. and Dow, D. and Downie, J. and Downing, E. and Dozieres, M. and Draggoo, V. and Drake, D. and Drake, R. P. and Drake, T. and Dreifuerst, G. and DuBois, D. F. and DuBois, P. F. and Dunham, G. and Dylla-Spears, R. and Dymoke-Bradshaw, A. K. L. and Dzenitis, B. and Ebbers, C. and Eckart, M. and Eddinger, S. and Eder, D. and Edgell, D. and Edwards, M. J. and Efthimion, P. and Eggert, J. H. and Ehrlich, B. and Ehrmann, P. and Elhadj, S. and Ellerbee, C. and Elliott, N. S. and Ellison, C. L. and Elsner, F. and Emerich, M. and Engelhorn, K. and England, T. and English, E. and Epperson, P. and Epstein, R. and Erbert, G. and Erickson, M. A. and Erskine, D. J. and Erlandson, A. and Espinosa, R. J. and Estes, C. and Estabrook, K. G. and Evans, S. and Fabyan, A. and Fair, J. and Fallejo, R. and Farmer, N. and Farmer, W. A. and Farrell, M. and Fatherley, V. E. and Fedorov, M. and Feigenbaum, E. and Feit, M. and Ferguson, W. and Fernandez, J. C. and Fernandez-Panella, A. and Fess, S. and Field, J. E. and Filip, C. V. and Fincke, J. R. and Finn, T. and Finnegan, S. M. and Finucane, R. G. and Fischer, M. and Fisher, A. and Fisher, J. and Fishler, B. and Fittinghoff, D. and Fitzsimmons, P. and Flegel, M. and Flippo, K. A. and Florio, J. and Folta, J. and Folta, P. and Foreman, L. R. and Forrest, C. and Forsman, A. and Fooks, J. and Foord, M. and Fortner, R. and Fournier, K. and Fratanduono, D. E. and Frazier, N. and Frazier, T. and Frederick, C. and Freeman, M. S. and Frenje, J. and Frey, D. and Frieders, G. and Friedrich, S. and Froula, D. H. and Fry, J. and Fuller, T. and Gaffney, J. and Gales, S. and Le Galloudec, B. and Le Galloudec, K. K. and Gambhir, A. and Gao, L. and Garbett, W. J. and Garcia, A. and Gates, C. and Gaut, E. and Gauthier, P. and Gavin, Z. and Gaylord, J. and Geissel, M. and G\'enin, F. and Georgeson, J. and Geppert-Kleinrath, H. and Geppert-Kleinrath, V. and Gharibyan, N. and Gibson, J. and Gibson, C. and Giraldez, E. and Glebov, V. and Glendinning, S. G. and Glenn, S. and Glenzer, S. H. and Goade, S. and Gobby, P. L. and Goldman, S. R. and Golick, B. and Gomez, M. and Goncharov, V. and Goodin, D. and Grabowski, P. and Grafil, E. and Graham, P. and Grandy, J. and Grasz, E. and Graziani, F. and Greenman, G. and Greenough, J. A. and Greenwood, A. and Gregori, G. and Green, T. and Griego, J. R. and Grim, G. P. and Grondalski, J. and Gross, S. and Guckian, J. and Guler, N. and Gunney, B. and Guss, G. and Haan, S. and Hackbarth, J. and Hackel, L. and Hackel, R. and Haefner, C. and Hagmann, C. and Hahn, K. D. and Hahn, S. and Haid, B. J. and Haines, B. M. and Hall, B. M. and Hall, C. and Hall, G. N. and Hamamoto, M. and Hamel, S. and Hamilton, C. E. and Hammel, B. A. and Hammer, J. H. and Hampton, G. and Hamza, A. and Handler, A. and Hansen, S. and Hanson, D. and Haque, R. and Harding, D. and Harding, E. and Hares, J. D. and Harris, D. B. and Harte, J. A. and Hartouni, E. P. and Hatarik, R. and Hatchett, S. and Hauer, A. A. and Havre, M. and Hawley, R. and Hayes, J. and Hayes, J. and Hayes, S. and Hayes-Sterbenz, A. and Haynam, C. A. and Haynes, D. A. and Headley, D. and Heal, A. and Heebner, J. E. and Heerey, S. and Heestand, G. M. and Heeter, R. and Hein, N. and Heinbockel, C. and Hendricks, C. and Henesian, M. and Heninger, J. and Henrikson, J. and Henry, E. A. and Herbold, E. B. and Hermann, M. R. and Hermes, G. and Hernandez, J. E. and Hernandez, V. J. and Herrmann, M. C. and Herrmann, H. W. and Herrera, O. D. and Hewett, D. and Hibbard, R. and Hicks, D. G. and Hill, D. and Hill, K. and Hilsabeck, T. and Hinkel, D. E. and Ho, D. D. and Ho, V. K. and Hoffer, J. K. and Hoffman, N. M. and Hohenberger, M. and Hohensee, M. and Hoke, W. and Holdener, D. and Holdener, F. and Holder, J. P. and Holko, B. and Holunga, D. and Holzrichter, J. F. and Honig, J. and Hoover, D. and Hopkins, D. and Berzak Hopkins, L. and Hoppe, M. and Hoppe, M. L. and Horner, J. and Hornung, R. and Horsfield, C. J. and Horvath, J. and Hotaling, D. and House, R. and Howell, L. and Hsing, W. W. and Hu, S. X. and Huang, H. and Huckins, J. and Hui, H. and Humbird, K. D. and Hund, J. and Hunt, J. and Hurricane, O. A. and Hutton, M. and Huynh, K. H.-K. and Inandan, L. and Iglesias, C. and Igumenshchev, I. V. and Izumi, N. and Jackson, M. and Jackson, J. and Jacobs, S. D. and James, G. and Jancaitis, K. and Jarboe, J. and Jarrott, L. C. and Jasion, D. and Jaquez, J. and Jeet, J. and Jenei, A. E. and Jensen, J. and Jimenez, J. and Jimenez, R. and Jobe, D. and Johal, Z. and Johns, H. M. and Johnson, D. and Johnson, M. A. and Gatu Johnson, M. and Johnson, R. J. and Johnson, S. and Johnson, S. A. and Johnson, T. and Jones, K. and Jones, O. and Jones, M. and Jorge, R. and Jorgenson, H. J. and Julian, M. and Jun, B. I. and Jungquist, R. and Kaae, J. and Kabadi, N. and Kaczala, D. and Kalantar, D. and Kangas, K. and Karasiev, V. V. and Karasik, M. and Karpenko, V. and Kasarky, A. and Kasper, K. and Kauffman, R. and Kaufman, M. I. and Keane, C. and Keaty, L. and Kegelmeyer, L. and Keiter, P. A. and Kellett, P. A. and Kellogg, J. and Kelly, J. H. and Kemic, S. and Kemp, A. J. and Kemp, G. E. and Kerbel, G. D. and Kershaw, D. and Kerr, S. M. and Kessler, T. J. and Key, M. H. and Khan, S. F. and Khater, H. and Kiikka, C. and Kilkenny, J. and Kim, Y. and Kim, Y.-J. and Kimko, J. and Kimmel, M. and Kindel, J. M. and King, J. and Kirkwood, R. K. and Klaus, L. and Klem, D. and Kline, J. L. and Klingmann, J. and Kluth, G. and Knapp, P. and Knauer, J. and Knipping, J. and Knudson, M. and Kobs, D. and Koch, J. and Kohut, T. and Kong, C. and Koning, J. M. and Koning, P. and Konior, S. and Kornblum, H. and Kot, L. B. and Kozioziemski, B. and Kozlowski, M. and Kozlowski, P. M. and Krammen, J. and Krasheninnikova, N. S. and Kraus, B. and Krauser, W. and Kress, J. D. and Kritcher, A. L. and Krieger, E. and Kroll, J. J. and Kruer, W. L. and Kruse, M. K. G. and Kucheyev, S. and Kumbera, M. and Kumpan, S. and Kunimune, J. and Kustowski, B. and Kwan, T. J. T. and Kyrala, G. A. and Laffite, S. and Lafon, M. and LaFortune, K. and Lahmann, B. and Lairson, B. and Landen, O. L. and Langenbrunner, J. and Lagin, L. and Land, T. and Lane, M. and Laney, D. and Langdon, A. B. and Langer, S. H. and Langro, A. and Lanier, N. E. and Lanier, T. E. and Larson, D. and Lasinski, B. F. and Lassle, D. and LaTray, D. and Lau, G. and Lau, N. and Laumann, C. and Laurence, A. and Laurence, T. A. and Lawson, J. and Le, H. P. and Leach, R. R. and Leal, L. and Leatherland, A. and LeChien, K. and Lechleiter, B. and Lee, A. and Lee, M. and Lee, T. and Leeper, R. J. and Lefebvre, E. and Leidinger, J.-P. and LeMire, B. and Lemke, R. W. and Lemos, N. C. and Le Pape, S. and Lerche, R. and Lerner, S. and Letts, S. and Levedahl, K. and Lewis, T. and Li, C. K. and Li, H. and Li, J. and Liao, W. and Liao, Z. M. and Liedahl, D. and Liebman, J. and Lindford, G. and Lindman, E. L. and Lindl, J. D. and Loey, H. and London, R. A. and Long, F. and Loomis, E. N. and Lopez, F. E. and Lopez, H. and Losbanos, E. and Loucks, S. and Lowe-Webb, R. and Lundgren, E. and Ludwigsen, A. P. and Luo, R. and Lusk, J. and Lyons, R. and Ma, T. and Macallop, Y. and MacDonald, M. J. and MacGowan, B. J. and Mack, J. M. and Mackinnon, A. J. and MacLaren, S. A. and MacPhee, A. G. and Magelssen, G. R. and Magoon, J. and Malone, R. M. and Malsbury, T. and Managan, R. and Mancini, R. and Manes, K. and Maney, D. and Manha, D. and Mannion, O. M. and Manuel, A. M. and Mapoles, E. and Mara, G. and Marcotte, T. and Marin, E. and Marinak, M. M. and Mariscal, C. and Mariscal, D. A. and Mariscal, E. F. and Marley, E. V. and Marozas, J. A. and Marquez, R. and Marshall, C. D. and Marshall, F. J. and Marshall, M. and Marshall, S. and Marticorena, J. and Martinez, D. and Maslennikov, I. and Mason, D. and Mason, R. J. and Masse, L. and Massey, W. and Masson-Laborde, P.-E. and Masters, N. D. and Mathisen, D. and Mathison, E. and Matone, J. and Matthews, M. J. and Mattoon, C. and Mattsson, T. R. and Matzen, K. and Mauche, C. W. and Mauldin, M. and McAbee, T. and McBurney, M. and Mccarville, T. and McCrory, R. L. and McEvoy, A. M. and McGuffey, C. and Mcinnis, M. and McKenty, P. and McKinley, M. S. and McLeod, J. B. and McPherson, A. and Mcquillan, B. and Meamber, M. and Meaney, K. D. and Meezan, N. B. and Meissner, R. and Mehlhorn, T. A. and Mehta, N. C. and Menapace, J. and Merrill, F. E. and Merritt, B. T. and Merritt, E. C. and Meyerhofer, D. D. and Mezyk, S. and Mich, R. J. and Michel, P. A. and Milam, D. and Miller, C. and Miller, D. and Miller, D. S. and Miller, E. and Miller, E. K. and Miller, J. and Miller, M. and Miller, P. E. and Miller, T. and Miller, W. and Miller-Kamm, V. and Millot, M. and Milovich, J. L. and Minner, P. and Miquel, J.-L. and Mitchell, S. and Molvig, K. and Montesanti, R. C. and Montgomery, D. S. and Monticelli, M. and Montoya, A. and Moody, J. D. and Moore, A. S. and Moore, E. and Moran, M. and Moreno, J. C. and Moreno, K. and Morgan, B. E. and Morrow, T. and Morton, J. W. and Moses, E. and Moy, K. and Muir, R. and Murillo, M. S. and Murray, J. E. and Murray, J. R. and Munro, D. H. and Murphy, T. J. and Munteanu, F. M. and Nafziger, J. and Nagayama, T. and Nagel, S. R. and Nast, R. and Negres, R. A. and Nelson, A. and Nelson, D. and Nelson, J. and Nelson, S. and Nemethy, S. and Neumayer, P. and Newman, K. and Newton, M. and Nguyen, H. and Di Nicola, J.-M. G. and Di Nicola, P. and Niemann, C. and Nikroo, A. and Nilson, P. M. and Nobile, A. and Noorai, V. and Nora, R. and Norton, M. and Nostrand, M. and Note, V. and Novell, S. and Nowak, P. F. and Nunez, A. and Nyholm, R. A. and O'Brien, M. and Oceguera, A. and Oertel, J. A. and Okui, J. and Olejniczak, B. and Oliveira, J. and Olsen, P. and Olson, B. and Olson, K. and Olson, R. E. and Opachich, Y. P. and Orsi, N. and Orth, C. D. and Owen, M. and Padalino, S. and Padilla, E. and Paguio, R. and Paguio, S. and Paisner, J. and Pajoom, S. and Pak, A. and Palaniyappan, S. and Palma, K. and Pannell, T. and Papp, F. and Paras, D. and Parham, T. and Park, H.-S. and Pasternak, A. and Patankar, S. and Patel, M. V. and Patel, P. K. and Patterson, R. and Patterson, S. and Paul, B. and Paul, M. and Pauli, E. and Pearce, O. T. and Pearcy, J. and Pedrotti, B. and Peer, A. and Pelz, L. J. and Penetrante, B. and Penner, J. and Perez, A. and Perkins, L. J. and Pernice, E. and Perry, T. S. and Person, S. and Petersen, D. and Petersen, T. and Peterson, D. L. and Peterson, E. B. and Peterson, J. E. and Peterson, J. L. and Peterson, K. and Peterson, R. R. and Petrasso, R. D. and Philippe, F. and Phipps, T. J. and Piceno, E. and Ping, Y. and Pickworth, L. and Pino, J. and Plummer, R. and Pollack, G. D. and Pollaine, S. M. and Pollock, B. B. and Ponce, D. and Ponce, J. and Pontelandolfo, J. and Porter, J. L. and Post, J. and Poujade, O. and Powell, C. and Powell, H. and Power, G. and Pozulp, M. and Prantil, M. and Prasad, M. and Pratuch, S. and Price, S. and Primdahl, K. and Prisbrey, S. and Procassini, R. and Pruyne, A. and Pudliner, B. and Qiu, S. R. and Quan, K. and Quinn, M. and Quintenz, J. and Radha, P. B. and Rainer, F. and Ralph, J. E. and Raman, K. S. and Raman, R. and Rambo, P. and Rana, S. and Randewich, A. and Rardin, D. and Ratledge, M. and Ravelo, N. and Ravizza, F. and Rayce, M. and Raymond, A. and Raymond, B. and Reed, B. and Reed, C. and Regan, S. and Reichelt, B. and Reis, V. and Reisdorf, S. and Rekow, V. and Remington, B. A. and Rendon, A. and Requieron, W. and Rever, M. and Reynolds, H. and Reynolds, J. and Rhodes, J. and Rhodes, M. and Richardson, M. C. and Rice, B. and Rice, N. G. and Rieben, R. and Rigatti, A. and Riggs, S. and Rinderknecht, H. G. and Ring, K. and Riordan, B. and Riquier, R. and Rivers, C. and Roberts, D. and Roberts, V. and Robertson, G. and Robey, H. F. and Robles, J. and Rocha, P. and Rochau, G. and Rodriguez, J. and Rodriguez, S. and Rosen, M. and Rosenberg, M. and Ross, G. and Ross, J. S. and Ross, P. and Rouse, J. and Rovang, D. and Rubenchik, A. M. and Rubery, M. S. and Ruiz, C. L. and Rushford, M. and Russ, B. and Rygg, J. R. and Ryujin, B. S. and Sacks, R. A. and Sacks, R. F. and Saito, K. and Salmon, T. and Salmonson, J. D. and Sanchez, J. and Samuelson, S. and Sanchez, M. and Sangster, C. and Saroyan, A. and Sater, J. and Satsangi, A. and Sauers, S. and Saunders, R. and Sauppe, J. P. and Sawicki, R. and Sayre, D. and Scanlan, M. and Schaffers, K. and Schappert, G. T. and Schiaffino, S. and Schlossberg, D. J. and Schmidt, D. W. and Schmitt, M. J. and Schneider, D. H. G. and Schneider, M. B. and Schneider, R. and Schoff, M. and Schollmeier, M. and Sch\"olmerich, M. and Schroeder, C. R. and Schrauth, S. E. and Scott, H. A. and Scott, I. and Scott, J. M. and Scott, R. H. H. and Scullard, C. R. and Sedillo, T. and Seguin, F. H. and Seka, W. and Senecal, J. and Sepke, S. M. and Seppala, L. and Sequoia, K. and Severyn, J. and Sevier, J. M. and Sewell, N. and Seznec, S. and Shah, R. C. and Shamlian, J. and Shaughnessy, D. and Shaw, M. and Shaw, R. and Shearer, C. and Shelton, R. and Shen, N. and Sherlock, M. W. and Shestakov, A. I. and Shi, E. L. and Shin, S. J. and Shingleton, N. and Shmayda, W. and Shor, M. and Shoup, M. and Shuldberg, C. and Siegel, L. and Silva, F. J. and Simakov, A. N. and Sims, B. T. and Sinars, D. and Singh, P. and Sio, H. and Skulina, K. and Skupsky, S. and Slutz, S. and Sluyter, M. and Smalyuk, V. A. and Smauley, D. and Smeltser, R. M. and Smith, C. and Smith, I. and Smith, J. and Smith, L. and Smith, R. and Sohn, R. and Sommer, S. and Sorce, C. and Sorem, M. and Soures, J. M. and Spaeth, M. L. and Spears, B. K. and Speas, S. and Speck, D. and Speck, R. and Spears, J. and Spinka, T. and Springer, P. T. and Stadermann, M. and Stahl, B. and Stahoviak, J. and Stanton, L. G. and Steele, R. and Steele, W. and Steinman, D. and Stemke, R. and Stephens, R. and Sterbenz, S. and Sterne, P. and Stevens, D. and Stevers, J. and Still, C. B. and Stoeckl, C. and Stoeffl, W. and Stolken, J. S. and Stolz, C. and Storm, E. and Stone, G. and Stoupin, S. and Stout, E. and Stowers, I. and Strauser, R. and Streckart, H. and Streit, J. and Strozzi, D. J. and Suratwala, T. and Sutcliffe, G. and Suter, L. J. and Sutton, S. B. and Svidzinski, V. and Swadling, G. and Sweet, W. and Szoke, A. and Tabak, M. and Takagi, M. and Tambazidis, A. and Tang, V. and Taranowski, M. and Taylor, L. A. and Telford, S. and Theobald, W. and Thi, M. and Thomas, A. and Thomas, C. A. and Thomas, I. and Thomas, R. and Thompson, I. J. and Thongstisubskul, A. and Thorsness, C. B. and Tietbohl, G. and Tipton, R. E. and Tobin, M. and Tomlin, N. and Tommasini, R. and Toreja, A. J. and Torres, J. and Town, R. P. J. and Townsend, S. and Trenholme, J. and Trivelpiece, A. and Trosseille, C. and Truax, H. and Trummer, D. and Trummer, S. and Truong, T. and Tubbs, D. and Tubman, E. R. and Tunnell, T. and Turnbull, D. and Turner, R. E. and Ulitsky, M. and Upadhye, R. and Vaher, J. L. and VanArsdall, P. and VanBlarcom, D. and Vandenboomgaerde, M. and VanQuinlan, R. and Van Wonterghem, B. M. and Varnum, W. S. and Velikovich, A. L. and Vella, A. and Verdon, C. P. and Vermillion, B. and Vernon, S. and Vesey, R. and Vickers, J. and Vignes, R. M. and Visosky, M. and Vocke, J. and Volegov, P. L. and Vonhof, S. and Von Rotz, R. and Vu, H. X. and Vu, M. and Wall, D. and Wall, J. and Wallace, R. and Wallin, B. and Walmer, D. and Walsh, C. A. and Walters, C. F. and Waltz, C. and Wan, A. and Wang, A. and Wang, Y. and Wark, J. S. and Warner, B. E. and Watson, J. and Watt, R. G. and Watts, P. and Weaver, J. and Weaver, R. P. and Weaver, S. and Weber, C. R. and Weber, P. and Weber, S. V. and Wegner, P. and Welday, B. and Welser-Sherrill, L. and Weiss, K. and Widmann, K. and Wheeler, G. F. and Whistler, W. and White, R. K. and Whitley, H. D. and Whitman, P. and Wickett, M. E. and Widmayer, C. and Wiedwald, J. and Wilcox, R. and Wilcox, S. and Wild, C. and Wilde, B. H. and Wilde, C. H. and Wilhelmsen, K. and Wilke, M. D. and Wilkens, H. and Wilkins, P. and Wilks, S. C. and Williams, E. A. and Williams, G. J. and Williams, W. and Williams, W. H. and Wilson, D. C. and Wilson, B. and Wilson, E. and Wilson, R. and Winters, S. and Wisoff, J. and Wittman, M. and Wolfe, J. and Wong, A. and Wong, K. W. and Wong, L. and Wong, N. and Wood, R. and Woodhouse, D. and Woodruff, J. and Woods, D. T. and Woods, S. and Woodworth, B. N. and Wooten, E. and Wootton, A. and Work, K. and Workman, J. B. and Wright, J. and Wu, M. and Wuest, C. and Wysocki, F. J. and Xu, H. and Yamaguchi, M. and Yang, B. and Yang, S. T. and Yatabe, J. and Yeamans, C. B. and Yee, B. C. and Yi, S. A. and Yin, L. and Young, B. and Young, C. S. and Young, C. V. and Young, P. and Youngblood, K. and Zacharias, R. and Zagaris, G. and Zaitseva, N. and Zaka, F. and Ze, F. and Zeiger, B. and Zika, M. and Zimmerman, G. B. and Zobrist, T. and Zuegel, J. D. and Zylstra, A. B.},
+        collaboration = {Indirect Drive ICF Collaboration},
+        journal       = {Physical Review Letters},
+        volume        = {129},
+        issue         = {7},
+        pages         = {075001},
+        numpages      = {19},
+        year          = {2022},
+        month         = {Aug},
+        publisher     = {American Physical Society},
+        doi           = {10.1103/PhysRevLett.129.075001},
+      }
+    paper_links: 
+      doi: https://doi.org/10.1103/PhysRevLett.129.075001
+  - paper_id: ijhpca22
+    paper_year: 2022
+    paper_title: >
+      Matrix-free approaches for GPU acceleration of a high-order finite element hydrodynamics application using MFEM, Umpire, and RAJA
+    paper_author:
+      - Arturo Vargas
+      - Thomas M. Stitt
+      - Kenneth Weiss
+      - Vladimir Z. Tomov
+      - Jean-Sylvain Camier
+      - Tzanio Kolev
+      - Robert N. Rieben
+    paper_venue:
+      journal: International Journal of High Performance Computing Applications (Vol. 36)
+    paper_links: 
+      paper: https://doi.org/10.1177/10943420221100262
+      arXiv: https://arxiv.org/abs/2112.07075
+    paper_abstract: >
+      With the introduction of advanced heterogeneous computing architectures based on GPU accelerators, large-scale production codes have had to rethink their numerical algorithms and incorporate new programming models and memory management strategies in order to run efficiently on the latest supercomputers. In this work we discuss our co-design strategy to address these challenges and achieve performance and portability with MARBL, a next-generation multi-physics code in development at Lawrence Livermore National Laboratory. We present a two-fold approach, wherein new hardware is used to motivate both new algorithms and new abstraction layers, resulting in a single source application code suitable for a variety of platforms. Focusing on MARBL's ALE hydrodynamics package, we demonstrate scalability on different platforms and highlight that many of our innovations have been contributed back to open-source software libraries, such as MFEM (finite element algorithms) and RAJA (kernel abstractions).
+    paper_bibtex: |
+      @Article{Vargas2022_ijhpca,
+        author    = {Vargas, Arturo and Stitt, Thomas M. and Weiss, Kenneth and Tomov, Vladimir Z. 
+                     and Camier, Jean-Sylvain and Kolev, Tzanio and Rieben, Robert N.},
+        journal   = {The International Journal of High Performance Computing Applications},
+        title     = {Matrix-free approaches for {GPU} acceleration of a high-order 
+                     finite element hydrodynamics application using {MFEM}, {U}mpire, and {RAJA}},
+        year      = {2022},
+        month     = {May},
+        number    = {4},
+        pages     = {492--509},
+        volume    = {36},
+        doi       = {10.1177/10943420221100262},
+        publisher = {SAGE Publications},
+      }
+  - paper_id: arxiv22
+    paper_year: 2022
+    paper_title: >
+      Understanding power and energy utilization in large scale production physics simulation codes
+    paper_author:
+      - Brian S. Ryujin
+      - Arturo Vargas
+      - Ian Karlin
+      - Shawn A. Dawson
+      - Kenneth Weiss
+      - Adam Bertsch
+      - M. Scott McKinley
+      - Michael R. Collette
+      - Si D. Hammond
+      - Kevin Pedretti
+      - Robert N. Rieben
+    paper_venue:
+      journal: arXiv (2201.01278)
+    paper_abstract: >
+      Power is an often-cited reason for moving to advanced architectures on the path to Exascale computing. This is due to the practical concern of delivering enough power to successfully site and operate these machines, as well as concerns over energy usage while running large simulations. Since accurate power measurements can be difficult to obtain, processor thermal design power (TDP) is a possible surrogate due to its simplicity and availability. However, TDP is not indicative of typical power usage while running simulations. Using commodity and advance technology systems at Lawrence Livermore National Laboratory (LLNL) and Sandia National Laboratory, we performed a series of experiments to measure power and energy usage in running simulation codes. These experiments indicate that large scale LLNL simulation codes are significantly more efficient than a simple processor TDP model might suggest.
+    paper_bibtex: |
+      @misc{Ryujin2022_arxiv,
+        title  = {Understanding power and energy utilization in large scale production physics simulation codes},
+        author = {Brian S. Ryujin and Arturo Vargas and Ian Karlin and Shawn A. Dawson 
+                  and Kenneth Weiss and Adam Bertsch and M. Scott McKinley and Michael R. Collette 
+                  and Si D. Hammond and Kevin Pedretti and Robert N. Rieben},
+        month  = {January},
+        year   = {2022},
+        doi    = {10.48550/arXiv.2201.01278},
+        eprint = {2201.01278},
+        archivePrefix = {arXiv},
+        primaryClass = {cs.DC}
+      }
+    paper_links: 
+      arXiv: https://doi.org/10.48550/arXiv.2201.01278
+
+  # 2021
+  - paper_id: cad21
+    paper_year: 2021
+    paper_title: > 
+      High-accuracy mesh-free quadrature for trimmed parametric surfaces and volumes
+    paper_author:
+      - David Gunderman
+      - Kenneth Weiss
+      - John A. Evans
+    paper_venue:
+      journal: Computer-Aided Design (Vol. 141)
+    paper_abstract: >
+      This work presents a high-accuracy, mesh-free, generalized Stokes theorem-based numerical quadrature scheme for integrating functions over trimmed parametric surfaces and volumes. The algorithm relies on two fundamental steps: (1) We iteratively reduce the dimensionality of integration using the generalized Stokes theorem to line integrals over trimming curves, and (2) we employ numerical antidifferentiation in the generalized Stokes theorem using high-order quadrature rules. The scheme achieves exponential convergence up to trimming curve approximation error and has applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order curvilinear meshes, and initialization of multi-material simulations. We compare the quadrature scheme to commonly-used quadrature schemes in the literature and show that our scheme is much more efficient in terms of number of quadrature points used. We provide an open-source implementation of the scheme in MATLAB as part of QuaHOG, a software package for Quadrature of High-Order Geometries.
+    paper_bibtex: |
+      @article{Gunderman2021_cad,
+        title   = {High-Accuracy Mesh-Free Quadrature for Trimmed Parametric Surfaces and Volumes},
+        journal = {Computer-Aided Design},
+        volume  = {141},
+        pages   = {103093},
+        month   = {December},
+        year    = {2021},
+        issn    = {0010-4485},
+        doi     = {10.1016/j.cad.2021.103093},
+        author  = {David Gunderman and Kenneth Weiss and John A. Evans},
+      }
+    paper_links:
+      paper: "papers/Gunderman21.arxiv.pdf"
+      arXiv: "https://arxiv.org/abs/2101.06497"
+      doi: "https://doi.org/10.1016/j.cad.2021.103093"
+  - paper_id: parco21
+    paper_year: 2021
+    paper_title: >
+      GPU algorithms for efficient exascale discretizations
+    paper_author: 
+      - Ahmad Abdelfattah
+      - Valeria Barra
+      - Natalie Beams
+      - Ryan Bleile
+      - Jed Brown
+      - Jean-Sylvain Camier
+      - Robert Carson
+      - Noel Chalmers
+      - Veselin Dobrev
+      - Yohann Dudouit
+      - Paul Fischer
+      - Ali Karakus
+      - Stefan Kerkemeier
+      - Tzanio Kolev
+      - Yu-Hsiang Lan
+      - Elia Merzari
+      - Misun Min
+      - Malachi Phillips
+      - Thilina Rathnayake
+      - Robert Rieben
+      - Thomas Stitt
+      - Ananias Tomboulides
+      - Stanimire Tomov
+      - Vladimir Tomov
+      - Arturo Vargas
+      - Tim Warburton
+      - Kenneth Weiss
+    paper_venue:
+      journal: Parallel Computing (Vol. 108)
+    paper_abstract: >
+      In this paper we describe the research and development activities in the Center for Efficient Exascale Discretization within the US Exascale Computing Project, targeting state-of-the-art high-order finite-element algorithms for high-order applications on GPU-accelerated platforms. We discuss the GPU developments in several components of the CEED software stack, including the libCEED, MAGMA, MFEM, libParanumal, and Nek projects. We report performance and capability improvements in several CEED-enabled applications on both NVIDIA and AMD GPU systems.
+    paper_bibtex: |
+      @article{Abdelfattah2021_parco,
+        title   = {GPU algorithms for Efficient Exascale Discretizations},
+        journal = {Parallel Computing},
+        volume  = {108},
+        pages   = {102841},
+        month   = {December},
+        year    = {2021},
+        issn    = {0167-8191},
+        doi     = {10.1016/j.parco.2021.102841},
+        author  = {Ahmad Abdelfattah and Valeria Barra and Natalie Beams and Ryan Bleile and Jed Brown and Jean-Sylvain Camier 
+                   and Robert Carson and Noel Chalmers and Veselin Dobrev and Yohann Dudouit and Paul Fischer and Ali Karakus 
+                   and Stefan Kerkemeier and Tzanio Kolev and Yu-Hsiang Lan and Elia Merzari and Misun Min and Malachi Phillips 
+                   and Thilina Rathnayake and Robert Rieben and Thomas Stitt and Ananias Tomboulides and Stanimire Tomov 
+                   and Vladimir Tomov and Arturo Vargas and Tim Warburton and Kenneth Weiss},
+      }
+    paper_links:
+      paper: "papers/Abdelfattah21.arxiv.pdf"
+      arXiv: "https://arxiv.org/abs/2109.05072"
+      doi: "https://doi.org/10.1016/j.parco.2021.102841"
+  - paper_id: cg21
+    paper_year: 2021
+    paper_title: >
+      The Stellar decomposition: A compact representation for simplicial complexes and beyond
+    paper_author:
+      - Riccardo Fellegara
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      journal: Computers & Graphics (Vol. 98)
+    paper_abstract: >
+      We introduce the Stellar decomposition, a model for efficient topological data structures over a broad range of simplicial and cell complexes. A Stellar decomposition of a complex is a collection of regions indexing the complex’s vertices and cells such that each region has sufficient information to locally reconstruct the star of its vertices, i.e., the cells incident in the region’s vertices. Stellar decompositions are general in that they can compactly represent and efficiently traverse arbitrary complexes with a manifold or non-manifold domain. They are scalable to complexes in high dimension and of large size, and they enable users to easily construct tailored application-dependent data structures using a fraction of the memory required by a corresponding global topological data structure on the complex. As a concrete realization of this model for spatially embedded complexes, we introduce the Stellar tree, which combines a nested spatial tree with a simple tuning parameter to control the number of vertices in a region. Stellar trees exploit the complex’s spatial locality by reordering vertex and cell indices according to the spatial decomposition and by compressing sequential ranges of indices. Stellar trees are competitive with state-of-the-art topological data structures for manifold simplicial complexes and offer significant improvements for cell complexes and non-manifold simplicial complexes. We conclude with a high-level description of several mesh processing and analysis applications that utilize Stellar trees to process large datasets.
+    paper_bibtex: |
+      @article{Fellegara2021_cg,
+        title   = {The Stellar decomposition: A compact representation for simplicial complexes and beyond},
+        journal = {Computers & Graphics},
+        volume  = {98},
+        pages   = {322--343},
+        month   = {August},
+        year    = {2021},
+        issn    = {0097-8493},
+        doi     = {10.1016/j.cag.2021.05.002},
+        author  = {Fellegara, Riccardo and Weiss, Kenneth and De Floriani, Leila},
+      }
+    paper_links:
+      paper: "papers/Fellegara21.arxiv.pdf"
+      arXiv: "https://arxiv.org/abs/1707.02211"
+      doi: "https://doi.org/10.1016/j.cag.2021.05.002"
+  - paper_id: imr21
+    paper_year: 2021
+    paper_title: >
+      MultiMat: An API for managing multimaterial simulation data
+    paper_author: 
+      - Raine Yeh
+      - Kenneth Weiss
+      - Arlie Capps
+      - Xavier Tricoche
+    paper_venue:
+      conference: International Meshing Roundtable 2021 (IMR '21)
+    paper_abstract: >
+      Multimaterial simulation codes model the flow of materials with differing physical properties over a computational domain. Due to the intrinsically complicated access and traversal patterns on the underlying material-based field data defined over its mesh cells, such codes require implementations to strike a careful balance between competing demands of usability and performance. For a successful multimaterial simulation code, the designs of space efficient data structures, performant implementations, and flexible, developer-friendly representations that can adapt to varying traversal patterns and computer architectures must all satisfy this balance. Towards this aim, we introduce MultiMat, an open source library designed for efficient interaction with multimaterial mesh data and clear, flexible expression of multimaterial algorithms. MultiMat provides an intuitive API for operating on multimaterial data, several concrete data structures for representing this data, and functions to easily convert between different representations. We include code-to-code comparisons against explicit implementations of several representative physics kernels. Our results indicate that MultiMat simplifies data access and increases code readability while achieving comparable performance."
+    paper_bibtex: |
+      @inproceedings{Yeh2021_imr,
+        title     = {{MultiMat}: An {API} for managing multimaterial simulation data},
+        author    = {Yeh, Raine and Weiss, Kenneth and Capps, Arlie and Tricoche, Xavier},
+        booktitle = {Proceedings 29th International Meshing Roundtable},
+        year      = {2021},
+        doi       = {10.5281/zenodo.5559021},
+        month     = {June 21--25},
+        series    = {IMR '21}
+      }
+    paper_links:
+      paper: papers/Yeh21.imr.pdf
+      osti: https://www.osti.gov/biblio/1806437
+      doi: https://doi.org/10.5281/zenodo.5559021
+    inactive_links:
+      conference: https://imr.sandia.gov/29th_imr/index.html
+  - paper_id: isc21
+    paper_year: 2021
+    paper_title: >
+      Ubiquitous Performance Analysis
+    paper_author: 
+      - David Boehme
+      - Pascal Aschwanden
+      - Olga Pearce
+      - Kenneth Weiss
+      - Matthew LeGendre
+    paper_venue:
+      conference: ISC High Performance 2021 (ISC '21)
+    paper_abstract: > 
+      In an effort to guide optimizations and detect performance regressions, developers of large HPC codes must regularly collect and analyze application performance profiles across different hardware platforms and in a variety of program configurations. However, traditional performance profiling tools mostly focus on ad-hoc analysis of individual program runs. Ubiquitous performance analysis is a new approach to automate and simplify the collection, management, and analysis of large numbers of application performance profiles. In this regime, performance profiling of large HPC codes transitions from a sporadic process that often requires the help of experts into a routine activity in which the entire development team can participate. We discuss the design and implementation of an open source ubiquitous performance analysis software stack with three major components: the Caliper instrumentation library with a new API to control performance profiling programmatically; Adiak, a library for automatic program metadata capture; and SPOT, a web-based visualization interface for comparing large sets of runs. A case study shows how ubiquitous performance analysis has helped the developers of the Marbl simulation code for over a year with analyzing performance and understanding regressions.
+    paper_bibtex: |
+      @inproceedings{Boehme2021_isc,
+        title     = {Ubiquitous Performance Analysis},
+        author    = {Boehme, David and Aschwanden, Pascal and Pearce, Olga and Weiss, Kenneth and LeGendre, Matthew},
+        booktitle = {Proceedings ISC High Performance},
+        year      = {2021},
+        month     = {June 24--July 2},
+        pages     = {431--449},
+        series    = {ISC-HPC '21},
+        publisher = {Springer International Publishing},
+        editor    = {Chamberlain, B. L. and Varbanescu, A.-L. and Ltaief, H. and Luszczek, P.},
+        doi       = {10.1007/978-3-030-78713-4_23},
+        isbn      = {978-3-030-78713-4}
+      }
+    paper_links:
+      paper: papers/Boehme21.isc.pdf
+      conference: https://www.isc-hpc.com
+      doi: https://doi.org/10.1007/978-3-030-78713-4_23
+
+  # 2020
+  - paper_id: tsas20
+    paper_year: 2020
+    paper_title: >
+      Tetrahedral trees: A family of hierarchical spatial indexes for tetrahedral meshes
+    paper_author: 
+      - Riccardo Fellegara
+      - Leila De Floriani
+      - Paola Magillo
+      - Kenneth Weiss
+    paper_venue:
+      journal: ACM Transactions on Spatial Algorithms and Systems (Vol. 6, Num. 4)
+    paper_abstract: > 
+      We address the problem of performing efficient spatial and topological queries on large tetrahedral meshes with arbitrary topology and complex boundaries. Such meshes arise in application domains such as 3D Geographic Information Systems (GISs), scientific visualization and finite element analysis. To this aim, we propose Tetrahedral trees, a family of spatial indexes based on a nested space subdivision (an octree or a kD-tree) and defined by several different subdivision criteria. We provide efficient algorithms for spatial and topological queries on Tetrahedral trees and compare to state-of-the-art approaches. Our results indicate that Tetrahedral trees are an improvement over R*-trees for querying tetrahedral meshes; they are more compact, they perform faster in many queries and are stable at variations of construction thresholds. They also support spatial queries on more general problem domains than topological data structures which explicitly encode adjacency information for efficient navigation, but have difficulties with non-trivial geometric or topological shapes.
+    paper_bibtex: |
+      @article{Fellegara2020_tsas,
+        author    = {Fellegara, Riccardo and De Floriani, Leila and Magillo, Paola and Weiss, Kenneth},
+        title     = {Tetrahedral Trees: A Family of Hierarchical Spatial Indexes for Tetrahedral Meshes},
+        journal   = {ACM Transactions on Spatial Algorithms and Systems},
+        publisher = {Association for Computing Machinery},
+        address   = {New York, NY, USA},
+        month     = {August},
+        year      = {2020},
+        volume    = {6},
+        number    = {4},
+        pages     = {23:1--23:34},
+        issn      = {2374-0353},
+        doi       = {10.1145/3385851},
+      }
+    paper_links:
+      paper: papers/Fellegara20.tsas.pdf
+      doi: https://doi.org/10.1145/3385851
+  - paper_id: cad20
+    paper_year: 2020
+    paper_title: >
+      Spectral mesh-free quadrature for planar regions bounded by rational parametric curves
+    paper_author:
+      - David Gunderman
+      - Kenneth Weiss
+      - John A. Evans
+    paper_venue:
+      journal: Computer-Aided Design (Vol. 130)
+    paper_abstract: >
+      This work presents spectral, mesh-free, Green’s theorem-based numerical quadrature schemes for integrating functions over planar regions bounded by rational parametric curves. Our algorithm proceeds in two steps: (1) We first find intermediate quadrature rules for line integrals along the region’s boundary curves corresponding to Green’s theorem. (2) We then use a high-order quadrature rule to compute the numerical antiderivative of the integrand along a coordinate axis, which is used to evaluate the Green’s theorem line integral. We present two methods to compute the intermediate quadrature rule. The first is spectrally accurate (it converges faster than any algebraic order with respect to number of quadrature points) and is relatively easy to implement, but has no guarantee of polynomial exactness. The second guarantees exactness for polynomial integrands up to a pre-specified degree with an a priori-known number of quadrature points and retains the convergence properties of the first, but is slightly more complicated. The quadrature schemes have applications to computation of geometric moments, immersogeometric analysis, conservative field transfer between high-order meshes, and initialization of multi-material simulations with rational geometry. We compare the quadrature schemes produced using our method to other methods in the literature and show that they are much more efficient both in terms of number of quadrature points and computational time. We provide an open-source implementation of the algorithm in MATLAB.
+    paper_bibtex: |
+      @article{Gunderman2020_cad,
+        author    = {Gunderman, David and Weiss, Kenneth and Evans, John A.},
+        title     = {Spectral mesh-free quadrature for planar regions bounded by rational parametric curves},
+        year      = {2020},
+        journal   = {Computer-Aided Design},
+        volume    = {130},
+        doi       = {10.1016/j.cad.2020.102944},  
+      }
+    paper_links:
+      paper: papers/Gunderman20.cad.pdf
+      arXiv: https://arxiv.org/abs/2005.07780
+      doi: https://doi.org/10.1016/j.cad.2020.102944
+  - paper_id: spm20
+    paper_year: 2020
+    paper_title: >
+      High-order mesh-free numerical quadrature for trimmed curved parametric domains
+    paper_author: 
+      - David Gunderman
+      - Kenneth Weiss
+      - John A. Evans
+    paper_venue:
+      conference: Solid and Physical Modeling 2020 Posters (SPM '20)
+    paper_abstract: >
+      This work presents a high-order, mesh-free, generalized Stokes' theorem-based numerical quadrature scheme for integrating arbitrary functions over domains in R^3 bounded by trimmed curved parametric surfaces. The algorithm proceeds in three steps: (1) surface-surface intersection is performed to find a high-order approximation to each edge curve of the trimmed region, (2) Stokes' theorem is applied to the integrand to transform volumetric integrals into surface integrals over each boundary parametric surface, and (3) Green's theorem is applied over each boundary parametric surface to transform surface integrals into line integrals along each approximated edge curve. Preliminary results indicate that this approach can achieve high efficiency due to its ability to attain high-order convergence without meshing of the trimmed geometry. Applications include moment-fitting methods, remapping between high-order meshes, fictitious domain methods, among others.
+    paper_bibtex: |
+      @inproceedings{Gunderman20_spm_poster,
+        author    = {Gunderman, David and Weiss, Kenneth and Evans, John A.},
+        title     = {High-order mesh-free numerical quadrature for trimmed curved parametric domains},
+        booktitle = {Solid and Physical Modeling (SPM) Posters},
+        year      = {2020},
+        address   = {Strasbourg, France},
+        month     = {June 2--4},
+      }
+    paper_links:
+      paper: papers/Gunderman20.spm.abstract.pdf
+      poster: papers/Gunderman20.spm.poster.pdf
+      conference: https://spm2020.sciencesconf.org
+
+  # 2017
+  - paper_id: arxiv17
+    paper_year: 2017
+    paper_title: >
+      The Stellar Tree: A compact representation for simplicial complexes and beyond
+    paper_author: 
+      - Riccardo Fellegara
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      journal: arXiv preprint (1701.02211v1)
+    paper_abstract: >
+      The efficient representation and management of simplicial and cell complexes is an active research topic in several fields, including geometric modeling, computer graphics, scientific visualization, and geographic data processing. In this paper, we propose the Stellar tree, a topological data structure for performing efficient topological queries on simplicial and non-simplicial complexes. We prove that a Stellar tree provides a scalable, compact and flexible data structure to represent these complexes, using a fraction of the memory required by a corresponding topological data structure on the global complex.
+    paper_bibtex: |
+      @article{Fellegara17,
+        author    = {Riccardo Fellegara and Kenneth Weiss and Leila De Floriani},
+        title     = {The Stellar Tree: A compact representation for simplicial complexes and beyond},
+        journal   = {Computing Research Repository (CoRR)},
+        volume    = {abs/1707.02211v1},
+        year      = {2017},
+        url       = {http://arxiv.org/abs/1707.02211v1},
+      }
+    paper_links:
+      paper: papers/Fellegara17.arxiv.pdf
+      arXiv: https://arxiv.org/abs/1707.02211v1
+
+  # 2016
+  - paper_id: imr16
+    paper_year: 2016
+    paper_title: >
+      Spatially accelerated shape embedding in multimaterial simulations
+    paper_author: 
+      - Kenneth Weiss
+      - George Zagaris
+      - Robert Rieben
+      - Andrew Cook
+    paper_venue:
+      conference: 25th International Meshing Roundtable (IMR '16)
+    paper_abstract: >
+      Multimaterial numerical simulations typically embed the shape of their materials into the computational mesh by determining the volume fractions of each material within the mesh elements, which requires the means to numerically describe the material boundaries. In this paper, we present a mesh-agnostic technique for generating and querying an implicit function defining the containment field of a surface with complex geometric boundaries. Specifically, given a closed, oriented surface representing a material boundary, we construct an In/Out octree to accelerate point containment queries which can efficiently determine whether an arbitrary point in space is enclosed by the surface. We apply this technique to initialize material volume fractions in the elements of a multimaterial high-order finite element Arbitrary Lagrangian-Eulerian (ALE) hydrodynamics code.
+    paper_bibtex: |
+      @inproceedings{Weiss16_imr,
+        title     = {Spatially accelerated shape embedding in multimaterial simulations},
+        author    = {Weiss, K. and Zagaris, G. and Rieben, R. and Cook, A.},
+        booktitle = {Proceedings 25$^{th}$ International Meshing Roundtable},
+        year      = {2016},
+        address   = {Washington, D.C.},
+        editor    = {Canann, S.},
+        month     = {September 27--30},
+        series    = {IMR '16},
+        url       = {https://www.osti.gov/biblio/1357384}
+      }
+    paper_links:
+      paper: papers/Weiss16.imr.pdf
+      osti: https://www.osti.gov/biblio/1357384
+    inactive_links:
+      conference: http://imr.sandia.gov/25imr/index.html
+      doi: http://imr.sandia.gov/papers/abstracts/We843.html
+  - paper_id: imr16b
+    paper_year: 2016
+    paper_title: >
+      An efficient approach for verifying manifold properties of simplicial complexes
+    paper_author: 
+      - Riccardo Fellegara
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: 25th International Meshing Roundtable (IMR '16)
+    paper_abstract: >
+      While the vast majority of mesh processing tools assume a manifold mesh, many available meshes do not satisfy these constraints due to geometric defects and non-manifold singularities. We propose an efficient technique, based on a simple and compact data structure, for verifying topological properties of arbitrary simplicial complexes and experimentally demonstrate its effectiveness.
+    paper_bibtex: |
+      @inproceedings{Fellegara16_imr,
+        author    = {Fellegara, R. and Weiss, K. and De Floriani, L.},
+        title     = {An efficient approach for verifying manifold properties of simplicial complexes},
+        booktitle = {Proceedings 25$^{th}$ International Meshing Roundtable},
+        year      = {2016},
+        editor    = {Canann, S.},
+        series    = {IMR '16},
+        address   = {Washington, D.C.},
+        month     = {September 27--30},
+        url       = {http://imr.sandia.gov/papers/abstracts/Fe830.html},
+      }
+    paper_links:
+      paper: papers/Fellegara16.imr.pdf
+      osti: https://www.osti.gov/biblio/1330746
+    inactive_links:
+      conference: http://imr.sandia.gov/25imr/index.html
+      doi: http://imr.sandia.gov/papers/abstracts/Fe830.html
+
+  - paper_id: sc16
+    paper_year: 2016
+    paper_title: >
+      Accelerated signed distance queries for performance portable multimaterial simulations
+    paper_author: 
+      - Evan DeSantola
+      - Jordan Backes
+      - George Zagaris
+      - Kenneth Weiss
+      - Matthew Larsen
+      - Cyrus Harrison
+    paper_venue:
+      conference: The International Conference for High Performance Computing, Networking, Storage and Analysis (SC '16)
+    paper_abstract: >
+      Signed distance is commonly employed to numerically represent material interfaces with complex boundaries in multi-material numerical simulations. However, the performance of computing the signed distance field is hindered by the complexity and size of the input. Recent trends in HPC architecture consist of multi-core CPUs and accelerators that collectively expose tens to thousands of cores to the application. Harnessing this massive parallelism for computing the signed distance field presents significant challenges. Chief among them, the design and implementation of a performance portable solution that can work across architectures. Addressing these challenges to accelerate signed distance queries is the primary merit of this work. Herein, we employ the RAJA programming model, which provides a loop-level abstraction that decouples the loop-body from the parallel execution and insulates application developers from non-portable compiler and platform-specific directives. Implementation and performance results are discussed in more detail.
+    paper_bibtex: |
+      @inproceedings{DeSantola16_sc,
+        author  = {DeSantola, E. and Backes, J. and Zagaris, G. and Weiss, K. and Larsen, M. and Harrison, C.},
+        title   = {Accelerated signed distance queries for performance portable multimaterial simulations},
+        year    = {2016},
+        address = {Salt Lake City, UT},
+        month   = {Nov 13--18},
+        url     = {http://sc16.supercomputing.org/sc-archive/src_poster/src_poster_pages/spost141.html},  
+      }
+    paper_links:
+      paper: papers/DeSantola16.sc.pdf
+      poster: papers/DeSantola16.sc.poster.pdf
+      doi: http://sc16.supercomputing.org/sc-archive/src_poster/src_poster_pages/spost141.html
+      conference: http://sc16.supercomputing.org/
+
+  # 2015
+  - paper_id: vis15
+    paper_year: 2015
+    paper_title: > 
+      Adaptive multilinear tensor product wavelets
+    paper_author: 
+      - Kenneth Weiss
+      - Peter Lindstrom
+    paper_venue:
+      conference: IEEE Visualization (Vis '15)
+      journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 22, Num. 1)
+    paper_abstract: >
+      Many foundational visualization techniques including isosurfacing, direct volume rendering and texture mapping rely on piecewise multilinear interpolation over the cells of a mesh. However, there has not been much focus within the visualization community on techniques that efficiently generate and encode globally continuous functions defined by the union of multilinear cells. Wavelets provide a rich context for analyzing and processing complicated datasets. In this paper, we exploit adaptive regular refinement as a means of representing and evaluating functions described by a subset of their nonzero wavelet coefficients. We analyze the dependencies involved in the wavelet transform and describe how to generate and represent the coarsest adaptive mesh with nodal function values such that the inverse wavelet transform is exactly reproduced via simple interpolation (subdivision) over the mesh elements. This allows for an adaptive, sparse representation of the function with on-demand evaluation at any point in the domain. We focus on the popular wavelets formed by tensor products of linear B-splines, resulting in an adaptive, nonconforming but crack-free quadtree (2D) or octree (3D) mesh that allows reproducing globally continuous functions via multilinear interpolation over its cells.
+    paper_bibtex: |
+      @article{Weiss15_vis,
+        author  = {Weiss, K. and Lindstrom, P.},
+        title   = {Adaptive multilinear tensor product wavelets},
+        journal = {IEEE Transactions on Visualization and Computer Graphics
+                   (Proceedings IEEE Visualization 2015)},
+        year    = {2016},
+        volume  = {22},
+        pages   = {985--994},
+        number  = {1},
+        month   = {Jan.},
+        doi     = {http://dx.doi.org/10.1109/TVCG.2015.2467412}
+      }
+    paper_links:
+      paper: papers/Weiss15.vis.pdf
+      supplemental: papers/Weiss15.vis_sup.pdf
+      video: https://vimeo.com/groups/vis2015previews/videos/136211175
+      doi: http://dx.doi.org/10.1109/TVCG.2015.2467412
+      conference: http://ieeevis.org/year/2015/info/vis-welcome/welcome
+
+  # 2014
+  - paper_id: gis14
+    paper_year: 2014
+    paper_title: >
+      Efficient computation and simplification of discrete Morse decompositions on triangulated terrains
+    paper_author: 
+      - Riccardo Fellegara
+      - Federico Iuricich
+      - Leila De Floriani
+      - Kenneth Weiss
+    paper_venue:
+      conference: ACM SIGSPATIAL 2014
+    paper_abstract: > 
+      We consider the problem of efficiently computing and simplifying Morse complexes on a Triangulated Irregular Network (TIN) based on discrete Morse theory. We develop a compact encoding for the discrete Morse gradient field defined by the terrain elevation by attaching it to the triangles of the TIN. This encoding is suitable to be combined with any TIN data structure storing just its vertices and triangles. We show how to compute this gradient field from the elevation values given at the TIN vertices, and how to simplify it effectively in order to reduce the number of critical elements. We demonstrate the effectiveness and scalability of our approach over large terrains by developing algorithms for extracting the cells of the Morse complexes as well as the graph joining the critical elements from the discrete gradient field. We compare implementations of our approach on a widely used and compact adjacency based topological data structure for a TIN and on a compact spatio-topological data structure that we have recently developed, the PR-star quadtree.
+    paper_bibtex: |
+      @inproceedings{Fellegara14_gis,
+        author    = {Fellegara, R. and Iuricich, F. and {De Floriani}, L. and Weiss, K.},
+        title     = {Efficient computation and simplification of discrete {M}orse decompositions 
+                     on triangulated terrains},
+        booktitle = {Proceedings ACM SIGSPATIAL GIS},
+        year      = {2014},
+        series    = {ACM SIGSPATIAL '14},
+        month     = {November},
+        publisher = {ACM},
+        location  = {Dallas, TX},
+        doi       = {http://dx.doi.org/10.1145/2666310.2666412},
+      }
+    paper_links:
+      paper: papers/Fellegara14.gis.pdf
+      doi: http://dx.doi.org/10.1145/2666310.2666412
+      conference: http://sigspatial2014.sigspatial.org
+    inactive_links:
+      references: papers/Fellegara14.gis_refs.bib
+
+  # 2013
+  - paper_id: eurovis13
+    paper_year: 2013
+    paper_title: > 
+      A primal/dual representation for discrete Morse complexes on tetrahedral meshes
+    paper_author: 
+      - Kenneth Weiss
+      - Federico Iuricich
+      - Riccardo Fellegara
+      - Leila De Floriani
+    paper_venue:
+      conference: Eurovis 2013
+      journal: Computer Graphics Forum (Vol. 32, Num. 3)
+    paper_abstract: > 
+      We consider the problem of computing discrete Morse and Morse-Smale complexes on an unstructured tetrahedral mesh discretizing the domain of a 3D scalar field. We use a duality argument to define the cells of the descending Morse complex in terms of the supplied (primal) tetrahedral mesh and those of the ascending complex in terms of its dual mesh. The Morse-Smale complex is then described combinatorially as collections of cells from the intersection of the primal and dual meshes. We introduce a simple compact encoding for discrete vector fields attached to the mesh tetrahedra that is suitable for combination with any topological data structure encoding just the vertices and tetrahedra of the mesh. We demonstrate the effectiveness and scalability of our approach over large unstructured tetrahedral meshes by developing algorithms for computing the discrete gradient field and for extracting the cells of the Morse and Morse-Smale complexes. We compare implementations of our approach on an adjacency-based topological data structure and on the PR-star octree, a compact spatio-topological data structure.
+    paper_bibtex: |
+      @article{Weiss13_eurovis,
+        author    = {Weiss, K. and Iuricich, F. and Fellegara, R. and {De Floriani}, L.},
+        title     = {A primal/dual representation for discrete {Morse} complexes on tetrahedral meshes},
+        journal   = {Computer Graphics Forum (Proceedings Eurovis 2013)},
+        year      = {2013},
+        volume    = {32},
+        pages     = {361--370},
+        number    = {3},
+        part      = {3},
+        doi       = {10.1111/cgf.12123},
+        issn      = {1467--8659},
+        publisher = {Blackwell Publishing Ltd}
+      }
+    paper_links:
+      paper: papers/Weiss13.eurovis.pdf
+      doi: http://dx.doi.org/10.1111/cgf.12123
+      conference: http://www.eurovis2013.de/
+
+  #2012
+  - paper_id: iwgs12
+    paper_year: 2012
+    paper_title: > 
+      A spatial approach to morphological feature extraction from irregularly sampled scalar fields
+    paper_author: 
+      - Leila De Floriani
+      - Federico Iuricich
+      - Riccardo Fellegara
+      - Kenneth Weiss
+    paper_venue:
+      conference: Third ACM SIGSPATIAL International Workshop on GeoStreaming (IWGS '12)
+    paper_abstract: >
+      Several algorithms have recently been introduced for morphological analysis of scalar fields (terrains, static and dynamic volume data) based on a discrete version of Morse theory. However, despite the applicability of the theory to very general discretized domains, memory constraints have limited its practical usage to scalar fields defined on regular grids, or to relatively small simplicial complexes. We propose an efficient and effective data structure for the extraction of morphological features, such as critical points and their regions of influence, based on the PR-star octree data structure, which uses a spatial index over the embedding space of the complex to locally reconstruct the connectivity among its cells. We demonstrate the effectiveness and scalability of our approach over irregular simplicial meshes in 2D and in 3D with a set of streaming algorithms which extract topological features of the associated scalar field from its locally computed discrete gradient field. Specifically, we extract the critical points of the scalar field, their corresponding regions in the Morse decomposition of the field domain induced by the gradient field, and their connectivity.
+    paper_bibtex: |
+      @inproceedings{DeFloriani12_iwgs,
+        author    = {{De Floriani}, L. and Iuricich, F. and Fellegara, R. and Weiss, K.},
+        title     = {A spatial approach to morphological feature extraction from irregularly sampled scalar fields},
+        booktitle = {Proceedings of the Third ACM SIGSPATIAL International Workshop on GeoStreaming},
+        year      = {2012},
+        series    = {IWGS '12},
+        pages     = {40--47},
+        address   = {New York, NY},
+        publisher = {ACM},
+        doi       = {10.1145/2442968.2442974},
+        isbn      = {978-1-4503-1695-8},
+        location  = {Redondo Beach, California}
+      }
+    paper_links:
+      paper: papers/DeFloriani12.iwgs.pdf
+      doi: http://dx.doi.org/10.1145/2442968.2442974
+      conference: http://persis.usc.edu/iwgs12
+    inactive_links:
+      references: papers/Weiss11.gis_refs.bib
+
+  - paper_id: vmls12
+    paper_year: 2012
+    paper_title: >
+      Discrete distortion for 3D data analysis
+    paper_author: 
+      - Leila De Floriani
+      - Federico Iuricich
+      - Paola Magillo
+      - Mohammed Mostefa Mesmoudi
+      - Kenneth Weiss
+    paper_venue:
+      book_chapter: Visualization in Medicine and Life Sciences II (VMLS II)
+    paper_abstract: >
+      We investigate a morphological approach to the analysis and understanding of three-dimensional scalar fields, and we consider applications to 3D medical and molecular images as examples. We consider a discrete model of the scalar field obtained by discretizing its 3D domain into a tetrahedral mesh. In particular, our meshes correspond to approximations at uniform or variable resolution extracted from a multi-resolution model of the 3D scalar field, that we call a <em>hierarchy of diamonds</em>. We analyze the images based on the concept of <em>discrete distortion</em>, that we have introduced in (Mesmoudi et al., 2008), and on segmentations based on Morse theory. Discrete distortion is defined by considering the graph of the discrete 3D field, which is a tetrahedral hypersurface in R<sup>4</sup>, and measuring the distortion of the transformation which maps the tetrahedral mesh discretizing the scalar field domain into the mesh representing its graph in R<sup>4</sup>. We describe a segmentation algorithm to produce Morse decompositions of a 3D scalar field which uses a watershed approach and we apply it to 3D images by using as scalar field both intensity and discrete distortion. We present experimental results by considering the influence of resolution on distortion computation. In particular, we show that the salient features of the distortion field appear prominently in lower resolution approximations to the dataset.
+    paper_bibtex: |
+      @incollection{DeFloriani12_vmls,
+        author    = {De~Floriani, L. and Iuricich, F. and Magillo, P. and Mesmoudi, M.M. and Weiss, K.},
+        title     = {Discrete distortion for {3D} data analysis},
+        booktitle = {Visualization in Medicine and Life Sciences II},
+        year      = {2012},
+        pages     = {3--25},
+        editor    = {Linsen, L. and Hagen, H. and Hamann, B. and Hege, H.-C.},
+        series    = {Mathematics and Visualization},
+        publisher = {Springer Verlag},
+        address   = {Berlin Heidelberg},
+        doi       = {http://dx.doi.org/10.1007/978-3-642-21608-4_1}
+      }
+    paper_links:
+      paper: papers/DeFloriani12.vmls.pdf
+      references: papers/DeFloriani12.vmls_refs.bib
+      doi: http://dx.doi.org/10.1007/978-3-642-21608-4_1
+      link: http://www.springer.com/mathematics/computational+science+%26+engineering/book/978-3-642-21607-7
+
+
+  #2011
+  - paper_id: gis11
+    paper_year: 2011
+    paper_title: > 
+      The PR-star Octree: A spatio-topological data structure for tetrahedral meshes
+    paper_author: 
+      - Kenneth Weiss
+      - Riccardo Fellegara
+      - Leila De Floriani
+      - Marcelo Velloso
+    paper_venue:
+      conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '11)
+    paper_abstract: > 
+      We propose the <em>PR-star octree</em> as a combined spatial data structure for performing efficient topological queries on tetrahedral meshes. The PR-star octree augments the <em>Point Region octree (PR Octree)</em> with a list of tetrahedra incident to its indexed vertices, i.e. those in the <em>star</em> of its vertices. Thus, each leaf node encodes the minimal amount of information necessary to locally reconstruct the topological connectivity of its indexed elements. This provides the flexibility to efficiently construct the optimal data structure to solve the task at hand using a fraction of the memory required for a corresponding data structure on the global tetrahedral mesh. Due to the spatial locality of successive queries in typical GIS applications, the construction costs of these runtime data structures are amortized over multiple accesses while processing each node. We demonstrate the advantages of the PR-star octree representation in several typical GIS applications, including detection of the domain boundaries, computation of local curvature estimates and mesh simplification.
+    paper_bibtex: |
+      @inproceedings{Weiss11_gis,
+        author    = {Weiss, K. and Fellegara, R. and De Floriani, L. and Velloso, M.},
+        title     = {The {PR-star} Octree: A spatio-topological data structure for tetrahedral meshes},
+        booktitle = {Proceedings ACM SIGSPATIAL GIS},
+        year      = {2011},
+        series    = {GIS '11},
+        month     = {November},
+        publisher = {ACM},
+        doi       = {http://dx.doi.org/10.1145/2093973.2093987},
+        location  = {Chicago, Illinois}
+      }
+    paper_links:
+      paper: papers/Weiss11.gis.pdf
+      presentation: papers/Weiss11.gis_presentation.pdf
+      references: papers/Weiss11.gis_refs.bib
+      doi: http://dx.doi.org/10.1145/2093973.2093987
+      conference: http://acmgis2011.cs.umn.edu/
+
+  - paper_id: phdThesis
+    paper_year: 2011
+    paper_title: >
+      Diamond-based models for scientific visualization
+    paper_author: 
+      - Kenneth Weiss
+    paper_venue:
+      thesis: University of Maryland, College Park
+    paper_abstract: >
+      Hierarchical spatial decompositions are a basic modeling tool in a variety of application domains including scientific visualization, finite element analysis and shape modeling and analysis. A popular class of such approaches is based on the <em>regular simplex bisection</em> operator, which bisects simplices (e.g. line segments, triangles, tetrahedra) along the midpoint of a predetermined edge. Regular simplex bisection produces adaptive simplicial meshes of high geometric quality, while simplifying the extraction of crack-free, or <em>conforming</em>, approximations to the original dataset. Efficient multiresolution representations for such models have been achieved in 2D and 3D by clustering sets of simplices sharing the same bisection edge into structures called <em>diamonds</em>. <br /> 
+      In this thesis, we introduce several diamond-based approaches for scientific visualization. We first formalize the notion of diamonds to arbitrary dimensions in terms of two related simplicial decompositions of hypercubes. This enables us to enumerate the vertices, simplices, parents and children of a diamond. In particular, we identify the number of simplices involved in conforming updates to be factorial in the dimension and group these into a linear number of subclusters of simplices that are generated simultaneously. The latter form the basis for a compact pointerless representation for conforming meshes generated by regular simplex bisection and for efficiently navigating the topological connectivity of these meshes. <br />
+      Next, we introduce the <em>supercube</em> as a high-level primitive on such nested meshes based on the atomic units within the underlying triangulation grid. We propose the use of supercubes to associate information with coherent subsets of the full hierarchy and demonstrate the effectiveness of such a representation for modeling multiresolution terrain and volumetric datasets. <br /> 
+      Next, we introduce <em>Isodiamond Hierarchies</em>, a general framework for spatial access structures on a hierarchy of diamonds that exploits the implicit hierarchical and geometric relationships of the diamond model. We use an isodiamond hierarchy to encode irregular updates to a multiresolution isosurface or interval volume in terms of regular updates to diamond. <br /> 
+      Finally, we consider nested hypercubic meshes, such as quadtrees, octrees and their higher dimensional analogues, through the lens of diamond hierarchies. This allows us to determine the relationships involved in generating <em>balanced</em> hypercubic meshes and to propose a compact pointerless representation of such meshes. We also provide a local diamond-based triangulation algorithm on these meshes to generate conforming simplicial meshes.
+    paper_bibtex: |
+      @phdthesis{Weiss11_dissertation,
+        author = {Weiss, Kenneth},
+        title  = {Diamond-based models for scientific visualization},
+        school = {University of Maryland, College Park},
+        year   = {2011},
+        doi    = {http://hdl.handle.net/1903/11704}  
+      }
+    paper_links:
+      paper: papers/kweiss_phdthesis.pdf
+      research_summary: papers/kweiss_research_summary.pdf
+      references: papers/Weiss11_dissertation_refs.bib
+      doi: http://hdl.handle.net/1903/11704
+
+  - paper_id: dagstuhl09
+    paper_year: 2011
+    paper_title: Modeling multiresolution 3D scalar fields through Regular Simplex Bisection
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      journal: "Scientific Visualization: Interactions, Features, Metaphors (Dagstuhl Follow-Ups)"
+    paper_abstract: > 
+      We review modeling techniques for multiresolution three-dimensional scalar fields based on a discretization of the field domain into nested tetrahedral meshes generated through <em>regular simplex bisection</em>. Such meshes are described through hierarchical data structures and their representation is characterized by the modeling primitive used. The primary conceptual distinction among the different approaches proposed in the literature is whether they treat tetrahedra or clusters of tetrahedra, called <em>diamonds</em>, as the modeling primitive. We first focus on representations for the modeling primitive and for nested meshes. Next, we survey the applications of these meshes to modeling multiresolution 3D scalar fields, with an emphasis on interactive visualization. We also consider the relationship of such meshes to octrees. Finally, we discuss directions for further research.
+    paper_bibtex: |
+      @incollection{Weis11_dagstuhl,
+        author    = {Weiss, K. and {De Floriani}, L.},
+        title     = {Modeling multiresolution {3D} scalar fields through {Regular Simplex Bisection}},
+        booktitle = {Scientific Visualization: Interactions, Features, Metaphors},
+        publisher = {Schloss Dagstuhl--Leibniz-Zentrum für Informatik},
+        year      = {2011},
+        editor    = {Hagen, H.},
+        volume    = {2},
+        series    = {Dagstuhl Follow-Ups},
+        pages     = {360--377},
+        address   = {Dagstuhl, Germany},
+        doi       = {http://dx.doi.org/10.4230/DFU.Vol2.SciViz.2011.360},
+        url       = {http://drops.dagstuhl.de/opus/volltexte/2011/3302}
+      }
+    paper_links:
+      paper: papers/Weiss11.dagstuhl.pdf
+      references: papers/Weiss11.dagstuhl_refs.bib
+      doi: http://dx.doi.org/10.4230/DFU.Vol2.SciViz.2011.360
+
+  - paper_id: smi11
+    paper_year: 2011
+    paper_title: > 
+      IA*: An adjacency-based representation for non-manifold simplicial shapes in arbitrary dimensions
+    paper_author: 
+      - David Canino
+      - Leila De Floriani
+      - Kenneth Weiss
+    paper_venue:
+      conference: Shape Modeling International (SMI '11)
+      journal: Computers & Graphics (Vol. 35, Num. 3)
+    paper_abstract: > 
+      We propose a compact, dimension-independent data structure for <em>manifold</em>, <em>non-manifold</em> and <em>non-regular</em> simplicial complexes, that we call the <em>Generalized Indexed Data structure with Adjacencies (IA* data structure)</em>. It encodes only top simplices, i.e. the ones that are not on the boundary of any other simplex, plus a suitable subset of the adjacency relations. We describe the IA* data structure in arbitrary dimensions, and compare the storage requirements of its two-dimensional and three-dimensional instances with both dimension-specific and dimension-independent representations. We show that the IA* data structure is more cost effective than other dimension-independent representations and is even slightly more compact than the existing dimension-specific ones. We present efficient algorithms for navigating a simplicial complex described as an IA* data structure. This shows that the IA* data structure allows retrieving all topological relations of a given simplex by considering only its local neighborhood and thus it is a more efficient alternative to incidence-based representations when information does not need to be encoded for boundary simplices.
+    paper_bibtex: |
+      @article{Canino11_smi,
+        author  = {Canino, D. and De Floriani, L. and Weiss, K.},
+        title   = {IA*: An adjacency-based representation for 
+                   non-manifold simplicial shapes in arbitrary dimensions},
+        journal = {Computers and Graphics (Proceedings Shape Modeling International 2011)},
+        year    = {2011},
+        volume  = {35},
+        pages   = {747--753},
+        number  = {3},
+        month   = {June},
+        doi     = {http://dx.doi.org/10.1016/j.cag.2011.03.009}
+      }
+    paper_links:
+      paper: papers/Canino11.smi.pdf
+      presentation: papers/Canino11.smi_presentation.pdf
+      poster: papers/Canino11.smi_poster.pdf
+      references: papers/Canino11.smi_refs.bib
+      doi: http://dx.doi.org/10.1016/j.cag.2011.03.009
+      conference: http://www1.idc.ac.il/SMI2011/index.html
+
+  - paper_id: egpgv11
+    paper_year: 2011
+    paper_title: > 
+      GPU algorithms for diamond-based multiresolution terrain processing
+    paper_author: 
+      - M. Adil Yalçın
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: Eurographics Symposium on Parallel Graphics and Visualization (PGV '11)
+    paper_abstract: > 
+      We present parallel algorithms for processing, extracting and rendering adaptively sampled regular terrain datasets represented as a multiresolution model defined by a <em>super-square-based diamond hierarchy</em>. This model represents a terrain as a nested triangle mesh generated through a series of longest edge bisections and encoded in an implicit hierarchical structure, which clusters triangles into <em>diamonds</em> and diamonds into <em>super-squares</em>. We decompose the problem into three parallel algorithms for performing: generation of the diamond hierarchy from a regularly distributed terrain dataset, selective refinement on the diamond hierarchy and generation of the corresponding crack-free triangle mesh for processing and rendering. We avoid the data transfer bottleneck common to previous approaches by processing all data entirely on the GPU. We demonstrate that this parallel approach can be successfully applied to interactive terrain visualization with a high tessellation quality on commodity GPUs.
+    paper_bibtex: |
+      @inproceedings{Yalcin11_egpgv,
+        author    = {Yalçın, M. A. and Weiss, K. and De Floriani, L.},
+        title     = {GPU algorithms for diamond-based multiresolution terrain processing},
+        booktitle = {Eurographics Symposium on Parallel Graphics and Visualization},
+        year      = {2011},
+        address   = {Bangor, Wales},
+        month     = {April 10--11}
+        pages     = {121--130},
+        doi       = {http://dx.doi.org/10.2312/EGPGV/EGPGV11/121-130}
+      }
+    paper_links:
+      paper: papers/Yalcin11.egpgv.pdf
+      references: papers/Yalcin11.egpgv_refs.bib
+      doi: http://dx.doi.org/10.2312/EGPGV/EGPGV11/121-130
+      conference: http://www.vis.uni-stuttgart.de/egpgv/egpgv2011/
+
+  - paper_id: cg_forum11
+    paper_year: 2011
+    paper_title: >
+      Simplex and diamond hierarchies: Models and applications
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      journal: Computer Graphics Forum (Vol. 30, Num. 8)
+    paper_abstract: >
+      Hierarchical spatial decompositions are a basic modeling tool in a variety of application domains. Several papers on this subject deal with hierarchical simplicial decompositions generated through regular simplex bisection. Such decompositions, originally developed for finite elements, are extensively used as the basis for multiresolution models of scalar fields, such as terrains, and static or time-varying volume data. They have also been used as an alternative to quadtrees and octrees as spatial access structures. The primary distinction among all such approaches is whether they treat the simplex or clusters of simplices, called diamonds, as the modeling primitive. This leads to two classes of data structures and to different query approaches. We present the hierarchical models in a dimension--independent manner, and organize the description of the various applications, primarily interactive terrain rendering and isosurface extraction, according to the dimension of the domain.
+    paper_bibtex: |
+      @article{Weiss11_cg_forum,
+        author    = {Weiss, K. and {De Floriani}, L.},
+        title     = {Simplex and Diamond Hierarchies: Models and Applications},
+        journal   = {Computer Graphics Forum},
+        year      = {2011},
+        volume    = {30},
+        pages     = {2127--2155},
+        number    = {8},
+        doi       = {http://dx.doi.org/10.1111/j.1467-8659.2011.01853.x},
+        publisher = {Eurographics Association}
+      }
+    paper_links:
+      paper: papers/Weiss11.cg_forum.pdf
+      references: papers/Weiss11.cg_forum_refs.bib
+      doi: http://dx.doi.org/10.1111/j.1467-8659.2011.01853.x
+
+  # 2010
+  - paper_id: vis10
+    paper_year: 2010
+    paper_title: >
+      Nested refinement domains for tetrahedral and diamond hierarchies
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: IEEE Visualization 2010 Posters Compendium (Vis '10)
+    paper_abstract: >
+      We investigate several families of polyhedra defining <em>nested refinement domains</em> for hierarchies generated through longest edge tetrahedral bisection. We define the <em>descendant domain</em> of a tetrahedron as the domain covered by all possible descendants generated by <em>conforming</em> bisections. Due to the fractal nature of these shapes, we propose two simpler approximations to the descendant domain that are relatively tight with respect to the descendant domain and can be implicitly computed at runtime. We conclude with a brief discussion of the applications of these shapes for interactive view--dependent volume visualization and isosurface extraction.        
+    paper_bibtex: |
+      @inproceedings{Weiss10_vis_poster,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Nested refinement domains for tetrahedral and diamond hierarchies},
+        booktitle = {IEEE Visualization 2010 Poster Compendium},
+        year      = {2010},
+        address   = {Salt Lake City, Utah},
+        month     = {October 24--29},
+      }
+    paper_links:
+      paper: papers/Weiss10.visPoster.pdf
+      poster: papers/Weiss10.visPoster_poster.pdf
+      references: papers/Weiss10.visPoster_refs.bib
+      conference: http://vis.computer.org/VisWeek2010/
+
+  - paper_id: imr10
+    paper_year: 2010
+    paper_title: Bisection-based triangulations of nested hypercubic meshes
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: 19th International Meshing Roundtable (IMR '10)
+    paper_abstract: > 
+      Hierarchical spatial decompositions play a fundamental role in many disparate areas of scientific and mathematical computing since they enable adaptive sampling of large problem domains. Although the use of quadtrees, octrees, and their higher dimensional analogues is ubiquitous, these structures generate meshes with cracks, which can lead to discontinuities in functions defined on their domain. In this paper, we propose a dimension-independent triangulation algorithm based on regular simplex bisection to locally decompose adaptive hypercubic meshes into high quality simplicial complexes with guaranteed geometric and adaptivity constraints.
+    paper_bibtex: |
+      @inproceedings{Weiss10_imr,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Bisection-based triangulations of nested hypercubic meshes},
+        booktitle = {Proceedings 19th International Meshing Roundtable},
+        pages     = {315--333},
+        editor    = {Shontz, S.},
+        year      = {2010},
+        month     = {October 3--6},
+        address   = {Chattanooga, Tennessee},
+        doi       = {http://dx.doi.org/10.1007/978-3-642-15414-0_19}
+      }
+    paper_links:
+      paper: papers/Weiss10.imr.pdf
+      references: papers/Weiss10.imr_refs.bib
+      doi:  http://dx.doi.org/10.1007/978-3-642-15414-0_19
+      conference: http://www.sandia.gov/imr/
+
+  - paper_id: icpr10
+    paper_year: 2010
+    paper_title: Multiresolution analysis of 3D images based on discrete distortion
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+      - Mohammed Mostefa Mesmoudi
+    paper_venue:
+      conference: International Conference on Pattern Recognition (ICPR '10)
+    paper_abstract: >
+      We consider a model of a 3D image obtained by discretizing it into a multiresolution tetrahedral mesh known as a <em>hierarchy of diamonds</em>. This model enables us to extract crack-free approximations of the 3D image at any uniform or variable resolution, thus reducing the size of the data set without reducing the accuracy.
+      A 3D intensity image is a scalar field (the intensity field) defined at the vertices of a 3D regular grid and thus the graph of the image is a hypersurface in R<sup>4</sup>. We measure the <em>discrete distortion</em>, a generalization of the notion of curvature, of the transformation which maps the tetrahedralized 3D grid onto its graph in R<sup>4</sup>.
+      We evaluate the use of a hierarchy of diamonds to analyze properties of a 3D image, such as its discrete distortion, directly on lower resolution approximations. Our results indicate that distortion-guided extractions focus the resolution of approximated images on the salient features of the intensity image.
+    paper_bibtex: |
+      @inproceedings{Weiss10_icpr,
+        author    = {Weiss, K. and De Floriani, L. and Mesmoudi, M.M.},
+        title     = {Multiresolution analysis of 3D images based on discrete distortion},
+        booktitle = {International Conference on Pattern Recognition (ICPR)},
+        year      = {2010},
+        pages     = {4093--4096},  
+        address   = {Istanbul, Turkey},
+        month     = {August},
+        doi       = {http://dx.doi.org/10.1109/ICPR.2010.995}
+        publisher = {IEEE Computer Society}
+      }
+    paper_links:
+      paper: papers/Weiss10.icpr.pdf
+      references: papers/Weiss10.icpr_refs.bib
+      doi: http://dx.doi.org/10.1109/ICPR.2010.995
+      conference: http://www.icpr2010.org
+
+  - paper_id: eg_star10
+    paper_year: 2010
+    paper_title: > 
+      Simplex and diamond hierarchies: Models and applications
+    paper_author:  
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference:  Eurographics State of the Art Reports (EG STAR '10)
+    paper_award:
+      award:  Invited to Journal (CG Forum)
+      link: "#cg_forum11"
+    paper_abstract: >
+      Hierarchical spatial decompositions are a basic modeling tool in a variety of application domains. Several papers on this subject deal with hierarchical simplicial decompositions generated through simplex bisection. Such decompositions, originally developed for finite elements, are extensively used as the basis for multiresolution models of scalar fields, such as terrains, and static or time-varying volume data. They have also been used as an alternative to quadtrees and octrees as spatial access structures and in other applications. In this state of the art report, we distinguish between approaches that focus on a specific dimension and those that apply to all dimensions. The primary distinction among all such approaches is whether they treat the simplex or clusters of simplexes, called diamonds, as the modeling primitive. This leads to two classes of data structures and to different query approaches. We present the hierarchical models in a dimension-independent manner, and organize the description of the various applications, primarily interactive terrain rendering and isosurface extraction, according to the dimension of the domain.
+    paper_bibtex: |
+      @inproceedings{Weiss10_eg_star,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Simplex and diamond hierarchies: Models and applications},
+        booktitle = {Eurographics 2010 - State of the Art Reports},
+        pages     = {113--136},
+        year      = {2010},
+        editor    = {Hauser, H. and Reinhard, E.},
+        address   = {Norrköping, Sweden},
+        publisher = {Eurographics Association}
+      }
+    paper_links:
+      paper: papers/Weiss10.eg_star.pdf
+      references: papers/Weiss10.eg_star_refs.bib
+      doi: http://www.eg.org/EG/DL/conf/EG2010/stars/113-136.pdf.abstract.pdf;internal;action=action.digitallibrary.ShowPaperAbstract
+      conference: http://www.eurographics2010.se
+
+  - paper_id: tvcg10
+    paper_year: 2010
+    paper_title: > 
+      Isodiamond hierarchies: An efficient multiresolution representation for isosurfaces and interval volumes
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 16, Num. 4)
+    paper_abstract: > 
+      Efficient multiresolution representations for isosurfaces and interval volumes are becoming increasingly important as the gap between volume data sizes and processing speed continues to widen. Our multiresolution scalar field model is a hierarchy of tetrahedral clusters generated by longest edge bisection, that we call a hierarchy of diamonds. We propose two multiresolution models for representing isosurfaces, or interval volumes, extracted from a hierarchy of diamonds which exploit its regular structure. These models are defined by subsets of diamonds in the hierarchy, that we call isodiamonds, which are enhanced with geometric and topological information for encoding the relation between the isosurface, or interval volume, and the diamond itself. The first multiresolution model, called a relevant isodiamond hierarchy, encodes the isodiamonds intersected by the isosurface, or interval volume, as well as their non-intersected ancestors, while the second model, called a minimal isodiamond hierarchy, encodes only the intersected isodiamonds. Since both models operate directly on the extracted isosurface or interval volume, they require significantly less memory and support faster selective refinement queries than the original multiresolution scalar field, but do not support dynamic isovalue modifications. Moreover, since a minimal isodiamond hierarchy only encodes intersected isodiamonds, its extracted meshes require significantly less memory than those extracted from a relevant isodiamond hierarchy. We demonstrate the compactness of isodiamond hierarchies by comparing them to an indexed representation of the mesh at full resolution.
+    paper_bibtex: |
+      @article{Weiss10_tvcg,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Isodiamond Hierarchies: An efficient multiresolution representation 
+                     for isosurfaces and interval volumes},
+        journal   = {IEEE Transactions on Visualization and Computer Graphics},
+        year      = {2010},
+        volume    = {16},
+        pages     = {583--598},
+        number    = {4},
+        month     = {July-Aug.},
+        doi       = {http://dx.doi.org/10.1109/TVCG.2010.29},
+        publisher = {IEEE Computer Society}
+      }
+    paper_links:
+      paper: papers/Weiss10.tvcg.pdf
+      references: papers/Weiss10.tvcg_refs.bib
+      doi: http://dx.doi.org/10.1109/TVCG.2010.29
+
+  # 2009
+  - paper_id: sgp09
+    paper_year: 2009
+    paper_title: > 
+      Diamond hierarchies of arbitrary dimension
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: Symposium on Geometry Processing (SGP '09)
+      journal: Computer Graphics Forum (Vol. 28, Num. 5)
+    paper_abstract: >
+      Nested simplicial meshes generated by the simplicial bisection decomposition proposed by Maubach (1995) have been widely used in 2D and 3D as multi-resolution models of terrains and three-dimensional scalar fields. They are an alternative to octree representation since they allow generating crack-free representations of the underlying field. On the other hand, this method generates conforming meshes only when all simplices sharing the bisection edge are subdivided concurrently. Thus, efficient representations have been proposed in 2D and 3D based on a clustering of the simplices sharing a common longest edge in what is called a diamond. These representations exploit the regularity of the vertex distribution and the diamond structure to yield an implicit encoding of the hierarchical and geometric relationships among the triangles and tetrahedra, respectively. Here, we analyze properties of d-dimensional diamonds to better understand the hierarchical and geometric relationships among the simplices generated by Maubach's bisection scheme and derive closed-form equations for the number of vertices, simplices, parents and children of each type of diamond. We exploit these properties to yield an implicit pointerless representation for d-dimensional diamonds and reduce the number of required neighbor-finding accesses from <em>O(d!)</em> to <em>O(d)</em>.
+    paper_bibtex: |
+      @article{Weiss09_sgp,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Diamond hierarchies of arbitrary dimension},
+        journal   = {Computer Graphics Forum (Proceedings SGP 2009)},
+        year      = {2009},
+        volume    = {28},
+        pages     = {1289--1300},
+        number    = {5},
+        doi       = {http://dx.doi.org/10.1111/j.1467-8659.2009.01506.x},
+        publisher = {Eurographics Association}
+      }
+    paper_links:
+      paper: papers/Weiss09.sgp.pdf
+      references: papers/Weiss09.sgp_refs.bib
+      doi: http://dx.doi.org/10.1111/j.1467-8659.2009.01506.x
+      conference: http://sgp09.mi.fu-berlin.de/
+
+  - paper_id: vis09
+    paper_year: 2009
+    paper_title: > 
+      Supercubes: A high-level primitive for diamond hierarchies
+    paper_author: 
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: IEEE Visualization / Information Visualization (Vis '09)
+      journal: IEEE Transactions on Visualization and Computer Graphics (Vol. 15, Num. 6)
+    paper_abstract: >
+      Volumetric datasets are often modeled using a multiresolution approach based on a nested decomposition of the domain into a polyhedral mesh. Nested tetrahedral meshes generated through the longest edge bisection rule are commonly used to decompose regular volumetric datasets since they produce highly adaptive crack-free representations. Efficient representations for such models have been achieved by clustering the set of tetrahedra sharing a common longest edge into a structure called a diamond. The alignment and orientation of the longest edge can be used to implicitly determine the geometry of a diamond and its relations to the other diamonds within the hierarchy. We introduce the supercube as a high-level primitive within such meshes that encompasses all unique types of diamonds. A supercube is a coherent set of edges corresponding to three consecutive levels of subdivision. Diamonds are uniquely characterized by the longest edge of the tetrahedra forming them and are clustered in supercubes through the association of the longest edge of a diamond with a unique edge in a supercube. Supercubes are thus a compact and highly efficient means of associating information with a subset of the vertices, edges and tetrahedra of the meshes generated through longest edge bisection. We demonstrate the effectiveness of the supercube representation when encoding multiresolution diamond hierarchies built on a subset of the points of a regular grid. We also show how supercubes can be used to efficiently extract meshes from diamond hierarchies and to reduce the storage requirements of such variable-resolution meshes.
+    paper_bibtex: |
+      @article{Weiss09_vis,
+        author  = {Weiss, K. and De Floriani, L.},
+        title   = {Supercubes: A high-level primitive for diamond hierarchies},
+        journal = {IEEE Transactions on Visualization and Computer Graphics 
+                   (Proceedings Visualization / Information Visualization 2009)},
+        year    = {2009},
+        volume  = {15},
+        pages   = {1603--1610},
+        number  = {6},
+        month   = {November-December},
+        doi     = {http://dx.doi.org/10.1109/TVCG.2009.186}
+      }
+    paper_links:
+      paper: papers/Weiss09.vis.pdf
+      references: papers/Weiss09.vis_refs.bib
+      doi: http://dx.doi.org/10.1109/TVCG.2009.186
+      conference: http://vis.computer.org/VisWeek2009/vis/
+
+  # 2008
+  - paper_id: pbgvg08
+    paper_year: 2008
+    paper_title: >
+      Multiresolution interval volume meshes
+    paper_award:
+      award: Invited to Journal (TVCG)
+      link: "#tvcg10"
+    paper_author:
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: IEEE/EG Symposium on Volume and Point-Based Graphics (PBGVG '08)
+    paper_abstract: > 
+      Interval volumes are a generalization of isosurfaces that represent the set of points between two surfaces. In this paper, we present a compact multi-resolution representation for interval volume meshes extracted from regularly sampled volume data sets. The multi-resolution model is a hierarchical tetrahedral mesh whose updates are based on the longest edge bisection (LEB) subdivision strategy for tetrahedra. Although our representation is decoupled from the scalar field, it maintains the implicit structure of the LEB model to efficiently encode mesh updates. Our representation efficiently supports selective refinement queries and requires significantly less storage than an encoding of the interval volume mesh at full resolution.
+    paper_bibtex: |
+      @inproceedings{Weiss08_pbgvg,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Multiresolution interval volume meshes},
+        booktitle = {IEEE/EG Symposium on Volume and Point-Based Graphics},
+        year      = {2008},
+        editor    = {Hege, H.-C. and Laidlaw, D. and Pajarola, R. and Staadt, O.},
+        pages     = {65--72},
+        address   = {Los Angeles, California, USA},
+        publisher = {Eurographics Association},
+        doi       = {http://dx.doi.org/10.2312/VG/VG-PBG08/065-072}
+      }
+    paper_links:
+      paper: papers/Weiss08.pbgvg.pdf
+      references: papers/Weiss08.pbgvg_refs.bib
+      doi: http://dx.doi.org/10.2312/VG/VG-PBG08/065-072
+      conference: http://www.zib.de/vg08/
+
+  - paper_id: gis08
+    paper_year: 2008
+    paper_title: > 
+      Sparse terrain pyramids
+    paper_award:
+      award: Best Paper Award
+      link: https://web.archive.org/web/20150217134721/http://www.sigspatial.org/sigspatial-special-issues/SIGSPATIALSpecialVol1Num1Mar09.pdf#page=9
+    
+    paper_author:
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems (GIS '08)
+    paper_abstract: > 
+      Bintrees based on longest edge bisection and hierarchies of diamonds are popular multiresolution techniques on regularly sampled terrain datasets. In this work, we consider sparse terrain pyramids as a compact multiresolution representation for terrain datasets whose samples are a subset of those lying on a regular grid. While previous diamond-based approaches can efficiently represent meshes built on a complete grid of resolution (2<sup>k</sup> +1)<sup>2</sup>, this is not suitable when the field values are uniform in large areas or simply non-existent. We explore properties of diamonds to simplify an encoding of the implicit dependency relationship between diamonds. Additionally, we introduce a diamond clustering technique to further reduce the geometric and topological overhead of such representations. We demonstrate the coherence of our clustering technique as well as the compactness of our representation.
+    paper_bibtex: |
+      @inproceedings{Weiss08_gis,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Sparse terrain pyramids},
+        booktitle = {Proceedings ACM SIGSPATIAL GIS},
+        year      = {2008},
+        pages     = {115-124},
+        address   = {New York, NY, USA},
+        publisher = {ACM},
+        doi       = {http://dx.doi.org/10.1145/1463434.1463454}
+      }
+    paper_links:
+      paper: papers/Weiss08.gis.pdf
+      references: papers/Weiss08.gis_refs.bib
+      doi: http://dx.doi.org/10.1145/1463434.1463454
+      conference: http://acmgis08.cs.umn.edu/
+    inactive_links: 
+      award: http://www.sigspatial.org/sigspatial-special-issues/SIGSPATIALSpecialVol1Num1Mar09.pdf#page=9
+
+  - paper_id: isvc08
+    paper_year: 2008
+    paper_title: > 
+      Modeling and visualization approaches for time-varying volumetric data
+    paper_author:
+      - Kenneth Weiss
+      - Leila De Floriani
+    paper_venue:
+      conference: International Symposium on Visual Computing (ISVC '08)
+    paper_abstract: > 
+      Time-varying volumetric data arise in a variety of application domains, and thus several techniques for dealing with such data have been proposed in the literature. A time-varying dataset is typically modeled either as a collection of discrete snapshots of volumetric data, or as a four-dimensional dataset. This choice influences the operations that can be efficiently performed on such data. Here, we classify the various approaches to modeling time-varying scalar fields, and briefly describe them. Since most models of time-varying data have been abstracted from well-known approaches to volumetric data, we review models of volumetric data as well as schemes to accelerate isosurface extraction and discuss how these approaches have been applied to time-varying datasets. Finally, we discuss multi-resolution approaches which allow interactive processing and visualization of large time varying datasets.
+    paper_bibtex: |
+      @inproceedings{Weiss08_isvc,
+        author    = {Weiss, K. and De Floriani, L.},
+        title     = {Modeling and visualization approaches for time-varying volumetric data},
+        booktitle = {Advances in Visual Computing},
+        year      = {2008},
+        editor    = {Bebis, G. and Boyle, R. and Parvin, B. and Koracin, D. and Remagnino, P. and Porikli, F. 
+                     and Peters, J. and Klosowski, J. and Arns, L. and Chun, Y. and Rhyne, T. and Monroe, L.},
+        pages     = {1000--1010},
+        publisher = {Springer},
+        doi       = {http://dx.doi.org/10.1007/978-3-540-89646-3_100},
+        isbn      = {978-3-540-89645-6},
+        location  = {Heidelberg}
+      }
+    paper_links:
+      paper: papers/Weiss08.isvc.pdf
+      poster: papers/Weiss08.isvc_poster.pdf
+      references: papers/Weiss08.isvc_refs.bib
+      doi: http://dx.doi.org/10.1007/978-3-540-89646-3_100
+      conference: http://www.isvc.net/08/
+
+  # 2004
+  - paper_id: siggraph04
+    paper_year: 2004
+    paper_title: >
+      Face modeling from frontal face image based on topographic analysis
+    paper_author:
+      - Lijun Yin
+      - Kenneth Weiss
+      - Xiaozhou Wei
+    paper_venue:
+      conference: ACM SIGGRAPH 2004, Posters session
+    paper_abstract: > 
+      Accurate face representation and modeling could help improve the 3D face recognition. This research attempts to model the human face based on a single image input in a high level of accuracy. We developed a novel face modeling system using an explicit face surface representation, the so-called topographic representation, and a generic model individulization process, as outlined in Figure 1.
+    paper_bibtex: |
+      @inproceedings{Yin04_siggraph,
+        author    = {Yin, L. and Weiss, K. and Wei, X.},
+        title     = {Face modeling from frontal face image based on topographic analysis},
+        booktitle = {ACM SIGGRAPH Posters},
+        year      = {2004},
+        pages     = {86},
+        address   = {New York, NY, USA},
+        publisher = {ACM},
+        doi       = {http://dx.doi.org/10.1145/1186415.1186516},
+        isbn      = {1-58113-896-2},
+        location  = {Los Angeles, California}
+      }
+    paper_links:
+      paper: http://www.cs.binghamton.edu/~lijun/Research/FaceModeling/RelatedPublications/Poster_TopoModelingl_Siggraph04.pdf
+      videos: 
+        - http://www.cs.binghamton.edu/~lijun/Research/FaceModeling/RelatedPublications/M_original_video.wmv
+        - http://www.cs.binghamton.edu/~lijun/Research/FaceModeling/RelatedPublications/M_glHeadTex_-6.wmv
+        - http://www.cs.binghamton.edu/~lijun/Research/FaceModeling/RelatedPublications/M_toptographic.wmv
+      doi: http://dx.doi.org/10.1145/1186415.1186516
+      conference: http://www.siggraph.org/s2004/
+
+  - paper_id: sigmm04
+    paper_year: 2004
+    paper_title: > 
+      Generating 3D views of facial expressions from frontal face video based on topographic analysis
+    paper_author:
+      - Lijun Yin
+      - Kenneth Weiss
+    paper_venue:
+      conference: ACM International Conference on Multimedia (SIGMM '04)
+    paper_abstract: >
+      In this paper, we report our newly developed 3D face modeling system with arbitrary expressions in a high level of detail using the topographic analysis and mesh instantiation process. Given a sequence of images of facial expressions at frontal views, we automatically generate 3D expressions at arbitrary views. Our face modeling system consists of two major components: facial surface representation using topographic analysis and generic model individualization based on labeled surface features and surface curvatures. The realism of the generated individual model is demonstrated through 3D views of facial expressions in videos. This work targets the accurate modeling of face and face expression for human computer interaction and 3D face recognition.
+    paper_bibtex: |
+      @inproceedings{Yin04_sigmm,
+        author    = {Yin, L. and Weiss, K.},
+        title     = {Generating 3D views of facial expressions from frontal face video based on topographic analysis},
+        booktitle = {Proceedings ACM International Conference on Multimedia},
+        year      = {2004},
+        pages     = {360--363},
+        address   = {New York, NY, USA},
+        publisher = {ACM},
+        doi       = {http://dx.doi.org/10.1145/1027527.1027611},
+        isbn      = {1-58113-893-8},
+        location  = {New York, NY, USA}
+      }
+    paper_links:
+      paper: http://www.cs.binghamton.edu/~lijun/Research/FaceModeling/RelatedPublications/ACM_MM04_Modeling_reprints.pdf
+      doi: http://dx.doi.org/10.1145/1027527.1027611
+      conference: http://www.mm2004.org/

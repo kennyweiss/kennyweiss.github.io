@@ -1,0 +1,92 @@
+type: object
+title: Papers Schema
+properties:
+  papers:
+    type: array
+    items:
+      type: object
+      properties:
+        paper_id:
+          type: string
+        paper_year:
+          type: number
+        paper_title:
+          type: string
+        paper_award:
+          type: object
+          properties:
+            award:
+              type: string
+            link:
+              type: string
+          required:
+            - award
+        paper_author:
+          type: array
+          items:
+            type: string
+        paper_venue:
+          type: object
+          properties:
+            book_chapter:
+              type: string
+            conference:
+              type: string
+            journal:
+              type: string
+            thesis:
+              type: string
+          additionalProperties: false
+        paper_abstract:
+          type: string
+        paper_bibtex:
+          type: string
+        paper_links:
+          type: object
+          properties:
+            arXiv:
+              type: string
+            conference:
+              type: string
+            doi:
+              type: string
+            link:
+              type: string
+            osti:
+              type: string
+            paper:
+              type: string
+            presentation:
+              type: string
+            poster:
+              type: string
+            references:
+              type: string
+            research_summary:
+              type: string
+            supplemental:
+              type: string
+            video:
+              type: string
+            videos:
+              type: array
+              items:
+                type: string
+          additionalProperties: false
+        inactive_links:
+          # can park old links, e.g. dead links, here, if desired
+          type: object
+
+      required:
+        - paper_id
+        - paper_year
+        - paper_title
+        - paper_author
+        - paper_venue
+        - paper_abstract
+        - paper_bibtex
+        - paper_links
+      additionalProperties: false
+
+required:
+  - papers
