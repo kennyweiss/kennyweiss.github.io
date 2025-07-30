@@ -2,6 +2,31 @@
 
 papers:
   # 2025
+  - paper_id: winding25
+    paper_year: 2025
+    paper_title: >
+      Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers
+    paper_author:
+      - Jacob Spainhour
+      - Kenneth Weiss
+    paper_venue:
+      journal: arXiv (2504.11435)
+    paper_abstract: >
+           Efficient and accurate evaluation of containment queries for regions bound by trimmed NURBS surfaces is important in many graphics and engineering applications. However, the algebraic complexity of surface-surface intersections makes gaps and overlaps between surfaces difficult to avoid for in-the-wild surface models. By considering this problem through the lens of the generalized winding number (GWN), a mathematical construction that is indifferent to the arrangement of surfaces in the shape, we can define a containment query that is robust to model watertightness. Applying contemporary techniques for the 3D GWN on arbitrary curved surfaces would require some form of geometric discretization, potentially inducing containment misclassifications near boundary components. In contrast, our proposed method computes an accurate GWN directly on the curved geometry of the input model. We accomplish this using a novel reformulation of the relevant surface integral using Stokes' theorem, which in turn permits an efficient adaptive quadrature calculation on the boundary and trimming curves of the model. While this is sufficient for "far-field" query points that are distant from the surface, we augment this approach for "near-field" query points (i.e., within a bounding box) and even those coincident to the surface patches via a strategy that directly identifies and accounts for the jump discontinuity in the scalar field. We demonstrate that our method of evaluating the GWN field is robust to complex trimming geometry in a CAD model, and is accurate up to arbitrary precision at arbitrary distances from the surface. Furthermore, the derived containment query is robust to non-watertightness while respecting all curved features of the input shape.
+    paper_bibtex: |
+      @misc{Spainhour2025_arxiv,
+        author  = {Jacob Spainhour and Kenneth Weiss},
+        title   = {Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers},
+        year    = {2025},
+        eprint  = {2504.11435},
+        doi     = {10.48550/arXiv.2504.11435},
+        url     = {https://arxiv.org/abs/2504.11435},
+        primaryClass  = {cs.GR},
+        archivePrefix = {arXiv},
+      }
+    paper_links:
+      arXiv: https://doi.org/10.48550/arXiv.2504.11435
+
   - paper_id: ijhpca25
     paper_year: 2025
     paper_title: >
