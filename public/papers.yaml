@@ -1,6 +1,39 @@
 # yaml-language-server: $schema=paper_schema.yaml
 
 papers:
+  # 2025
+  - paper_id: ijhpca25
+    paper_year: 2025
+    paper_title: >
+      Understanding power and energy utilization in large scale production physics simulation codes
+    paper_author:
+      - Adam Bertsch
+      - Michael R. Collette
+      - Shawn A. Dawson
+      - Si D. Hammond 
+      - Ian Karlin 
+      - M. Scott McKinley 
+      - Kevin Pedretti 
+      - Robert N. Rieben 
+      - Brian S. Ryujin 
+      - Arturo Vargas
+      - Kenneth Weiss      
+    paper_venue:
+      journal: International Journal of High Performance Computing Applications
+    paper_abstract: >
+      Power is an often-cited reason for the move to advanced architectures on the path to Exascale computing. This is due to practical considerations related to delivering enough power to successfully site and operate these machines, as well as concerns about energy usage while running large simulations. Since obtaining accurate power measurements can be challenging, it may be tempting to use the processor thermal design power (TDP) as a surrogate due to its simplicity and availability. However, TDP is not indicative of typical power usage while running simulations. Using commodity and advanced technology systems at Lawrence Livermore and Sandia National Labs, we performed a series of experiments to measure power and energy usage in running simulation codes. These experiments indicate that large scale Lawrence Livermore simulation codes are significantly more efficient than a simple processor TDP model might suggest.
+    paper_bibtex: |
+      @article{Bertsch2025_ijhpca,
+        title  = {Understanding power and energy utilization in large scale production physics simulation codes},
+        author = {Adam Bertsch and Michael R Collette and Shawn A Dawson and Si D Hammond 
+                  and Ian Karlin and M Scott McKinley and Kevin Pedretti and Robert N Rieben 
+                  and Brian S Ryujin and Arturo Vargas and Kenneth Weiss},
+        year   = {2025},
+        doi    = {10.1177/10943420251362635},
+      }
+    paper_links: 
+      doi: https://doi.org/10.1177/10943420251362635
+
   # 2024
   - paper_id: siggraph24
     paper_year: 2024

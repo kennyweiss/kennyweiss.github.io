@@ -3,7 +3,7 @@ import Publications from './Publications.jsx';
 
 function App() {
   const publication_years = [
-    2024, 2022, 2021, 2020, 
+    2025, 2024, 2022, 2021, 2020, 
     2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 
     2009, 2008, 2004];
 
