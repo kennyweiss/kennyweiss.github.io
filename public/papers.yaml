@@ -27,7 +27,33 @@ papers:
     paper_links:
       arXiv: https://doi.org/10.48550/arXiv.2504.11435
 
-  - paper_id: ijhpca25
+  - paper_id: ijhpca25_b
+    paper_year: 2025
+    paper_title: >
+      Comparing cross-platform performance via node-to-node scaling studies
+    paper_author:
+      - Kenneth Weiss
+      - Thomas Stitt
+      - Daryl Hawkins
+      - Olga Pearce
+      - Stephanie Brink
+      - Robert N. Rieben
+    paper_venue:
+      journal: International Journal of High Performance Computing Applications
+    paper_abstract: >
+      Due to the increasing diversity of high-performance computing architectures, researchers and practitioners are increasingly interested in comparing a code's performance and scalability across different platforms. However, there is a lack of available guidance on how to actually set up and analyze such cross-platform studies. In this paper, we contend that the natural base unit of computing for such studies is a single compute node on each platform and offer guidance in setting up, running, and analyzing node-to-node scaling studies. We propose templates for presenting scaling results of these studies and provide several case studies highlighting the benefits of this approach.
+    paper_bibtex: |
+      @article{Weiss2025_ijhpca,
+        title   = {Comparing cross-platform performance via node-to-node scaling studies},
+        author  = {Kenneth Weiss and Thomas Stitt and Daryl Hawkins and Olga Pearce and Stephanie Brink and Robert N. Rieben},
+        journal = {The International Journal of High Performance Computing Applications},
+        year    = {2025},
+        doi     = {10.1177/10943420251381191},
+      }
+    paper_links:
+      doi: https://doi.org/10.1177/10943420251381191
+
+  - paper_id: ijhpca25_a
     paper_year: 2025
     paper_title: >
       Understanding power and energy utilization in large scale production physics simulation codes
@@ -57,6 +83,8 @@ papers:
         doi    = {10.1177/10943420251362635},
       }
     paper_links: 
+      paper: "papers/Bertsch25.ijhpca.pdf"
+      arXiv: https://doi.org/10.48550/arXiv.2201.01278
       doi: https://doi.org/10.1177/10943420251362635
 
   # 2024
@@ -221,41 +249,6 @@ papers:
         doi       = {10.1177/10943420221100262},
         publisher = {SAGE Publications},
       }
-  - paper_id: arxiv22
-    paper_year: 2022
-    paper_title: >
-      Understanding power and energy utilization in large scale production physics simulation codes
-    paper_author:
-      - Brian S. Ryujin
-      - Arturo Vargas
-      - Ian Karlin
-      - Shawn A. Dawson
-      - Kenneth Weiss
-      - Adam Bertsch
-      - M. Scott McKinley
-      - Michael R. Collette
-      - Si D. Hammond
-      - Kevin Pedretti
-      - Robert N. Rieben
-    paper_venue:
-      journal: arXiv (2201.01278)
-    paper_abstract: >
-      Power is an often-cited reason for moving to advanced architectures on the path to Exascale computing. This is due to the practical concern of delivering enough power to successfully site and operate these machines, as well as concerns over energy usage while running large simulations. Since accurate power measurements can be difficult to obtain, processor thermal design power (TDP) is a possible surrogate due to its simplicity and availability. However, TDP is not indicative of typical power usage while running simulations. Using commodity and advance technology systems at Lawrence Livermore National Laboratory (LLNL) and Sandia National Laboratory, we performed a series of experiments to measure power and energy usage in running simulation codes. These experiments indicate that large scale LLNL simulation codes are significantly more efficient than a simple processor TDP model might suggest.
-    paper_bibtex: |
-      @misc{Ryujin2022_arxiv,
-        title  = {Understanding power and energy utilization in large scale production physics simulation codes},
-        author = {Brian S. Ryujin and Arturo Vargas and Ian Karlin and Shawn A. Dawson 
-                  and Kenneth Weiss and Adam Bertsch and M. Scott McKinley and Michael R. Collette 
-                  and Si D. Hammond and Kevin Pedretti and Robert N. Rieben},
-        month  = {January},
-        year   = {2022},
-        doi    = {10.48550/arXiv.2201.01278},
-        eprint = {2201.01278},
-        archivePrefix = {arXiv},
-        primaryClass = {cs.DC}
-      }
-    paper_links: 
-      arXiv: https://doi.org/10.48550/arXiv.2201.01278
 
   # 2021
   - paper_id: cad21
