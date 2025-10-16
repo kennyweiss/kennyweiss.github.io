@@ -10,6 +10,7 @@ In case of problems, some of the following might be helpful:
 > npm audit
 > npm outdated
 > npm install <pkg@latest>
+> npm update
 ```
 
 ### Using npm commands
