@@ -73,7 +73,7 @@ papers:
       - Arturo Vargas
       - Kenneth Weiss      
     paper_venue:
-      journal: International Journal of High Performance Computing Applications
+      journal: International Journal of High Performance Computing Applications (Vol. 39)
     paper_abstract: >
       Power is an often-cited reason for the move to advanced architectures on the path to Exascale computing. This is due to practical considerations related to delivering enough power to successfully site and operate these machines, as well as concerns about energy usage while running large simulations. Since obtaining accurate power measurements can be challenging, it may be tempting to use the processor thermal design power (TDP) as a surrogate due to its simplicity and availability. However, TDP is not indicative of typical power usage while running simulations. Using commodity and advanced technology systems at Lawrence Livermore and Sandia National Labs, we performed a series of experiments to measure power and energy usage in running simulation codes. These experiments indicate that large scale Lawrence Livermore simulation codes are significantly more efficient than a simple processor TDP model might suggest.
     paper_bibtex: |
@@ -83,6 +83,9 @@ papers:
                   and Ian Karlin and M Scott McKinley and Kevin Pedretti and Robert N Rieben 
                   and Brian S Ryujin and Arturo Vargas and Kenneth Weiss},
         year   = {2025},
+        volume = {39},
+        number = {6},
+        pages  = {770--783},
         doi    = {10.1177/10943420251362635},
       }
     paper_links: 
