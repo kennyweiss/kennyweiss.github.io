@@ -52,6 +52,7 @@ papers:
         publisher = {SAGE Publications},
       }
     paper_links:
+      paper: "papers/Weiss25.ijhpca.pdf"
       arXiv: https://doi.org/10.48550/arXiv.2510.12166
       doi: https://doi.org/10.1177/10943420251381191
 
