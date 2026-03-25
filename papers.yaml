@@ -10,22 +10,25 @@ papers:
       - Jacob Spainhour
       - Kenneth Weiss
     paper_venue:
-      journal: arXiv (2504.11435)
+      journal: ACM Transactions on Graphics
     paper_abstract: >
-           Efficient and accurate evaluation of containment queries for regions bound by trimmed NURBS surfaces is important in many graphics and engineering applications. However, the algebraic complexity of surface-surface intersections makes gaps and overlaps between surfaces difficult to avoid for in-the-wild surface models. By considering this problem through the lens of the generalized winding number (GWN), a mathematical construction that is indifferent to the arrangement of surfaces in the shape, we can define a containment query that is robust to model watertightness. Applying contemporary techniques for the 3D GWN on arbitrary curved surfaces would require some form of geometric discretization, potentially inducing containment misclassifications near boundary components. In contrast, our proposed method computes an accurate GWN directly on the curved geometry of the input model. We accomplish this using a novel reformulation of the relevant surface integral using Stokes' theorem, which in turn permits an efficient adaptive quadrature calculation on the boundary and trimming curves of the model. While this is sufficient for "far-field" query points that are distant from the surface, we augment this approach for "near-field" query points (i.e., within a bounding box) and even those coincident to the surface patches via a strategy that directly identifies and accounts for the jump discontinuity in the scalar field. We demonstrate that our method of evaluating the GWN field is robust to complex trimming geometry in a CAD model, and is accurate up to arbitrary precision at arbitrary distances from the surface. Furthermore, the derived containment query is robust to non-watertightness while respecting all curved features of the input shape.
+      We propose a containment query that is robust to the watertightness of regions bound by trimmed NURBS surfaces, as this property is difficult to guarantee for in-the-wild CAD models. Containment is determined through the generalized winding number (GWN), a mathematical construction that is indifferent to the arrangement of surfaces in the shape. Applying contemporary techniques for the 3D GWN to trimmed NURBS surfaces requires some form of geometric discretization, introducing computational inefficiency to the algorithm and even risking containment misclassifications near the surface. In contrast, our proposed method leverages properties of the 3D solid angle to solve the relevant surface integral using a boundary formulation with rapidly converging adaptive quadrature. Batches of queries are further accelerated by memoizing (i.e. caching and reusing) quadrature node positions and tangents as they are evaluated. We demonstrate that our GWN method is robust to complex trimming geometry in a CAD model, and is accurate up to arbitrary precision at arbitrary distances from the surface. The derived containment query is therefore robust to model non-watertightness while respecting all curved features of the input shape.
     paper_bibtex: |
-      @misc{Spainhour2025_arxiv,
-        title   = {Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers},
-        author  = {Jacob Spainhour and Kenneth Weiss},
-        year    = {2025},
-        eprint  = {2504.11435},
-        url     = {https://arxiv.org/abs/2504.11435},
-        doi     = {10.48550/arXiv.2504.11435},
-        primaryClass  = {cs.GR},
-        archivePrefix = {arXiv},
+      @article{Spainhour2025,
+        title     = {Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers},
+        author    = {Jacob Spainhour and Kenneth Weiss},
+        year      = {2026},
+        journal   = {ACM Transactions on Graphics},
+        month     = {February},
+        publisher = {Association for Computing Machinery},
+        address   = {New York, NY, USA},
+        issn      = {0730--0301},
+        doi       = {10.1145/3797957}
       }
     paper_links:
+      paper: "papers/Spainhour25.tog.pdf"
       arXiv: https://doi.org/10.48550/arXiv.2504.11435
+      doi: https://doi.org/10.1145/3797957
 
   - paper_id: ijhpca25_b
     paper_year: 2025
