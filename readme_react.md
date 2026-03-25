@@ -13,6 +13,8 @@ In case of problems, some of the following might be helpful:
 > npm update
 ```
 
+To modify major versions of the dependencies, edit `package.json` directly.
+
 ### Using npm commands
 
 `npm` commands can be run with:
@@ -41,7 +43,9 @@ The page will be built in the `dist` directory.
 
 ### Validate papers schema
 
-After updating the `papers.yaml`, validate against the papers schema by running the `check_yaml_validity.py` script in the `validation` directory.
+After updating the `papers.yaml`, validate against the papers schema by running the `check_yaml_validity.py` script in the `validation` directory. 
+
+This can be run through `uv` in the `validation` directory with `uv sync` and `uv run python check_yaml_validity.py`.
 
 ### Deploy webpage
 
