@@ -1,35 +1,69 @@
 # yaml-language-server: $schema=paper_schema.yaml
 
 papers:
-  # 2025
-  - paper_id: winding25
-    paper_year: 2025
+  # 2026
+  - paper_id: siggraph26
+    paper_year: 2026
+    paper_title: >
+      Spatially accelerated winding numbers for curved geometry
+    paper_author:
+      - Jacob Spainhour
+      - Brad Whitlock
+      - Kenneth Weiss
+    paper_venue:
+      conference: ACM SIGGRAPH (SIGGRAPH '26)
+      journal: ACM Transactions on Graphics
+    paper_abstract: >
+      The generalized winding number (GWN) is a scalar field that supports robust containment queries on curved geometry, including non-watertight, overlapping, and nested boundary representations. While queries can be easily parallelized over samples, direct evaluation on parametric curves and surfaces remains costly for large and complex models. Fast, state-of-the-art GWN approaches leverage a spatial index to approximate the GWN, typically coupled with a Taylor expansion which approximates the GWN contribution for far clusters of geometric primitives. However, such methods operate only on discrete inputs such as triangle meshes and point clouds, and would introduce containment errors near boundaries if applied to curved input. We extend support for fast GWN evaluation over arbitrary collections of NURBS curves in 2D and trimmed NURBS patches in 3D via a Bounding Volume Hierarchy that stores efficiently precomputed moment data in the hierarchy nodes. When querying the hierarchy, approximations for far clusters are used alongside direct evaluation for nearby NURBS primitives, achieving sub-linear complexity while preserving the geometric features in the vicinity of the query point. Central to our performance improvements is an adaptive subdivision strategy for NURBS primitives during a preprocessing phase, creating better spatial partitions while retaining the same accuracy for containment decisions as a direct evaluation. We demonstrate the performance and accuracy of our approach across a large collection of 2D and 3D datasets.
+    paper_bibtex: |
+      @article{Spainhour2026,
+        title     = {Spatially accelerated winding numbers for curved geometry},
+        author    = {Jacob Spainhour and Brad Whitlock and Kenneth Weiss},
+        journal   = {ACM Transactions on Graphics},
+        year      = {2026},
+        publisher = {Association for Computing Machinery},
+        address   = {New York, NY, USA},
+      }
+    paper_links:
+      paper: "papers/Spainhour26.siggraph.pdf"
+      arXiv: https://doi.org/10.48550/arXiv.2605.19200
+
+  - paper_id: tog26
+    paper_year: 2026
     paper_title: >
       Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers
     paper_author:
       - Jacob Spainhour
       - Kenneth Weiss
     paper_venue:
-      journal: ACM Transactions on Graphics
+      journal: ACM Transactions on Graphics (Vol. 45, Num. 3)
+    paper_award: 
+      award: Presented at SIGGRAPH 2026
+      link: https://s2026.conference-schedule.org/presentation/?id=paperstog_119&sess=sess149
     paper_abstract: >
       We propose a containment query that is robust to the watertightness of regions bound by trimmed NURBS surfaces, as this property is difficult to guarantee for in-the-wild CAD models. Containment is determined through the generalized winding number (GWN), a mathematical construction that is indifferent to the arrangement of surfaces in the shape. Applying contemporary techniques for the 3D GWN to trimmed NURBS surfaces requires some form of geometric discretization, introducing computational inefficiency to the algorithm and even risking containment misclassifications near the surface. In contrast, our proposed method leverages properties of the 3D solid angle to solve the relevant surface integral using a boundary formulation with rapidly converging adaptive quadrature. Batches of queries are further accelerated by memoizing (i.e. caching and reusing) quadrature node positions and tangents as they are evaluated. We demonstrate that our GWN method is robust to complex trimming geometry in a CAD model, and is accurate up to arbitrary precision at arbitrary distances from the surface. The derived containment query is therefore robust to model non-watertightness while respecting all curved features of the input shape.
     paper_bibtex: |
-      @article{Spainhour2025,
+      @article{Spainhour2026,
         title     = {Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers},
         author    = {Jacob Spainhour and Kenneth Weiss},
-        year      = {2026},
         journal   = {ACM Transactions on Graphics},
-        month     = {February},
+        year      = {2026},
+        volume    = {45},
+        number    = {3},
+        articleno = {26},
+        numpages  = {21},
+        issn      = {0730--0301},
+        month     = {April},
         publisher = {Association for Computing Machinery},
         address   = {New York, NY, USA},
-        issn      = {0730--0301},
-        doi       = {10.1145/3797957}
+        doi       = {10.1145/3797957},
       }
     paper_links:
-      paper: "papers/Spainhour25.tog.pdf"
+      paper: "papers/Spainhour26.tog.pdf"
       arXiv: https://doi.org/10.48550/arXiv.2504.11435
       doi: https://doi.org/10.1145/3797957
 
+  # 2025
   - paper_id: ijhpca25_b
     paper_year: 2025
     paper_title: >
