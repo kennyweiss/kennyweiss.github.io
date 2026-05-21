@@ -1,35 +1,43 @@
 # yaml-language-server: $schema=paper_schema.yaml
 
 papers:
-  # 2025
-  - paper_id: winding25
-    paper_year: 2025
+  # 2026
+  - paper_id: winding26
+    paper_year: 2026
     paper_title: >
       Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers
     paper_author:
       - Jacob Spainhour
       - Kenneth Weiss
     paper_venue:
-      journal: ACM Transactions on Graphics
+      journal: ACM Transactions on Graphics (Vol. 45, Num. 3)
+    paper_award: 
+      award: Presented at SIGGRAPH 2026
+      link: https://s2026.conference-schedule.org/presentation/?id=paperstog_119&sess=sess149
     paper_abstract: >
       We propose a containment query that is robust to the watertightness of regions bound by trimmed NURBS surfaces, as this property is difficult to guarantee for in-the-wild CAD models. Containment is determined through the generalized winding number (GWN), a mathematical construction that is indifferent to the arrangement of surfaces in the shape. Applying contemporary techniques for the 3D GWN to trimmed NURBS surfaces requires some form of geometric discretization, introducing computational inefficiency to the algorithm and even risking containment misclassifications near the surface. In contrast, our proposed method leverages properties of the 3D solid angle to solve the relevant surface integral using a boundary formulation with rapidly converging adaptive quadrature. Batches of queries are further accelerated by memoizing (i.e. caching and reusing) quadrature node positions and tangents as they are evaluated. We demonstrate that our GWN method is robust to complex trimming geometry in a CAD model, and is accurate up to arbitrary precision at arbitrary distances from the surface. The derived containment query is therefore robust to model non-watertightness while respecting all curved features of the input shape.
     paper_bibtex: |
-      @article{Spainhour2025,
+      @article{Spainhour2026,
         title     = {Robust containment queries over collections of trimmed NURBS surfaces via generalized winding numbers},
         author    = {Jacob Spainhour and Kenneth Weiss},
-        year      = {2026},
         journal   = {ACM Transactions on Graphics},
-        month     = {February},
+        year      = {2026},
+        volume    = {45},
+        number    = {3},
+        articleno = {26},
+        numpages  = {21},
+        issn      = {0730--0301},
+        month     = {April},
         publisher = {Association for Computing Machinery},
         address   = {New York, NY, USA},
-        issn      = {0730--0301},
-        doi       = {10.1145/3797957}
+        doi       = {10.1145/3797957},
       }
     paper_links:
-      paper: "papers/Spainhour25.tog.pdf"
+      paper: "papers/Spainhour26.tog.pdf"
       arXiv: https://doi.org/10.48550/arXiv.2504.11435
       doi: https://doi.org/10.1145/3797957
 
+  # 2025
   - paper_id: ijhpca25_b
     paper_year: 2025
     paper_title: >
