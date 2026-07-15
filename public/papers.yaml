@@ -82,7 +82,7 @@ papers:
       - Stephanie Brink
       - Robert N. Rieben
     paper_venue:
-      journal: International Journal of High Performance Computing Applications
+      journal: International Journal of High Performance Computing Applications (Vol. 40, Num. 1)
     paper_abstract: >
       Due to the increasing diversity of high-performance computing architectures, researchers and practitioners are increasingly interested in comparing a code's performance and scalability across different platforms. However, there is a lack of available guidance on how to actually set up and analyze such cross-platform studies. In this paper, we contend that the natural base unit of computing for such studies is a single compute node on each platform and offer guidance in setting up, running, and analyzing node-to-node scaling studies. We propose templates for presenting scaling results of these studies and provide several case studies highlighting the benefits of this approach.
     paper_bibtex: |
@@ -91,6 +91,10 @@ papers:
         author    = {Kenneth Weiss and Thomas Stitt and Daryl Hawkins and Olga Pearce and Stephanie Brink and Robert N. Rieben},
         journal   = {The International Journal of High Performance Computing Applications},
         year      = {2025},
+        month     = {January},
+        volume    = {40},
+        number    = {1},
+        pages     = {80--95},
         publisher = {SAGE Publications},
         doi       = {10.1177/10943420251381191},
       }
