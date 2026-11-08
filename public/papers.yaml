@@ -2,6 +2,33 @@
 
 papers:
   # 2026
+  - paper_id: arxiv26_mir
+    paper_year: 2026
+    paper_title: >
+      Feature-preserving interface reconstruction using piecewise circles and cusps
+    paper_author:
+      - Jerry Liu
+      - Kenneth Weiss
+      - Jin Yao
+    paper_venue:
+      journal: arXiv (2610.41305)
+    paper_abstract: >
+      We present a geometric interface reconstruction method for Volume-of-Fluid (VOF) simulations that captures both curved interfaces and sharp features using only volume fraction data. We represent interfaces with linear facets, circular arcs, and corner facets formed by two lines or arcs joined within a single cell. We first propagate local orientation constraints through a graph and merge cells to resolve ambiguities, treating topological consistency as a first-class constraint. An optional conservative refinement improves C0 continuity while preserving local volume constraints. Users can independently enable circular facets, corner facets, cell merging, and continuity refinement to balance accuracy and computational cost. In its simplest configuration, our method provides a fast local line-fitting scheme competitive with state-of-the-art PLIC methods. On standard static benchmarks, the full configuration reconstructs identifiable lines, circles, and sufficiently resolved corners to numerical precision on coarse, perturbed Cartesian meshes. On varying-curvature interfaces, it achieves third-order convergence in facet-gap error and approximately first-order convergence in curvature error. These results demonstrate global volume conservation and accurate reconstruction of curved and corner features.
+    paper_bibtex: |
+      @misc{Liu26,
+        title         = {Feature-preserving interface reconstruction using piecewise circles and cusps}, 
+        author        = {Jerry Liu and Kenneth Weiss and Jin Yao},
+        year          = {2026},
+        eprint        = {2610.41305},
+        archivePrefix = {arXiv},
+        primaryClass  = {physics.comp-ph},
+        url           = {https://arxiv.org/abs/2610.41305}, 
+        doi           = {https://doi.org/10.48550/arXiv.2610.41305}, 
+      }      
+    paper_links:
+      paper: "papers/Liu26.arxiv.pdf"
+      arXiv: https://doi.org/10.48550/arXiv.2610.41305
+
   - paper_id: siggraph26
     paper_year: 2026
     paper_title: >
